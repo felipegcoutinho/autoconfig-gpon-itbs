@@ -1,0 +1,4 @@
+.header { 
+  background-color: tomato;   
+  grid-area: 1 / 1 / 1 / 9;
+}

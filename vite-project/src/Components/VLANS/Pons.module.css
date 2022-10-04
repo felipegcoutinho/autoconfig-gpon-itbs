@@ -1,0 +1,33 @@
+.container {
+
+  background-color: violet;
+  display: flex;  
+  flex-direction: column;
+  grid-area: 2 / 2 / 7 / 4;
+  padding: 0.5rem;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+input {
+  border: 2px solid black;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.1rem;
+  padding: 0.1rem;
+  width: 100px;
+}
+
+h4 {
+  margin: 5px;
+}
+
+.teste {
+  background-color: aquamarine;
+  display: flex;
+  margin: 5px;
+}
