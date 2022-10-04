@@ -7,9 +7,17 @@ function Pons() {
       <h3>Configuração de VLANs das PONs</h3>
       <div className={Styles.teste}>
         <h4>PON1</h4>
-        <label>AIM <input type="number" value="1" /></label>
-        <label> VLAN ID <input type="number" value="110" /></label>
+        <label>AIM</label>
+        <input className={Styles.aim} type="number" value="1" />
+        <label>ID</label>
+        <input type="number" value={1190} />
       </div>
+
+
+
+
+
+
       <div className={Styles.teste}>
         <h4>PON2</h4>
         <label>AIM <input type="number" value="2" /></label>
