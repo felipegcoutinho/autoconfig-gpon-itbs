@@ -1,9 +1,10 @@
 import React from 'react'
 import Styles from './Pons.module.css'
+import ProfileVlan from './ProfileVlan.jsx'
 
 function Pons() {
   return (
-    <div className={Styles.container}>
+    <><div className={Styles.container}>
       <h3>Configuração de VLANs das PONs</h3>
 
       <div className={Styles.uplinkselect}>
@@ -23,11 +24,11 @@ function Pons() {
       </div>
 
       {/* <div className={Styles.uplinkselect}>
-        interface ethernet 2/2
-        switchport mode hybrid
-        switchport hybrid tagged vlan 100-65
-        exit
-      </div> */}
+      interface ethernet 2/2
+      switchport mode hybrid
+      switchport hybrid tagged vlan 100-65
+      exit
+    </div> */}
 
       <div className={Styles.gpon}>
         <Props title="PON 1" aim="1" vlan="10" idVlan="vlanpon1" idAim="aimpon1" />
@@ -47,9 +48,9 @@ function Pons() {
         <Props title="PON 15" aim="15" vlan="25" idVlan="vlanpon15" idAim="aimpon15" />
         <Props title="PON 16" aim="16" vlan="26" idVlan="vlanpon16" idAim="aimpon16" />
       </div>
-
-
     </div>
+      <ProfileVlan />
+    </>
   )
 }
 

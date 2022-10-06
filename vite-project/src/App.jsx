@@ -9,9 +9,6 @@ function App() {
       <Header />
       <Pons />
       <div className={Styles.div3}></div>
-      {/* <div className={Styles.div4}></div>
-      <div className={Styles.div5}></div>
-      <div className={Styles.div6}></div> */}
     </div>
   )
 }
