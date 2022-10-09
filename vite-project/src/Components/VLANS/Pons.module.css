@@ -15,6 +15,7 @@ input::-webkit-inner-spin-button {
 
 .gpon {
   display: flex;
+  
 }
 
 label {
@@ -61,7 +62,8 @@ h5 {
 
 .pons {  
   background-color: #DFDFDF;
-  border-radius: 5px;display: flex;
+  border-radius: 5px;
+  display: flex;
   flex-direction: column;
   margin: 2px;
   padding: 5px;
