@@ -1,13 +1,13 @@
-/* input::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
-/* input[type=number] {
+Firefox
+ input[type=number] {
   -moz-appearance: textfield;
-} */
+}
 
 .container {
   grid-area: 2 / 2 / 2 / 12;
@@ -15,7 +15,6 @@ input::-webkit-inner-spin-button {
 
 .gpon {
   display: flex;
-  
 }
 
 label {
