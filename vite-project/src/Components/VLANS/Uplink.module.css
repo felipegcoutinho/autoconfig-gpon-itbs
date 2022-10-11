@@ -1,0 +1,28 @@
+.container {  
+  box-sizing: border-box;
+  width: 100%
+}
+
+.content {
+  background-color: #282828;
+  border:1px solid black;
+  box-shadow: 0 0 0.5em #000;
+  color: white; 
+  padding: 20px;
+}
+
+.container label {
+  font-size: 1.2rem;
+}
+
+.container select {
+background-color: #121212;
+border:2px solid white;
+color: white;
+padding: 5px;
+width: fit-content;
+}
+
+h4 {
+  color: wheat;
+}

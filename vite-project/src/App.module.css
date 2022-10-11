@@ -1,0 +1,28 @@
+.container {
+  background-color: #F5F5F5;
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 0.1fr repeat(2, 1fr);
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Segoe UI, Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.teste {
+  background-color: black;
+  border-radius: 3px;
+  margin-left: 5px;
+  padding: 10px;
+  position: fixed;
+  top: 30%;
+}

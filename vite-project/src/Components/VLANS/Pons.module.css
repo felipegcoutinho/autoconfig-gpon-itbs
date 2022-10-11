@@ -10,11 +10,23 @@ Firefox
 }
 
 .container {
-  grid-area: 2 / 2 / 2 / 12;
+  display: flex;
+  flex-direction: column;
 }
 
-.gpon {
+.ponContainer{
   display: flex;
+}
+
+.pons {  
+  background-color: #DFDFDF;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  padding: 5px;
+  text-align: center;
 }
 
 label {
@@ -26,15 +38,12 @@ input,
 select {
   background-color: #e6e6e6;  
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 3px;
+  box-sizing: border-box;
   font-size: 0.9rem;
-  margin-bottom: 0.1rem;
+  margin-bottom: 3px;
   text-align: center;
   width: 100%;
-}
-
-select {
-  width: 100px;
 }
 
 h5 {
@@ -45,27 +54,3 @@ h5 {
   padding: 3px;
   text-align: center;
 }
-
-.uplinkselect {
-  background-color: #5E6573;
-  border-radius: 5px;
-  color: white;
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 180px;
-}
-
-.uplinkselect label {
-  margin-right: 10px;
-}
-
-.pons {  
-  background-color: #DFDFDF;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  margin: 2px;
-  padding: 5px;
-  text-align: center;
-}
-

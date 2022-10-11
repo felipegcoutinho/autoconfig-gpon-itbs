@@ -1,11 +1,60 @@
-.container {
-  background-color:#303030;
-  color: white;
-  grid-area: 3 / 2 / 5 / 12; 
-  padding: 20px;
+.container { 
+  grid-area: 3 / 2 / 5 / 12;
 }
 
-p {
+.content {
+  background-color:#282828;
+  box-shadow: 0 0 0.5em #000;  
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px; 
+}
+
+pre {
+  font-size: 0.8rem;
   margin: 0;
   padding: 0;
+}
+
+pre::before {
+  color: green;
+  content: '# ';
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end
+}
+
+.button {
+  background-color: #00A335;
+  border:none;
+  border-radius:6px;
+  box-shadow: 0px 13px 80px -7px black;
+  color:white;
+  cursor: pointer;
+  font-size:0.8rem;
+  height:35px;
+  margin-bottom: 20px;
+  max-width:150px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #007a29;
+}
+
+.button:active {
+  background-color: #71a482;
+}
+
+hr {
+  border: 1px solid #007a29;
+}
+
+.teste:hover{
+  background: blue;
+  cursor: pointer;
 }

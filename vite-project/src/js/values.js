@@ -31,7 +31,7 @@ const initialValues = {
   vlanpon14: '214',
   vlanpon15: '215',
   vlanpon16: '216',
-  // uplinkpon1: 'eth 1',
+  uplink: 'ethernet 1/1',
   // uplinkpon2: 'eth 1',
   // uplinkpon3: 'eth 1',
   // uplinkpon4: 'eth 1',
