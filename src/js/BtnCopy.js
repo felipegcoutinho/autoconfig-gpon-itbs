@@ -1,7 +1,6 @@
 import React from 'react'
 
 function BtnCopy() {
-  const [buttonText, setButtonText] = React.useState('Copiar');
 
   function copyToClip(str) {
     function listener(e) {
@@ -11,10 +10,10 @@ function BtnCopy() {
     document.addEventListener('copy', listener);
     document.execCommand('copy');
     document.removeEventListener('copy', listener);
-    setButtonText('Copiado!');
-    setTimeout(() => {
-      setButtonText('Copiar');
-    }, 2000);
+    swal("COPIADO COM SUCESSO!", {
+      button: false,
+      timer: 1000,
+    });
   }
 
   return (

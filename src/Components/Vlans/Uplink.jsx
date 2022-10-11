@@ -9,9 +9,9 @@ export default function Uplink() {
 
   return (
     <div id="two" className={Style.container}>
-      <h2>#2 Configuração da Porta Uplink e criação das VLANs</h2>
+      <h2>#3 Configuração da Porta Uplink e criação das VLANs</h2>
       <div className={Style.content}>
-        <h4>#2.1 DEFINIR PORTA UPLINK</h4>
+        <h4>#3.1 DEFINIR PORTA UPLINK</h4>
 
         <select defaultValue={values.uplink} onChange={handleChange} name="uplink">
           {options.map((option) => (
@@ -19,9 +19,9 @@ export default function Uplink() {
           ))}
         </select>
 
-        <h4>#2.2 CRIAR VLAN</h4>
+        <h4>#3.2 CRIAR VLAN</h4>
         <pre>vlan {values.vlanpon1}-{values.vlanpon16}</pre>
-        <h4>#2.3 CRIAR UPLINK</h4>
+        <h4>#3.3 CRIAR UPLINK</h4>
         <pre>interface {values.uplink}</pre>
         <pre>switchport mode hybrid</pre>
         <pre>switchport hybrid tagged vlan {values.vlanpon1}-{values.vlanpon16}</pre>

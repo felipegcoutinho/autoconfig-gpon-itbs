@@ -23,7 +23,6 @@ export default function ProfileVlan() {
   return (
     <div className={Style.container}>
       <h2>#4 Profile Vlan</h2>
-      <h3>Clique nos grupos para copiar!</h3>
       <div className={Style.content}>
 
         <span id="bloco1" className={Style.teste} onClick={() =>
@@ -44,7 +43,7 @@ export default function ProfileVlan() {
           <pre>aim {values.aimvlanpon7} name vlan{values.vlanpon7}</pre><pre>translate old-vlan {values.vlanpon7} new-vlan {values.vlanpon7}</pre><pre>active</pre>
           <pre>aim {values.aimvlanpon8} name vlan{values.vlanpon8}</pre><pre>translate old-vlan {values.vlanpon8} new-vlan {values.vlanpon8}</pre><pre>active</pre>
         </span>
-        <hr />
+        <hr></hr>
         <span id="bloco3" className={Style.teste} onClick={() =>
           copyToClip(document.getElementById('bloco3').innerText)
         }>
@@ -53,7 +52,7 @@ export default function ProfileVlan() {
           <pre>aim {values.aimvlanpon11} name vlan{values.vlanpon11}</pre><pre>translate old-vlan {values.vlanpon11} new-vlan {values.vlanpon11}</pre> <pre>active</pre>
           <pre>aim {values.aimvlanpon12} name vlan{values.vlanpon12}</pre><pre>translate old-vlan {values.vlanpon12} new-vlan {values.vlanpon12}</pre> <pre>active</pre>
         </span>
-        <hr />
+        <hr></hr>
         <span id="bloco4" className={Style.teste} onClick={() =>
           copyToClip(document.getElementById('bloco4').innerText)
         }>

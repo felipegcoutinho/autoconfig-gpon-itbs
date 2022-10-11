@@ -22,9 +22,10 @@ export default function AppVlan() {
   return (
     <ValueContext.Provider value={{ values, handleChange }}>
       <div className={Style.container}>
+        <h1>G16 - Configurações iniciais de Auto Provisionamento</h1>
+        <Dba />
         <Pons />
         <Uplink />
-        <Dba />
         <ProfileVlan />
       </div>
     </ValueContext.Provider >

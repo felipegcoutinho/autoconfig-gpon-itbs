@@ -8,7 +8,7 @@ export default function Pons() {
 
   return (
     <div id="one" className={Style.container}>
-      <h2>#1 Definição dos AIMs e VLANs</h2>
+      <h2>#2 Definição dos AIMs e VLANs</h2>
       <div className={Style.ponContainer}>
         <div className={Style.pons}>
           <Aim name="aimvlanpon1" defaultValue={values.aimvlanpon1} title="PON 1" handleChange={handleChange} />

@@ -57,7 +57,7 @@ hr {
 
 .teste {
   cursor: pointer;
-  padding: 5px;
+  padding: 15px 10px;
 }
 
 .teste:hover{
@@ -66,4 +66,13 @@ hr {
 
 .teste:active{
   background-color: #3c5745;
+}
+
+.teste:before{
+  color: gray;
+  content: 'Clique para copiar';
+  display: flex;
+  font-size: x-small;
+  justify-content: end;
+  text-transform: uppercase;
 }

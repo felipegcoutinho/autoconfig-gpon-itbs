@@ -7,3 +7,41 @@
   flex-direction: column;
   padding: 20px; 
 }
+
+.teste {
+  cursor: pointer;
+  padding: 15px 10px;
+}
+
+.teste:hover{
+  background-color: #343333;
+}
+
+.teste:active{
+  background-color: #3c5745;
+}
+
+.teste:before{
+  animation: pulse 3s infinite;
+  content: 'Clique para Copiar';
+  display: flex;
+  font-size: x-small;
+  font-weight: bold;
+  justify-content: end;
+  text-transform: uppercase;
+}
+
+@keyframes pulse {
+	0% {
+		color: gray;
+	}
+
+  50% { 
+    color: #dc6b6b;
+    text-shadow: 0px 0px 20px #c76c6c;
+  }
+
+	100% {
+		color: gray;
+	}
+}
