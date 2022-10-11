@@ -4,7 +4,7 @@
 
 .content {
   background-color:#282828;
-  box-shadow: 0 0 0.5em #000;  
+  box-shadow: 0 0 0.5em black;  
   box-sizing: border-box;
   color: white;
   display: flex;
@@ -52,9 +52,18 @@ pre::before {
 
 hr {
   border: 1px solid #007a29;
+  width: 100%;
+}
+
+.teste {
+  cursor: pointer;
+  padding: 5px;
 }
 
 .teste:hover{
-  background: blue;
-  cursor: pointer;
+  background-color: #343333;
+}
+
+.teste:active{
+  background-color: #3c5745;
 }
