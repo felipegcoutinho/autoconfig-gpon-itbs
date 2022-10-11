@@ -21,11 +21,11 @@ export default function ProfileVlan() {
   }
 
   return (
-    <div className={Style.container}>
+    <div id="vlan" className={Style.container}>
       <h2>#4 Profile Vlan</h2>
       <div className={Style.content}>
 
-        <span id="bloco1" className={Style.teste} onClick={() =>
+        <span id="bloco1" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('bloco1').innerText)
         }>
           <pre>deploy profile vlan</pre>
@@ -35,7 +35,7 @@ export default function ProfileVlan() {
           <pre>aim {values.aimvlanpon4} name vlan{values.vlanpon4}</pre><pre>translate old-vlan {values.vlanpon4} new-vlan {values.vlanpon4}</pre><pre>active</pre>
         </span>
         <hr></hr>
-        <span id="bloco2" className={Style.teste} onClick={() =>
+        <span id="bloco2" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('bloco2').innerText)
         }>
           <pre>aim {values.aimvlanpon5} name vlan{values.vlanpon5}</pre><pre>translate old-vlan {values.vlanpon5} new-vlan {values.vlanpon5}</pre><pre>active</pre>
@@ -44,7 +44,7 @@ export default function ProfileVlan() {
           <pre>aim {values.aimvlanpon8} name vlan{values.vlanpon8}</pre><pre>translate old-vlan {values.vlanpon8} new-vlan {values.vlanpon8}</pre><pre>active</pre>
         </span>
         <hr></hr>
-        <span id="bloco3" className={Style.teste} onClick={() =>
+        <span id="bloco3" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('bloco3').innerText)
         }>
           <pre>aim {values.aimvlanpon9} name vlan{values.vlanpon9}</pre><pre>translate old-vlan {values.vlanpon9} new-vlan {values.vlanpon9}</pre><pre>active</pre>
@@ -53,7 +53,7 @@ export default function ProfileVlan() {
           <pre>aim {values.aimvlanpon12} name vlan{values.vlanpon12}</pre><pre>translate old-vlan {values.vlanpon12} new-vlan {values.vlanpon12}</pre> <pre>active</pre>
         </span>
         <hr></hr>
-        <span id="bloco4" className={Style.teste} onClick={() =>
+        <span id="bloco4" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('bloco4').innerText)
         }>
           <pre>aim {values.aimvlanpon13} name vlan{values.vlanpon13}</pre><pre>translate old-vlan {values.vlanpon13} new-vlan {values.vlanpon13}</pre> <pre>active</pre>

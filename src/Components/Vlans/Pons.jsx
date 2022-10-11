@@ -7,7 +7,7 @@ export default function Pons() {
   const { values, handleChange } = React.useContext(ValueContext);
 
   return (
-    <div id="one" className={Style.container}>
+    <div id="aim" className={Style.container}>
       <h2>#2 Definição dos AIMs e VLANs</h2>
       <div className={Style.ponContainer}>
         <div className={Style.pons}>

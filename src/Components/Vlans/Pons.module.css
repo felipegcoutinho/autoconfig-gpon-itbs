@@ -12,6 +12,7 @@ Firefox
 .container {
   display: flex;
   flex-direction: column;
+  grid-area: 4 / 2 / 4 / 12;
 }
 
 .ponContainer{

@@ -2,7 +2,6 @@ import React from 'react'
 import Style from './Dba.module.css'
 
 function Dba() {
-
   function copyToClip(str) {
     function listener(e) {
       e.preventDefault();
@@ -18,10 +17,10 @@ function Dba() {
   }
 
   return (
-    <div className={Style.container}>
+    <div id="Pdba" className={Style.container}>
       <h2>#1 Profile DBA</h2>
       <div className={Style.content}>
-        <span id="bloco" className={Style.teste} onClick={() =>
+        <code id="bloco" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('bloco').innerText)
         }>
           <pre>deploy profile dba</pre>
@@ -29,7 +28,7 @@ function Dba() {
           <pre>type 4 max 1200000</pre>
           <pre>active</pre>
           <pre>exit</pre>
-        </span>
+        </code>
       </div>
     </div>
   )

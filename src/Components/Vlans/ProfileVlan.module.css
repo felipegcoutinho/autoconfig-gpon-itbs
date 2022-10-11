@@ -1,5 +1,5 @@
 .container { 
-  grid-area: 3 / 2 / 5 / 12;
+  grid-area: 6 / 2 / 6 / 12;
 }
 
 .content {
@@ -55,20 +55,20 @@ hr {
   width: 100%;
 }
 
-.teste {
+.code {
   cursor: pointer;
   padding: 15px 10px;
 }
 
-.teste:hover{
+.code:hover{
   background-color: #343333;
 }
 
-.teste:active{
+.code:active{
   background-color: #3c5745;
 }
 
-.teste:before{
+.code:before{
   color: gray;
   content: 'Clique para copiar';
   display: flex;

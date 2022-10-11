@@ -1,28 +1,37 @@
 .container {
-  background-color: #F5F5F5;
-  display: grid;
-  grid-column-gap: 5px;
-  grid-row-gap: 10px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 0.2fr repeat(10, 1fr);
+    background-color: whitesmoke;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 0.1fr);
 }
 
-body {
-  box-sizing: border-box;
-  font-family: Segoe UI, Arial, Helvetica, sans-serif;
-  margin: 0;
+.h1 {
+    grid-area: 2 / 2 / 2 / 12;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
-.teste {
-  background-color: black;
-  border-radius: 3px;
-  margin-left: 5px;
-  padding: 10px;
-  position: fixed;
-  top: 30%;
-}
+.nav {
+    background-color: black;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    grid-area: 3 / 2 / 3/ 1;
+    height: fit-content;
+    margin-top: 10%;
+    padding: 10px 5px;
+    position: fixed;
+    text-align: center;
+    text-transform: uppercase;
+    width: fit-content;
+  }
+  
+  body {
+    box-sizing: border-box;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
