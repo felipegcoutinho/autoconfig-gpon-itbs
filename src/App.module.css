@@ -3,7 +3,7 @@
     display: grid;
     grid-row-gap: 10px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, 0.1fr);
+    grid-template-rows: repeat(12, 0.1fr);
 }
 
 .h1 {

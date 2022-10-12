@@ -7,6 +7,11 @@ import Uplink from './Components/Uplink/Uplink'
 import Style from './App.module.css'
 import Dba from './Components/DBA/Dba'
 import Header from './Components/Header/Header'
+import AimLine from './Components/Line/AimLine'
+import ProfileLineBridge from './Components/Line/ProfileLineBridge';
+import ProfileLineRouter from './Components/Line/ProfileLineRouter';
+import SelectDeviceBridge from './Components/Line/SelectDeviceBridge.jsx';
+import SelectDeviceRouter from './Components/Line/SelectDeviceRouter.jsx';
 
 export default function App() {
 
@@ -34,12 +39,19 @@ export default function App() {
           <div><a href="#uplink">Uplink</a></div>
           <hr />
           <div><a href="#vlan">Vlan</a></div>
+          <hr />
+          <div><a href="#aimLine">Aim Line</a></div>
         </nav>
         <Header />
         <Dba />
         <Pons />
         <Uplink />
         <ProfileVlan />
+        <AimLine />
+        <ProfileLineBridge />
+        <ProfileLineRouter />
+        <SelectDeviceBridge />
+        <SelectDeviceRouter />
       </div>
     </ValueContext.Provider >
   )

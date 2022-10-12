@@ -34,8 +34,8 @@ export default function Uplink() {
         </select>
 
         <h4 className={Style.h4}>#3.2 CRIAR VLAN</h4>
-        <code id="bloco1" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('bloco1').innerText)
+        <code id="criarVlan" className={Style.code} onClick={() =>
+          copyToClip(document.getElementById('criarVlan').innerText)
         }>
           <pre>vlan {values.vlanpon1}-{values.vlanpon16}</pre>
         </code>

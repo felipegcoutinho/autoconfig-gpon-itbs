@@ -1,0 +1,57 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+Firefox
+ input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  grid-area: 7 / 2 / 7 / 12;
+}
+
+.ponContainer{
+  display: flex;
+}
+
+.pons {  
+  background-color: #DFDFDF;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  padding: 5px;
+  text-align: center;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+input,
+select {
+  background-color: #e6e6e6;  
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+  text-align: center;
+  width: 100%;
+}
+
+h5 {
+  background-color: #00A335;
+  border-radius: 3px;
+  color: white;
+  margin: 0 0 5px 0;
+  padding: 3px;
+  text-align: center;
+}

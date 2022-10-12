@@ -1,5 +1,11 @@
 .container { 
-  grid-area: 6 / 2 / 6 / 12;
+  grid-area: 9 / 2 / 9 / 7;
+  margin-right: 10px;
+}
+
+.containerRouter {
+  grid-area: 9 / 7 / 9 / 12;
+  margin-left: 10px;
 }
 
 .content {
@@ -12,6 +18,14 @@
   padding: 20px; 
 }
 
+.container select {
+  background-color: #696969;
+  color: white;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: fit-content;
+}
+
 pre {
   font-size: 0.8rem;
   margin: 0;
@@ -19,7 +33,7 @@ pre {
 }
 
 pre::before {
-  color: green;
+  color: mediumaquamarine;
   content: '# ';
 }
 

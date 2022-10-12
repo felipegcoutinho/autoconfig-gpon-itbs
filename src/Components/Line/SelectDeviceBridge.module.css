@@ -1,0 +1,16 @@
+.container { 
+  grid-area: 8 / 2 / 8 / 7;
+  margin-right: 10px;
+}
+
+.content {
+  background-color: #cdc997;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.selectBridge, .selectRouter {
+  color: white;
+  width: fit-content;
+}
