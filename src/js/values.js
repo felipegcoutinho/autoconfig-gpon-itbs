@@ -64,7 +64,8 @@ const initialValues = {
   aimrouter14: '63',
   aimrouter15: '64',
   aimrouter16: '65',
-  device: 'i30-100',
+  devicebridge: 'i30-100',
+  devicerouter: 'i41-211',
 };
 
 export default initialValues;

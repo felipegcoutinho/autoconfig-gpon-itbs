@@ -2,24 +2,10 @@ import React from 'react'
 import options from '../../js/UplinkOptions'
 import Style from './Uplink.module.css'
 import ValueContext from "../../js/ValueContext";
+import copyToClip from '../../js/BtnCopy';
 
 export default function Uplink() {
-
   const { values, handleChange } = React.useContext(ValueContext);
-
-  function copyToClip(str) {
-    function listener(e) {
-      e.preventDefault();
-      e.clipboardData.setData('text/plain', str);
-    }
-    document.addEventListener('copy', listener);
-    document.execCommand('copy');
-    document.removeEventListener('copy', listener);
-    swal("COPIADO COM SUCESSO!", {
-      button: false,
-      timer: 1000,
-    });
-  }
 
   return (
     <div id="uplink" className={Style.container}>
@@ -41,14 +27,14 @@ export default function Uplink() {
         </code>
 
         <h4 className={Style.h4}>#3.3 CRIAR UPLINK</h4>
-        <span id="bloco2" className={Style.code} onClick={() =>
+        <code id="bloco2" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('bloco2').innerText)
         }>
           <pre>interface {values.uplink}</pre>
           <pre>switchport mode hybrid</pre>
           <pre>switchport hybrid tagged vlan {values.vlanpon1}-{values.vlanpon16}</pre>
           <pre>exit</pre>
-        </span>
+        </code>
       </div>
     </div>
   )

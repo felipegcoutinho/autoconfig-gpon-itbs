@@ -27,25 +27,23 @@
 
 .code:before{
   animation: pulse 3s infinite;
-  content: 'Clique para Copiar';
+  content: '[ Clique para copiar ]';
   display: flex;
   font-size: x-small;
-  font-weight: bold;
   justify-content: end;
   text-transform: uppercase;
 }
 
 @keyframes pulse {
 	0% {
-		color: gray;
+		color: lightgray;
 	}
 
   50% { 
-    color: #dc6b6b;
-    text-shadow: 0px 0px 20px #c76c6c;
+    color: #343333;
   }
 
 	100% {
-		color: gray;
+		color: lightgray;
 	}
 }

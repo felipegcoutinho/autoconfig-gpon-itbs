@@ -10,8 +10,9 @@ import Header from './Components/Header/Header'
 import AimLine from './Components/Line/AimLine'
 import ProfileLineBridge from './Components/Line/ProfileLineBridge';
 import ProfileLineRouter from './Components/Line/ProfileLineRouter';
-import SelectDeviceBridge from './Components/Line/SelectDeviceBridge.jsx';
-import SelectDeviceRouter from './Components/Line/SelectDeviceRouter.jsx';
+import SelectDeviceBridge from './Components/Line/SelectDeviceBridge';
+import SelectDeviceRouter from './Components/Line/SelectDeviceRouter';
+import AutoConfig from './Components/AutoConfig/AutoConfig';
 
 export default function App() {
 
@@ -32,15 +33,19 @@ export default function App() {
           <h1>G16 - Configurações iniciais de Auto Provisionamento</h1>
         </div>
         <nav className={Style.nav}>
-          <div><a href="#Pdba">DBA</a></div>
+          <div className={Style.navItem}><a href="#Pdba">DBA</a></div>
           <hr />
-          <div><a href="#aim">AIMs</a></div>
+          <div className={Style.navItem}><a href="#aim">AIMs</a></div>
           <hr />
-          <div><a href="#uplink">Uplink</a></div>
+          <div className={Style.navItem}><a href="#uplink">Uplink</a></div>
           <hr />
-          <div><a href="#vlan">Vlan</a></div>
+          <div className={Style.navItem}><a href="#vlan">Vlan</a></div>
           <hr />
-          <div><a href="#aimLine">Aim Line</a></div>
+          <div className={Style.navItem}><a href="#aimLine">Aim Line</a></div>
+          <hr />
+          <div className={Style.navItem}><a href="#profileLine">Profile Line</a></div>
+          <hr />
+          <div className={Style.navItem}><a href="#autoconfig">Auto Config</a></div>
         </nav>
         <Header />
         <Dba />
@@ -48,10 +53,11 @@ export default function App() {
         <Uplink />
         <ProfileVlan />
         <AimLine />
-        <ProfileLineBridge />
-        <ProfileLineRouter />
         <SelectDeviceBridge />
         <SelectDeviceRouter />
+        <ProfileLineBridge />
+        <ProfileLineRouter />
+        <AutoConfig />
       </div>
     </ValueContext.Provider >
   )

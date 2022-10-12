@@ -42,10 +42,24 @@ hr {
 }
 
 .code:before{
-  color: gray;
-  content: 'Clique para copiar';
+  animation: pulse 3s infinite;
+  content: '[ Clique para copiar ]';
   display: flex;
   font-size: x-small;
   justify-content: end;
   text-transform: uppercase;
+}
+
+@keyframes pulse {
+	0% {
+		color: lightgray;
+	}
+
+  50% { 
+    color: #343333;
+  }
+
+	100% {
+		color: lightgray;
+	}
 }

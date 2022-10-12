@@ -3,7 +3,7 @@
     display: grid;
     grid-row-gap: 10px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 0.1fr);
+    grid-template-rows: repeat(2, 0.8fr);
 }
 
 .h1 {
@@ -12,17 +12,22 @@
 
 .nav {
     background-color: black;
-    border-radius: 0px 10px 10px 0px;
-    font-size: 0.8rem;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 0.7rem;
     font-weight: bold;
     grid-area: 3 / 2 / 3/ 1;
     height: fit-content;
+    margin-left: 5px;
     margin-top: 10%;
     padding: 10px 5px;
     position: fixed;
-    text-align: center;
     text-transform: uppercase;
     width: fit-content;
+  }
+
+  .navItem:before {
+    color:white;
+    content:'# ';
   }
   
   body {
