@@ -9,7 +9,7 @@ export default function SelectDeviceRouter() {
   return (
     <div className={Style.container}>
       <div className={Style.h2}>
-        <h2> Profile Line</h2>
+        <h2> Profile Line Router</h2>
       </div>
       <div className={Style.content}>
         <div className={Style.select}>
