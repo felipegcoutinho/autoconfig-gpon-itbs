@@ -2,6 +2,17 @@
   grid-area: 6 / 3 / 6 / 15;
 }
 
+.container h2 {
+  border-bottom: 3px solid black;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.container h2:before {
+  content: '\23\34';
+  font: var(--fa-font-solid);
+}
+
 .content {
   background-color:#282828;
   box-shadow: 0 0 0.5em black;  
@@ -11,8 +22,6 @@
   flex-direction: column;
   padding: 20px; 
 }
-
-
 
 .code {
   cursor: pointer;
@@ -31,9 +40,11 @@
   animation: pulse 3s infinite;
   content: '[ Clique para copiar ]';
   display: flex;
+  font-family: 'JetBrains Mono', monospace, arial;
   font-size: x-small;
   justify-content: end;
   text-transform: uppercase;
+
 }
 
 @keyframes pulse {

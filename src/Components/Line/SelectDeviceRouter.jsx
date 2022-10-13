@@ -8,6 +8,9 @@ export default function SelectDeviceRouter() {
 
   return (
     <div className={Style.container}>
+      <div className={Style.h2}>
+        <h2> Profile Line</h2>
+      </div>
       <div className={Style.content}>
         <div className={Style.select}>
           <label htmlFor="devicerouter">Escolha o Device para Line Router</label>

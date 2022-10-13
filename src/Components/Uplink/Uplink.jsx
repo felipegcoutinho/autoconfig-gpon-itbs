@@ -9,9 +9,9 @@ export default function Uplink() {
 
   return (
     <div id="uplink" className={Style.container}>
-      <h2>#3 Configuração da Porta Uplink e criação das VLANs</h2>
+      <h2> Configuração da Porta Uplink e criação das VLANs</h2>
       <div className={Style.content}>
-        <h4 className={Style.h4}>#3.1 DEFINIR PORTA UPLINK</h4>
+        <h4 className={Style.h4}>3.1 DEFINA A PORTA UPLINK:</h4>
 
         <select defaultValue={values.uplink} onChange={handleChange} name="uplink">
           {options.map((option) => (
@@ -19,14 +19,14 @@ export default function Uplink() {
           ))}
         </select>
 
-        <h4 className={Style.h4}>#3.2 CRIAR VLAN</h4>
+        <h4 className={Style.h4}>3.2 CRIAR VLAN</h4>
         <code id="criarVlan" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('criarVlan').innerText)
         }>
           <pre>vlan {values.vlanpon1}-{values.vlanpon16}</pre>
         </code>
 
-        <h4 className={Style.h4}>#3.3 CRIAR UPLINK</h4>
+        <h4 className={Style.h4}>3.3 CRIAR UPLINK</h4>
         <code id="bloco2" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('bloco2').innerText)
         }>

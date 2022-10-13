@@ -1,10 +1,10 @@
 .container { 
-  grid-area: 9 / 3 / 19 / 9;
+  grid-area: 10 / 3 / 20 / 9;
   margin-right: 10px;
 }
 
 .containerRouter {
-  grid-area: 9 / 9 / 19 / 15;
+  grid-area: 10 / 9 / 20 / 15;
   margin-left: 10px;
 }
 
@@ -26,10 +26,6 @@
   width: fit-content;
 }
 
-hr {
-  border: 1px solid #007a29;
-}
-
 .code {
   cursor: pointer;
   padding: 15px 10px;
@@ -47,6 +43,7 @@ hr {
   animation: pulse 3s infinite;
   content: '[ Clique para copiar ]';
   display: flex;
+  font-family: 'JetBrains Mono', monospace, arial;
   font-size: x-small;
   justify-content: end;
   text-transform: uppercase;

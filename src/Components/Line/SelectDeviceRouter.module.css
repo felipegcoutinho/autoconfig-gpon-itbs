@@ -1,13 +1,32 @@
 .container {
   align-items: center; 
-  grid-area: 8 / 9 / 8 / 15;
+  grid-area: 9 / 9 / 9 / 15;
   margin-left: 10px;
-  margin-top: 72px;
+}
+
+.h2 {
+  grid-area: 8 / 3 / 8 / 15;
+}
+
+.container h2 {
+  border-bottom: 3px solid black;
+  border-radius: 3px;
+  padding: 5px;
 }
 
 .content {
-  background-color: #cdc997;
+  background-color: cadetblue;
   display: flex;
   justify-content: center;
   padding: 10px;
+}
+
+.select select {
+  background-color: black;
+  border: none;
+  color: white;
+  height: 25px;
+  margin-left: 10px;
+  text-align: center;
+  width: 100px;
 }

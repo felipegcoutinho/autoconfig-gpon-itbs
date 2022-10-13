@@ -2,6 +2,17 @@
   grid-area: 5 / 3 / 5 / 15;
 }
 
+.container h2 {
+  border-bottom: 3px solid black;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.container h2:before {
+  content: '\23\33';
+  font: var(--fa-font-solid);
+}
+
 .content {
   background-color:#282828;
   box-shadow: 0 0 0.5em black;  
@@ -15,9 +26,10 @@
 .container select {
   background-color: #696969;
   color: white;
-  margin-bottom: 10px;
+  margin: 10px 0 10px 5px;
   padding: 5px;
-  width: fit-content;
+  text-align: center;
+  width: 150px;
 }
 
 .h4 {
@@ -25,9 +37,14 @@
   margin: 5px;
 }
 
+.h4:before {
+  content: '\23';
+  font: var(--fa-font-solid);
+}
+
 .code {
   cursor: pointer;
-  padding: 15px 10px;
+  padding: 5px 10px 15px 10px;
 }
 
 .code:hover{
@@ -40,9 +57,9 @@
 
 .code:before{
   animation: pulse 3s infinite;
-  color: gray;
   content: '[ Clique para copiar ]';
   display: flex;
+  font-family: 'JetBrains Mono', monospace, arial;
   font-size: x-small;
   justify-content: end;
   text-transform: uppercase;

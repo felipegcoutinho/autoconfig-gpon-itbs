@@ -3,6 +3,17 @@
   margin-bottom: 10px;
 }
 
+.container h2 {
+  border-bottom: 3px solid black;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.container h2:before {
+  content: '\23\37';
+  font: var(--fa-font-solid);
+}
+
 .content {
   background-color:#282828;
   box-shadow: 0 0 0.5em black;  
@@ -12,7 +23,6 @@
   flex-direction: column;
   padding: 20px; 
 }
-
 
 .code {
   cursor: pointer;
@@ -29,9 +39,9 @@
 
 .code:before{
   animation: pulse 3s infinite;
-  color: gray;
   content: '[ Clique para copiar ]';
   display: flex;
+  font-family: 'JetBrains Mono', monospace, arial;
   font-size: x-small;
   justify-content: end;
   text-transform: uppercase;

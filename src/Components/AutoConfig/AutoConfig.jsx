@@ -8,7 +8,7 @@ export default function AutoConfig() {
 
   return (
     <div id="autoconfig" className={Style.container}>
-      <h2>#7 Auto Config</h2>
+      <h2> Auto Config</h2>
       <div className={Style.content}>
         <code id="auto" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('auto').innerText)

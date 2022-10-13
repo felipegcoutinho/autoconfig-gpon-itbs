@@ -9,7 +9,7 @@ export default function ProfileVlan() {
 
   return (
     <div id="vlan" className={Style.container}>
-      <h2>#4 Profile Vlan</h2>
+      <h2> Profile Vlan</h2>
       <div className={Style.content}>
 
         <code id="bloco1" className={Style.code} onClick={() =>

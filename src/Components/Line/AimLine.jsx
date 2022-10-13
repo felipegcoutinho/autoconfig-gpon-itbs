@@ -8,7 +8,7 @@ export default function AimLine() {
 
   return (
     <div id="aimLine" className={Style.container}>
-      <h2>#5 Definição dos AIMs do Line Bridge e Router</h2>
+      <h2> Definição dos AIMs do Line Bridge e Router</h2>
       <div className={Style.ponContainer}>
         <div className={Style.pons}>
           <AimBridge name="aimbridge1" defaultValue={values.aimbridge1} title="PON1" handleChange={handleChange} />

@@ -40,6 +40,7 @@
   animation: pulse 3s infinite;
   content: '[ Clique para copiar ]';
   display: flex;
+  font-family: 'JetBrains Mono', monospace, arial;
   font-size: x-small;
   justify-content: end;
   text-transform: uppercase;
