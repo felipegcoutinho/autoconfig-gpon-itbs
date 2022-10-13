@@ -6,7 +6,7 @@ function Dba() {
 
   return (
     <div id="Pdba" className={Style.container}>
-      <h2>#1 Profile DBA</h2>
+      <h2> Profile DBA</h2>
       <div className={Style.content}>
         <code id="bloco" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('bloco').innerText)

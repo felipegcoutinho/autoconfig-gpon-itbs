@@ -12,7 +12,7 @@ Firefox
 .container {
   display: flex;
   flex-direction: column;
-  grid-area: 7 / 2 / 7 / 12;
+  grid-area: 7 / 3 / 7 / 15;
 }
 
 .ponContainer{
@@ -31,7 +31,7 @@ Firefox
 }
 
 label {
-  font-size: 0.8rem;
+  font-size: smaller;
   font-weight: bold;
 }
 
@@ -45,13 +45,4 @@ select {
   margin-bottom: 3px;
   text-align: center;
   width: 100%;
-}
-
-h5 {
-  background-color: #00A335;
-  border-radius: 3px;
-  color: white;
-  margin: 0 0 5px 0;
-  padding: 3px;
-  text-align: center;
 }

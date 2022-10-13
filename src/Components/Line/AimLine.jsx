@@ -82,7 +82,6 @@ export default function AimLine() {
 function AimBridge({ handleChange, ...props }) {
   return (
     <>
-      {/* <h5>{props.title}</h5> */}
       <label>Aim Bridge</label>
       <input type="number" onChange={handleChange} {...props} />
     </>

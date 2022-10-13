@@ -8,7 +8,7 @@ export default function Pons() {
 
   return (
     <div id="aim" className={Style.container}>
-      <h2>#2 Definição dos AIMs e VLANs</h2>
+      <h2> Definição dos AIMs e VLANs</h2>
       <div className={Style.ponContainer}>
         <div className={Style.pons}>
           <Aim name="aimvlanpon1" defaultValue={values.aimvlanpon1} title="PON 1" handleChange={handleChange} />
@@ -82,7 +82,7 @@ export default function Pons() {
 function Aim({ handleChange, ...props }) {
   return (
     <>
-      <h5>{props.title}</h5>
+      <h5 className={Style.h5}>{props.title}</h5>
       <label>AIM</label>
       <input type="number" onChange={handleChange} {...props} />
     </>

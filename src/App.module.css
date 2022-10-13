@@ -1,42 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+html {
+  scroll-behavior:smooth
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Fira Sans',Segoe UI, Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+pre {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+pre::before {
+  color: green;
+  content: '# ';
+}
+
+hr {
+  border: 1px solid #007a29;
+  width: 100%;
+}
+
 .container {
     background-color: whitesmoke;
     display: grid;
     grid-row-gap: 10px;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(2, 0.8fr);
 }
 
 .h1 {
-    grid-area: 2 / 2 / 2 / 12;
+  grid-area: 2 / 3 / 2 / 15;
 }
 
-.nav {
+.menu {
     background-color: black;
-    border-radius: 10px 10px 10px 10px;
-    font-size: 0.7rem;
+    border-radius: 3px;
+    box-shadow: 0 0 0.5em black;  
+    font-size: 0.8rem;
     font-weight: bold;
-    grid-area: 3 / 2 / 3/ 1;
+    grid-area: 3 / 1 / 3/ 1;
     height: fit-content;
-    margin-left: 5px;
-    margin-top: 10%;
-    padding: 10px 5px;
-    position: fixed;
-    text-transform: uppercase;
-    width: fit-content;
+    list-style: none;
+    margin-left: 3px;
+    padding: 15px 15px 15px 10px;
+    position: sticky;
+    top: 20%;
+    width: max-content;
   }
 
-  .navItem:before {
-    color:white;
-    content:'# ';
-  }
-  
-  body {
-    box-sizing: border-box;
-    font-family: Segoe UI, Arial, Helvetica, sans-serif;
-    margin: 0;
-  }
-  
-  a {
+  .menuItem {
     color: white;
-    text-decoration: none;
+    padding: 5px;
+  }
+
+  .menuItem:before {
+    color:tomato;
+    content:'\23';
+    font: var(--fa-font-solid);
+  } 
+
+  .menuItem:hover {
+    background-color: #00A335;
+    border-radius: 3px;
+    color: white;
   }

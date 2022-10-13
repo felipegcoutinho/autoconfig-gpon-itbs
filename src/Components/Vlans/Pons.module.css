@@ -12,7 +12,18 @@ Firefox
 .container {
   display: flex;
   flex-direction: column;
-  grid-area: 4 / 2 / 4 / 12;
+  grid-area: 4 / 3 / 4 / 15;
+}
+
+.container h2 {
+  border-bottom: 3px solid black;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.container h2:before {
+  content: '\23\32';
+  font: var(--fa-font-solid);
 }
 
 .ponContainer{
@@ -47,10 +58,11 @@ select {
   width: 100%;
 }
 
-h5 {
+.h5 {
   background-color: #00A335;
   border-radius: 3px;
   color: white;
+  font-size: small;
   margin: 0 0 5px 0;
   padding: 3px;
   text-align: center;

@@ -1,5 +1,16 @@
 .container {
-  grid-area: 3 / 2 / 3 / 12;
+  grid-area: 3 / 3 / 3 / 15;
+}
+
+.container h2 {
+  border-bottom: 3px solid black;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.container h2:before {
+  content: '\23\31';
+  font: var(--fa-font-solid);
 }
 
 .content {

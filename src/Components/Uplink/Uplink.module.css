@@ -1,7 +1,5 @@
-.container {  
-  box-sizing: border-box;
-  grid-area: 5 / 2 / 5 / 12;
-  width: 100%;
+.container {
+  grid-area: 5 / 3 / 5 / 15;
 }
 
 .content {

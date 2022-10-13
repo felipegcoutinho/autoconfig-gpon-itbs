@@ -1,5 +1,5 @@
 .container { 
-  grid-area: 6 / 2 / 6 / 12;
+  grid-area: 6 / 3 / 6 / 15;
 }
 
 .content {
@@ -12,21 +12,7 @@
   padding: 20px; 
 }
 
-pre {
-  font-size: 0.8rem;
-  margin: 0;
-  padding: 0;
-}
 
-pre::before {
-  color: green;
-  content: '# ';
-}
-
-hr {
-  border: 1px solid #007a29;
-  width: 100%;
-}
 
 .code {
   cursor: pointer;

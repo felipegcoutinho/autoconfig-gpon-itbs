@@ -32,21 +32,15 @@ export default function App() {
         <div className={Style.h1}>
           <h1>G16 - Configurações iniciais de Auto Provisionamento</h1>
         </div>
-        <nav className={Style.nav}>
-          <div className={Style.navItem}><a href="#Pdba">DBA</a></div>
-          <hr />
-          <div className={Style.navItem}><a href="#aim">AIMs</a></div>
-          <hr />
-          <div className={Style.navItem}><a href="#uplink">Uplink</a></div>
-          <hr />
-          <div className={Style.navItem}><a href="#vlan">Vlan</a></div>
-          <hr />
-          <div className={Style.navItem}><a href="#aimLine">Aim Line</a></div>
-          <hr />
-          <div className={Style.navItem}><a href="#profileLine">Profile Line</a></div>
-          <hr />
-          <div className={Style.navItem}><a href="#autoconfig">Auto Config</a></div>
-        </nav>
+        <ul className={Style.menu}>
+          <a href="#Pdba"><li className={Style.menuItem}> Profile DBA</li></a>
+          <a href="#aim"><li className={Style.menuItem}> Aim Vlan</li></a>
+          <a href="#uplink"><li className={Style.menuItem}> Uplink</li></a>
+          <a href="#vlan"><li className={Style.menuItem}> Profile Vlan</li></a>
+          <a href="#aimLine"><li className={Style.menuItem}> Aim Line</li></a>
+          <a href="#profileLine"><li className={Style.menuItem}> Profile Line</li></a>
+          <a href="#autoconfig"><li className={Style.menuItem}> Auto Config</li></a>
+        </ul>
         <Header />
         <Dba />
         <Pons />
