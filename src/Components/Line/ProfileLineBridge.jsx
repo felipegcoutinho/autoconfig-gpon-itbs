@@ -1,7 +1,6 @@
 import React from 'react'
 import Style from './ProfileLine.module.css'
 import ValueContext from "../../js/ValueContext";
-import swal from 'sweetalert';
 import copyToClip from '../../js/BtnCopy';
 
 export default function ProfileLineBridge() {

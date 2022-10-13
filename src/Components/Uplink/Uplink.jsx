@@ -9,7 +9,7 @@ export default function Uplink() {
 
   return (
     <div id="uplink" className={Style.container}>
-      <h2> Configuração da Porta Uplink e criação das VLANs</h2>
+      <h2> Configuração da interface Uplink e criação das VLANs na OLT</h2>
       <div className={Style.content}>
         <h4 className={Style.h4}>3.1 DEFINA A PORTA UPLINK:</h4>
 

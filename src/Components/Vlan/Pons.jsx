@@ -1,7 +1,7 @@
 import React from 'react'
 import Style from './Pons.module.css'
 import ValueContext from "../../js/ValueContext";
-import initialValues from '../../js/values.js'
+import initialValues from '../../js/Values.js'
 
 
 export default function Pons() {
@@ -10,7 +10,7 @@ export default function Pons() {
 
   return (
     <div id="aim" className={Style.container}>
-      <h2> Definição dos AIMs e VLANs<button onClick={() => setValues(initialValues)}>Reset</button></h2>
+      <h2> Definição dos AIMs do Profile VLAN<button onClick={() => setValues(initialValues)}>Reset</button></h2>
 
       <div className={Style.content}>
         <div className={Style.pons}>
