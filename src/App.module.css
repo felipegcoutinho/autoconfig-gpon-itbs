@@ -44,7 +44,7 @@ pre {
 }
 
 pre::before {
-  color: mediumaquamarine;
+  color: #00A335;
   content: '# ';
 }
 
@@ -87,7 +87,7 @@ hr {
   }
 
   .menuItem:before {
-    color:tomato;
+    color:lightgray;
     content:'\23';
     font: var(--fa-font-solid);
   } 

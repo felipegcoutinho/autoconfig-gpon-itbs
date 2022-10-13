@@ -5,7 +5,7 @@ import ValueContext from "../../js/ValueContext";
 import copyToClip from '../../js/BtnCopy';
 
 export default function Uplink() {
-  const { values, handleChange } = React.useContext(ValueContext);
+  const { values, handleChange, checked } = React.useContext(ValueContext);
 
   return (
     <div id="uplink" className={Style.container}>
@@ -23,7 +23,7 @@ export default function Uplink() {
         <code id="criarVlan" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('criarVlan').innerText)
         }>
-          <pre>vlan {values.vlanpon1}-{values.vlanpon16}</pre>
+          {checked ? <pre>vlan {values.vlanpon1}-{values.vlanpon16}</pre> : <pre>vlan {values.vlanpon1}-{values.vlanpon8}</pre>}
         </code>
 
         <h4 className={Style.h4}>3.3 CRIAR UPLINK</h4>
@@ -32,7 +32,7 @@ export default function Uplink() {
         }>
           <pre>interface {values.uplink}</pre>
           <pre>switchport mode hybrid</pre>
-          <pre>switchport hybrid tagged vlan {values.vlanpon1}-{values.vlanpon16}</pre>
+          {checked ? <pre>switchport hybrid tagged vlan {values.vlanpon1}-{values.vlanpon16}</pre> : <pre>switchport hybrid tagged vlan {values.vlanpon1}-{values.vlanpon8}</pre>}
           <pre>exit</pre>
         </code>
       </div>

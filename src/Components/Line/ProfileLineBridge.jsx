@@ -11,8 +11,6 @@ export default function ProfileLineBridge() {
     <div className={Style.container}>
       <div className={Style.content}>
 
-        BRIDGE
-
         <code id="linebridge1" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linebridge1').innerText)
         }>

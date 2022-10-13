@@ -11,8 +11,6 @@ export default function ProfileLineRouter() {
     <div className={Style.containerRouter}>
       <div className={Style.content}>
 
-        ROUTER
-
         <code id="linerouter1" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linerouter1').innerText)
         }>

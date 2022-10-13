@@ -16,6 +16,11 @@ import AutoConfig from './Components/AutoConfig/AutoConfig';
 
 export default function App() {
 
+  const [checked, setChecked] = React.useState(true)
+  const handleChangeCheckbox = () => {
+    setChecked(!checked)
+  }
+
   const [values, setValues] = React.useState(initialValues);
 
   const handleChange = (e) => {
@@ -27,10 +32,17 @@ export default function App() {
   };
 
   return (
-    <ValueContext.Provider value={{ values, handleChange }}>
+    <ValueContext.Provider value={{ values, setValues, handleChange, checked }}>
       <div className={Style.container}>
         <div className={Style.h1}>
           <h1>G16 - Configurações iniciais de Auto Provisionamento</h1>
+          <label>{checked ? "Desmarque para voltar para G16" : "G8"}</label>
+          <input
+            type="checkbox"
+            checked={checked}
+            onChange={handleChangeCheckbox}
+          />
+
         </div>
         <ul className={Style.menu}>
           <a href="#Pdba"><li className={Style.menuItem}> Profile DBA</li></a>

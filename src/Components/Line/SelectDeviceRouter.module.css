@@ -1,5 +1,4 @@
-.container {
-  align-items: center; 
+.container { 
   grid-area: 8 / 9 / 8 / 15;
   margin-left: 10px;
 }
@@ -15,9 +14,9 @@
 }
 
 .content {
-  background-color: cadetblue;
+  background-color: #5E6573;
+  color: whitesmoke;
   display: flex;
-  justify-content: center;
   padding: 10px;
 }
 
