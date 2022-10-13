@@ -4,7 +4,7 @@ import ValueContext from "../../js/ValueContext";
 
 export default function AimLine() {
 
-  const { values, handleChange } = React.useContext(ValueContext);
+  const { values, handleChange, checked } = React.useContext(ValueContext);
 
   return (
     <div id="aimLine" className={Style.container}>
@@ -42,38 +42,42 @@ export default function AimLine() {
           <AimBridge name="aimbridge8" defaultValue={values.aimbridge8} title="PON 8" handleChange={handleChange} />
           <AimRouter name="aimrouter8" defaultValue={values.aimrouter8} handleChange={handleChange} />
         </div>
-        <div className={Style.pons}>
-          <AimBridge name="aimbridge9" defaultValue={values.aimbridge9} title="PON 9" handleChange={handleChange} />
-          <AimRouter name="aimrouter9" defaultValue={values.aimrouter9} handleChange={handleChange} />
-        </div>
-        <div className={Style.pons}>
-          <AimBridge name="aimbridge10" defaultValue={values.aimbridge10} title="PON 10" handleChange={handleChange} />
-          <AimRouter name="aimrouter10" defaultValue={values.aimrouter10} handleChange={handleChange} />
-        </div>
-        <div className={Style.pons}>
-          <AimBridge name="aimbridge11" defaultValue={values.aimbridge11} title="PON 11" handleChange={handleChange} />
-          <AimRouter name="aimrouter11" defaultValue={values.aimrouter11} handleChange={handleChange} />
-        </div>
-        <div className={Style.pons}>
-          <AimBridge name="aimbridge12" defaultValue={values.aimbridge12} title="PON 12" handleChange={handleChange} />
-          <AimRouter name="aimrouter12" defaultValue={values.aimrouter12} handleChange={handleChange} />
-        </div>
-        <div className={Style.pons}>
-          <AimBridge name="aimbridge13" defaultValue={values.aimbridge13} title="PON 13" handleChange={handleChange} />
-          <AimRouter name="aimrouter13" defaultValue={values.aimrouter13} handleChange={handleChange} />
-        </div>
-        <div className={Style.pons}>
-          <AimBridge name="aimbridge14" defaultValue={values.aimbridge14} title="PON 14" handleChange={handleChange} />
-          <AimRouter name="aimrouter14" defaultValue={values.aimrouter14} handleChange={handleChange} />
-        </div>
-        <div className={Style.pons}>
-          <AimBridge name="aimbridge15" defaultValue={values.aimbridge15} title="PON 15" handleChange={handleChange} />
-          <AimRouter name="aimrouter15" defaultValue={values.aimrouter15} handleChange={handleChange} />
-        </div>
-        <div className={Style.pons}>
-          <AimBridge name="aimbridge16" defaultValue={values.aimbridge16} title="PON 16" handleChange={handleChange} />
-          <AimRouter name="aimrouter16" defaultValue={values.aimrouter16} handleChange={handleChange} />
-        </div>
+        {checked && (
+          <>
+            <div className={Style.pons}>
+              <AimBridge name="aimbridge9" defaultValue={values.aimbridge9} title="PON 9" handleChange={handleChange} />
+              <AimRouter name="aimrouter9" defaultValue={values.aimrouter9} handleChange={handleChange} />
+            </div>
+            <div className={Style.pons}>
+              <AimBridge name="aimbridge10" defaultValue={values.aimbridge10} title="PON 10" handleChange={handleChange} />
+              <AimRouter name="aimrouter10" defaultValue={values.aimrouter10} handleChange={handleChange} />
+            </div>
+            <div className={Style.pons}>
+              <AimBridge name="aimbridge11" defaultValue={values.aimbridge11} title="PON 11" handleChange={handleChange} />
+              <AimRouter name="aimrouter11" defaultValue={values.aimrouter11} handleChange={handleChange} />
+            </div>
+            <div className={Style.pons}>
+              <AimBridge name="aimbridge12" defaultValue={values.aimbridge12} title="PON 12" handleChange={handleChange} />
+              <AimRouter name="aimrouter12" defaultValue={values.aimrouter12} handleChange={handleChange} />
+            </div>
+            <div className={Style.pons}>
+              <AimBridge name="aimbridge13" defaultValue={values.aimbridge13} title="PON 13" handleChange={handleChange} />
+              <AimRouter name="aimrouter13" defaultValue={values.aimrouter13} handleChange={handleChange} />
+            </div>
+            <div className={Style.pons}>
+              <AimBridge name="aimbridge14" defaultValue={values.aimbridge14} title="PON 14" handleChange={handleChange} />
+              <AimRouter name="aimrouter14" defaultValue={values.aimrouter14} handleChange={handleChange} />
+            </div>
+            <div className={Style.pons}>
+              <AimBridge name="aimbridge15" defaultValue={values.aimbridge15} title="PON 15" handleChange={handleChange} />
+              <AimRouter name="aimrouter15" defaultValue={values.aimrouter15} handleChange={handleChange} />
+            </div>
+            <div className={Style.pons}>
+              <AimBridge name="aimbridge16" defaultValue={values.aimbridge16} title="PON 16" handleChange={handleChange} />
+              <AimRouter name="aimrouter16" defaultValue={values.aimrouter16} handleChange={handleChange} />
+            </div>
+          </>
+        )}
       </div>
     </div>
   )

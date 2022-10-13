@@ -4,7 +4,7 @@ import ValueContext from "../../js/ValueContext";
 import copyToClip from '../../js/BtnCopy';
 
 export default function ProfileLineRouter() {
-  const { values } = React.useContext(ValueContext);
+  const { values, checked } = React.useContext(ValueContext);
 
   return (
     <div className={Style.containerRouter}>
@@ -121,119 +121,122 @@ export default function ProfileLineRouter() {
           <pre>flow 1 port veip vlan {values.vlanpon8} keep</pre>
           <pre>active</pre>
         </code>
-        <hr />
-        <code id="linerouter9" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linerouter9').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimrouter9} name {values.devicerouter}_{values.vlanpon9}</pre>
-          <pre>device type {values.devicerouter}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon9}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port veip vlan {values.vlanpon9} gemport 1</pre>
-          <pre>flow 1 port veip vlan {values.vlanpon9} keep</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linerouter10" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linerouter10').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimrouter10} name {values.devicerouter}_{values.vlanpon10}</pre>
-          <pre>device type {values.devicerouter}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon10}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port veip vlan {values.vlanpon10} gemport 1</pre>
-          <pre>flow 1 port veip vlan {values.vlanpon10} keep</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linerouter11" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linerouter11').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimrouter11} name {values.devicerouter}_{values.vlanpon11}</pre>
-          <pre>device type {values.devicerouter}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon11}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port veip vlan {values.vlanpon11} gemport 1</pre>
-          <pre>flow 1 port veip vlan {values.vlanpon11} keep</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linerouter12" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linerouter12').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimrouter12} name {values.devicerouter}_{values.vlanpon12}</pre>
-          <pre>device type {values.devicerouter}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon12}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port veip vlan {values.vlanpon12} gemport 1</pre>
-          <pre>flow 1 port veip vlan {values.vlanpon12} keep</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linerouter13" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linerouter13').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimrouter13} name {values.devicerouter}_{values.vlanpon13}</pre>
-          <pre>device type {values.devicerouter}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon13}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port veip vlan {values.vlanpon13} gemport 1</pre>
-          <pre>flow 1 port veip vlan {values.vlanpon13} keep</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linerouter14" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linerouter14').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimrouter14} name {values.devicerouter}_{values.vlanpon14}</pre>
-          <pre>device type {values.devicerouter}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon14}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port veip vlan {values.vlanpon14} gemport 1</pre>
-          <pre>flow 1 port veip vlan {values.vlanpon14} keep</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linerouter15" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linerouter15').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimrouter15} name {values.devicerouter}_{values.vlanpon15}</pre>
-          <pre>device type {values.devicerouter}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon15}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port veip vlan {values.vlanpon15} gemport 1</pre>
-          <pre>flow 1 port veip vlan {values.vlanpon15} keep</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linerouter16" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linerouter16').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimrouter16} name {values.devicerouter}_{values.vlanpon16}</pre>
-          <pre>device type {values.devicerouter}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon16}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port veip vlan {values.vlanpon16} gemport 1</pre>
-          <pre>flow 1 port veip vlan {values.vlanpon16} keep</pre>
-          <pre>active</pre>
-        </code>
-
+        {checked && (
+          <>
+            <hr />
+            <code id="linerouter9" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linerouter9').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimrouter9} name {values.devicerouter}_{values.vlanpon9}</pre>
+              <pre>device type {values.devicerouter}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon9}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port veip vlan {values.vlanpon9} gemport 1</pre>
+              <pre>flow 1 port veip vlan {values.vlanpon9} keep</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linerouter10" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linerouter10').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimrouter10} name {values.devicerouter}_{values.vlanpon10}</pre>
+              <pre>device type {values.devicerouter}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon10}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port veip vlan {values.vlanpon10} gemport 1</pre>
+              <pre>flow 1 port veip vlan {values.vlanpon10} keep</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linerouter11" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linerouter11').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimrouter11} name {values.devicerouter}_{values.vlanpon11}</pre>
+              <pre>device type {values.devicerouter}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon11}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port veip vlan {values.vlanpon11} gemport 1</pre>
+              <pre>flow 1 port veip vlan {values.vlanpon11} keep</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linerouter12" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linerouter12').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimrouter12} name {values.devicerouter}_{values.vlanpon12}</pre>
+              <pre>device type {values.devicerouter}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon12}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port veip vlan {values.vlanpon12} gemport 1</pre>
+              <pre>flow 1 port veip vlan {values.vlanpon12} keep</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linerouter13" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linerouter13').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimrouter13} name {values.devicerouter}_{values.vlanpon13}</pre>
+              <pre>device type {values.devicerouter}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon13}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port veip vlan {values.vlanpon13} gemport 1</pre>
+              <pre>flow 1 port veip vlan {values.vlanpon13} keep</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linerouter14" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linerouter14').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimrouter14} name {values.devicerouter}_{values.vlanpon14}</pre>
+              <pre>device type {values.devicerouter}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon14}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port veip vlan {values.vlanpon14} gemport 1</pre>
+              <pre>flow 1 port veip vlan {values.vlanpon14} keep</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linerouter15" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linerouter15').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimrouter15} name {values.devicerouter}_{values.vlanpon15}</pre>
+              <pre>device type {values.devicerouter}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon15}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port veip vlan {values.vlanpon15} gemport 1</pre>
+              <pre>flow 1 port veip vlan {values.vlanpon15} keep</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linerouter16" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linerouter16').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimrouter16} name {values.devicerouter}_{values.vlanpon16}</pre>
+              <pre>device type {values.devicerouter}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon16}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port veip vlan {values.vlanpon16} gemport 1</pre>
+              <pre>flow 1 port veip vlan {values.vlanpon16} keep</pre>
+              <pre>active</pre>
+            </code>
+          </>
+        )}
       </div>
 
     </div >

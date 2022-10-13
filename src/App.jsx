@@ -16,14 +16,16 @@ import AutoConfig from './Components/AutoConfig/AutoConfig';
 
 export default function App() {
 
+  //Hook para armazenar o modelo do equipamento
   const [checked, setChecked] = React.useState(true)
   const handleChangeCheckbox = () => {
     setChecked(!checked)
   }
 
+  //Hook para armazenar os valores dos inputs
   const [values, setValues] = React.useState(initialValues);
-
   const handleChange = (e) => {
+
     const { name, value } = e.target;
     setValues({
       ...values,
@@ -34,17 +36,27 @@ export default function App() {
   return (
     <ValueContext.Provider value={{ values, setValues, handleChange, checked }}>
       <div className={Style.container}>
-        <div className={Style.h1}>
-          <h1>G16 - Configurações iniciais de Auto Provisionamento</h1>
-          <label>{checked ? "Desmarque para voltar para G16" : "G8"}</label>
-          <input
-            type="checkbox"
-            checked={checked}
-            onChange={handleChangeCheckbox}
-          />
+
+        {/* Select para o equipamento */}
+        <div id="start" className={Style.title}>
+          <div className={Style.selectContainer}>
+            <h2 className={Style.h2}>Escolha o Concentrador que será configurado:</h2>
+            <select className={Style.select} onChange={handleChangeCheckbox}>
+              <option>G16</option>
+              <option>G08</option>
+            </select>
+          </div>
+
+          <h1 className={Style.h1}>{checked ? "G16" : "G08"} - Configurações de Auto Provisionamento</h1>
+
+          {/* Limpa os valores dos inputs */}
+          <button onClick={() => setValues(initialValues)}>Limpar tudo</button>
 
         </div>
+        {/* Menu Lateral */}
         <ul className={Style.menu}>
+          <a href="#start"><li className={Style.menuItem}> Inicio</li></a>
+          <hr />
           <a href="#Pdba"><li className={Style.menuItem}> Profile DBA</li></a>
           <a href="#aim"><li className={Style.menuItem}> Aim Vlan</li></a>
           <a href="#uplink"><li className={Style.menuItem}> Uplink</li></a>
@@ -53,6 +65,7 @@ export default function App() {
           <a href="#profileLine"><li className={Style.menuItem}> Profile Line</li></a>
           <a href="#autoconfig"><li className={Style.menuItem}> Auto Config</li></a>
         </ul>
+        {/* Todos os componentes são chamados aqui */}
         <Header />
         <Dba />
         <Pons />

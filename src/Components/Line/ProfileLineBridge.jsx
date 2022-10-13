@@ -4,7 +4,7 @@ import ValueContext from "../../js/ValueContext";
 import copyToClip from '../../js/BtnCopy';
 
 export default function ProfileLineBridge() {
-  const { values } = React.useContext(ValueContext);
+  const { values, checked } = React.useContext(ValueContext);
 
   return (
     <div className={Style.container}>
@@ -121,118 +121,122 @@ export default function ProfileLineBridge() {
           <pre>flow 1 port eth 1 default vlan {values.vlanpon8}</pre>
           <pre>active</pre>
         </code>
-        <hr />
-        <code id="linebridge9" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linebridge9').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimbridge9} name {values.devicebridge}_{values.vlanpon9}</pre>
-          <pre>device type {values.devicebridge}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon9}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port eth 1 vlan {values.vlanpon9} gemport 1</pre>
-          <pre>flow 1 port eth 1 default vlan {values.vlanpon9}</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linebridge10" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linebridge10').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimbridge10} name {values.devicebridge}_{values.vlanpon10}</pre>
-          <pre>device type {values.devicebridge}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon10}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port eth 1 vlan {values.vlanpon10} gemport 1</pre>
-          <pre>flow 1 port eth 1 default vlan {values.vlanpon10}</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linebridge11" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linebridge11').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimbridge11} name {values.devicebridge}_{values.vlanpon11}</pre>
-          <pre>device type {values.devicebridge}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon11}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port eth 1 vlan {values.vlanpon11} gemport 1</pre>
-          <pre>flow 1 port eth 1 default vlan {values.vlanpon11}</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linebridge12" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linebridge12').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimbridge12} name {values.devicebridge}_{values.vlanpon12}</pre>
-          <pre>device type {values.devicebridge}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon12}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port eth 1 vlan {values.vlanpon12} gemport 1</pre>
-          <pre>flow 1 port eth 1 default vlan {values.vlanpon12}</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linebridge13" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linebridge13').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimbridge13} name {values.devicebridge}_{values.vlanpon13}</pre>
-          <pre>device type {values.devicebridge}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon13}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port eth 1 vlan {values.vlanpon13} gemport 1</pre>
-          <pre>flow 1 port eth 1 default vlan {values.vlanpon13}</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linebridge14" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linebridge14').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimbridge14} name {values.devicebridge}_{values.vlanpon14}</pre>
-          <pre>device type {values.devicebridge}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon14}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port eth 1 vlan {values.vlanpon14} gemport 1</pre>
-          <pre>flow 1 port eth 1 default vlan {values.vlanpon14}</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linebridge15" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linebridge15').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimbridge15} name {values.devicebridge}_{values.vlanpon15}</pre>
-          <pre>device type {values.devicebridge}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon15}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port eth 1 vlan {values.vlanpon15} gemport 1</pre>
-          <pre>flow 1 port eth 1 default vlan {values.vlanpon15}</pre>
-          <pre>active</pre>
-        </code>
-        <hr />
-        <code id="linebridge16" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('linebridge16').innerText)
-        }>
-          <pre>deploy profile line</pre>
-          <pre>aim {values.aimbridge16} name {values.devicebridge}_{values.vlanpon16}</pre>
-          <pre>device type {values.devicebridge}</pre>
-          <pre>tcont 1 profile dba 1</pre>
-          <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon16}</pre>
-          <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port eth 1 vlan {values.vlanpon16} gemport 1</pre>
-          <pre>flow 1 port eth 1 default vlan {values.vlanpon16}</pre>
-          <pre>active</pre>
-        </code>
+        {checked && (
+          <>
+            <hr />
+            <code id="linebridge9" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linebridge9').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimbridge9} name {values.devicebridge}_{values.vlanpon9}</pre>
+              <pre>device type {values.devicebridge}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon9}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port eth 1 vlan {values.vlanpon9} gemport 1</pre>
+              <pre>flow 1 port eth 1 default vlan {values.vlanpon9}</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linebridge10" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linebridge10').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimbridge10} name {values.devicebridge}_{values.vlanpon10}</pre>
+              <pre>device type {values.devicebridge}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon10}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port eth 1 vlan {values.vlanpon10} gemport 1</pre>
+              <pre>flow 1 port eth 1 default vlan {values.vlanpon10}</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linebridge11" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linebridge11').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimbridge11} name {values.devicebridge}_{values.vlanpon11}</pre>
+              <pre>device type {values.devicebridge}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon11}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port eth 1 vlan {values.vlanpon11} gemport 1</pre>
+              <pre>flow 1 port eth 1 default vlan {values.vlanpon11}</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linebridge12" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linebridge12').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimbridge12} name {values.devicebridge}_{values.vlanpon12}</pre>
+              <pre>device type {values.devicebridge}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon12}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port eth 1 vlan {values.vlanpon12} gemport 1</pre>
+              <pre>flow 1 port eth 1 default vlan {values.vlanpon12}</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linebridge13" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linebridge13').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimbridge13} name {values.devicebridge}_{values.vlanpon13}</pre>
+              <pre>device type {values.devicebridge}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon13}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port eth 1 vlan {values.vlanpon13} gemport 1</pre>
+              <pre>flow 1 port eth 1 default vlan {values.vlanpon13}</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linebridge14" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linebridge14').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimbridge14} name {values.devicebridge}_{values.vlanpon14}</pre>
+              <pre>device type {values.devicebridge}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon14}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port eth 1 vlan {values.vlanpon14} gemport 1</pre>
+              <pre>flow 1 port eth 1 default vlan {values.vlanpon14}</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linebridge15" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linebridge15').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimbridge15} name {values.devicebridge}_{values.vlanpon15}</pre>
+              <pre>device type {values.devicebridge}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon15}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port eth 1 vlan {values.vlanpon15} gemport 1</pre>
+              <pre>flow 1 port eth 1 default vlan {values.vlanpon15}</pre>
+              <pre>active</pre>
+            </code>
+            <hr />
+            <code id="linebridge16" className={Style.code} onClick={() =>
+              copyToClip(document.getElementById('linebridge16').innerText)
+            }>
+              <pre>deploy profile line</pre>
+              <pre>aim {values.aimbridge16} name {values.devicebridge}_{values.vlanpon16}</pre>
+              <pre>device type {values.devicebridge}</pre>
+              <pre>tcont 1 profile dba 1</pre>
+              <pre>gemport 1 tcont 1 vlan-profile {values.aimvlanpon16}</pre>
+              <pre>mapping mode port-vlan</pre>
+              <pre>mapping 1 port eth 1 vlan {values.vlanpon16} gemport 1</pre>
+              <pre>flow 1 port eth 1 default vlan {values.vlanpon16}</pre>
+              <pre>active</pre>
+            </code>
+          </>
+        )}
       </div>
     </div >
   )
