@@ -1,18 +1,18 @@
-import React from 'react'
-import initialValues from './js/Values.js'
-import ProfileVlan from './Components/Vlan/ProfileVlan';
-import Pons from './Components/Vlan/Pons'
-import ValueContext from "./js/ValueContext";
-import Uplink from './Components/Uplink/Uplink'
-import Style from './App.module.css'
-import Dba from './Components/DBA/Dba'
-import Header from './Components/Header/Header'
-import AimLine from './Components/Line/AimLine'
+import React from 'react';
+import Style from './App.module.css';
+import AutoConfig from './Components/AutoConfig/AutoConfig';
+import Dba from './Components/DBA/Dba';
+import Header from './Components/Header/Header';
+import AimLine from './Components/Line/AimLine';
 import ProfileLineBridge from './Components/Line/ProfileLineBridge';
 import ProfileLineRouter from './Components/Line/ProfileLineRouter';
 import SelectDeviceBridge from './Components/Line/SelectDeviceBridge';
 import SelectDeviceRouter from './Components/Line/SelectDeviceRouter';
-import AutoConfig from './Components/AutoConfig/AutoConfig';
+import Uplink from './Components/Uplink/Uplink';
+import Pons from './Components/Vlan/Pons';
+import ProfileVlan from './Components/Vlan/ProfileVlan';
+import ValueContext from "./js/ValueContext";
+import initialValues from './js/Values.js';
 
 export default function App() {
 
@@ -46,6 +46,16 @@ export default function App() {
               <option disabled>8820i (Disabled)</option>
             </select>
           </div>
+          <div className={Style.selectContainer}>
+            <h2 className={Style.h2}>Escolha o modo que será configurado:</h2>
+            <select className={Style.select} onChange={handleChangeCheckbox}>
+              <option>Uma VLAN por Porta Pon</option>
+              <option>Apenas uma VLAN </option>
+
+            </select>
+          </div>
+
+
 
           <h1 className={Style.h1}>{checked ? "G16" : "G08"} - Configurações de Auto Provisionamento</h1>
 

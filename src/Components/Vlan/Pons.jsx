@@ -1,7 +1,6 @@
-import React from 'react'
-import Style from './Pons.module.css'
+import React from 'react';
 import ValueContext from "../../js/ValueContext";
-import initialValues from '../../js/Values.js'
+import Style from './Pons.module.css';
 
 export default function Pons() {
   const { values, handleChange, checked } = React.useContext(ValueContext);
@@ -83,12 +82,12 @@ export default function Pons() {
   )
 }
 
-function Aim({ handleChange, teste, ...props }) {
+function Aim({ handleChange, ...props }) {
   return (
     <>
       <h5 className={Style.h5}>{props.title}</h5>
       <label>AIM</label>
-      <input type="number" onChange={handleChange} onBlur={teste} {...props} />
+      <input type="number" onChange={handleChange} {...props} />
     </>
   )
 }
