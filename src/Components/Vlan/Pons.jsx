@@ -84,12 +84,12 @@ export default function Pons() {
   )
 }
 
-function Aim({ handleChange, ...props }) {
+function Aim({ handleChange, teste, ...props }) {
   return (
     <>
       <h5 className={Style.h5}>{props.title}</h5>
       <label>AIM</label>
-      <input type="number" onChange={handleChange} {...props} />
+      <input type="number" onChange={handleChange} onBlur={teste} {...props} />
     </>
   )
 }

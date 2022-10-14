@@ -23,7 +23,12 @@ export default function Uplink() {
         <code id="criarVlan" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('criarVlan').innerText)
         }>
-          {checked ? <pre>vlan {values.vlanpon1}-{values.vlanpon16}</pre> : <pre>vlan {values.vlanpon1}-{values.vlanpon8}</pre>}
+          {checked ? <pre>vlan {values.vlanpon1},{values.vlanpon2},{values.vlanpon3},{values.vlanpon4},
+            {values.vlanpon5},{values.vlanpon6},{values.vlanpon7},{values.vlanpon8},{values.vlanpon9},
+            {values.vlanpon10},{values.vlanpon11},{values.vlanpon12},{values.vlanpon13},
+            {values.vlanpon14},{values.vlanpon15},{values.vlanpon16}</pre> :
+            <pre>vlan {values.vlanpon1},{values.vlanpon2},{values.vlanpon3},{values.vlanpon4},
+              {values.vlanpon5},{values.vlanpon6},{values.vlanpon7},{values.vlanpon8}</pre>}
         </code>
 
         <h4 className={Style.h4}>3.3 CRIAR UPLINK</h4>
@@ -32,7 +37,12 @@ export default function Uplink() {
         }>
           <pre>interface {values.uplink}</pre>
           <pre>switchport mode hybrid</pre>
-          {checked ? <pre>switchport hybrid tagged vlan {values.vlanpon1}-{values.vlanpon16}</pre> : <pre>switchport hybrid tagged vlan {values.vlanpon1}-{values.vlanpon8}</pre>}
+          {checked ? <pre>switchport hybrid tagged vlan {values.vlanpon1},{values.vlanpon2},{values.vlanpon3},{values.vlanpon4},
+            {values.vlanpon5},{values.vlanpon6},{values.vlanpon7},{values.vlanpon8},{values.vlanpon9},
+            {values.vlanpon10},{values.vlanpon11},{values.vlanpon12},{values.vlanpon13},
+            {values.vlanpon14},{values.vlanpon15},{values.vlanpon16}</pre>
+            : <pre>switchport hybrid tagged vlan {values.vlanpon1},{values.vlanpon2},{values.vlanpon3},{values.vlanpon4},
+              {values.vlanpon5},{values.vlanpon6},{values.vlanpon7},{values.vlanpon8}</pre>}
           <pre>exit</pre>
         </code>
       </div>

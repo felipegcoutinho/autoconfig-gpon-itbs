@@ -66,10 +66,7 @@ hr {
 }
 
 .select {
-  background-color: black;
   border: none;
-  border-radius: 3px;
-  color: white;
   font-size: 1rem;
   font-weight: bold;
   height: 30px;
@@ -87,8 +84,9 @@ hr {
 }
 
 .selectContainer {
-  background-color: lightgrey;
+  background-color: #21743c;
   border-radius: 3px;
+  color: white;
   display: flex;
   padding: 20px;
   text-align: center;
@@ -106,8 +104,8 @@ hr {
     margin-left: 3px;
     padding: 15px 15px 15px 10px;
     position: sticky;
-    top: 15%;
-    width: max-content;
+    top: 0%;
+    width: max-content
   }
 
   .menuItem {

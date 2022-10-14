@@ -25,7 +25,6 @@ export default function App() {
   //Hook para armazenar os valores dos inputs
   const [values, setValues] = React.useState(initialValues);
   const handleChange = (e) => {
-
     const { name, value } = e.target;
     setValues({
       ...values,
@@ -44,13 +43,11 @@ export default function App() {
             <select className={Style.select} onChange={handleChangeCheckbox}>
               <option>G16</option>
               <option>G08</option>
+              <option disabled>8820i (Disabled)</option>
             </select>
           </div>
 
           <h1 className={Style.h1}>{checked ? "G16" : "G08"} - Configurações de Auto Provisionamento</h1>
-
-          {/* Limpa os valores dos inputs */}
-          <button onClick={() => setValues(initialValues)}>Limpar tudo</button>
 
         </div>
         {/* Menu Lateral */}
@@ -58,7 +55,7 @@ export default function App() {
           <a href="#start"><li className={Style.menuItem}> Inicio</li></a>
           <hr />
           <a href="#Pdba"><li className={Style.menuItem}> Profile DBA</li></a>
-          <a href="#aim"><li className={Style.menuItem}> Aim Vlan</li></a>
+          <a href="#aim"><li className={Style.menuItem}> IDs Vlan</li></a>
           <a href="#uplink"><li className={Style.menuItem}> Uplink</li></a>
           <a href="#vlan"><li className={Style.menuItem}> Profile Vlan</li></a>
           <a href="#aimLine"><li className={Style.menuItem}> Aim Line</li></a>
