@@ -27,7 +27,6 @@ export default function ProfileLineRouter() {
         <code id="linerouter2" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linerouter2').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimrouter2} name {values.devicerouter}_{values.vlanpon2}</pre>
           <pre>device type {values.devicerouter}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -41,7 +40,6 @@ export default function ProfileLineRouter() {
         <code id="linerouter3" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linerouter3').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimrouter3} name {values.devicerouter}_{values.vlanpon3}</pre>
           <pre>device type {values.devicerouter}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -55,7 +53,6 @@ export default function ProfileLineRouter() {
         <code id="linerouter4" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linerouter4').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimrouter4} name {values.devicerouter}_{values.vlanpon4}</pre>
           <pre>device type {values.devicerouter}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -69,7 +66,6 @@ export default function ProfileLineRouter() {
         <code id="linerouter5" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linerouter5').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimrouter5} name {values.devicerouter}_{values.vlanpon5}</pre>
           <pre>device type {values.devicerouter}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -83,7 +79,6 @@ export default function ProfileLineRouter() {
         <code id="linerouter6" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linerouter6').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimrouter6} name {values.devicerouter}_{values.vlanpon6}</pre>
           <pre>device type {values.devicerouter}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -97,7 +92,6 @@ export default function ProfileLineRouter() {
         <code id="linerouter7" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linerouter7').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimrouter7} name {values.devicerouter}_{values.vlanpon7}</pre>
           <pre>device type {values.devicerouter}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -111,7 +105,6 @@ export default function ProfileLineRouter() {
         <code id="linerouter8" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linerouter8').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimrouter8} name {values.devicerouter}_{values.vlanpon8}</pre>
           <pre>device type {values.devicerouter}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -127,7 +120,6 @@ export default function ProfileLineRouter() {
             <code id="linerouter9" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linerouter9').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimrouter9} name {values.devicerouter}_{values.vlanpon9}</pre>
               <pre>device type {values.devicerouter}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -141,7 +133,6 @@ export default function ProfileLineRouter() {
             <code id="linerouter10" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linerouter10').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimrouter10} name {values.devicerouter}_{values.vlanpon10}</pre>
               <pre>device type {values.devicerouter}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -155,7 +146,6 @@ export default function ProfileLineRouter() {
             <code id="linerouter11" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linerouter11').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimrouter11} name {values.devicerouter}_{values.vlanpon11}</pre>
               <pre>device type {values.devicerouter}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -169,7 +159,6 @@ export default function ProfileLineRouter() {
             <code id="linerouter12" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linerouter12').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimrouter12} name {values.devicerouter}_{values.vlanpon12}</pre>
               <pre>device type {values.devicerouter}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -183,7 +172,6 @@ export default function ProfileLineRouter() {
             <code id="linerouter13" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linerouter13').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimrouter13} name {values.devicerouter}_{values.vlanpon13}</pre>
               <pre>device type {values.devicerouter}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -197,7 +185,6 @@ export default function ProfileLineRouter() {
             <code id="linerouter14" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linerouter14').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimrouter14} name {values.devicerouter}_{values.vlanpon14}</pre>
               <pre>device type {values.devicerouter}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -211,7 +198,6 @@ export default function ProfileLineRouter() {
             <code id="linerouter15" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linerouter15').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimrouter15} name {values.devicerouter}_{values.vlanpon15}</pre>
               <pre>device type {values.devicerouter}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -225,7 +211,6 @@ export default function ProfileLineRouter() {
             <code id="linerouter16" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linerouter16').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimrouter16} name {values.devicerouter}_{values.vlanpon16}</pre>
               <pre>device type {values.devicerouter}</pre>
               <pre>tcont 1 profile dba 1</pre>

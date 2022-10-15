@@ -27,7 +27,6 @@ export default function ProfileLineBridge() {
         <code id="linebridge2" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linebridge2').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimbridge2} name {values.devicebridge}_{values.vlanpon2}</pre>
           <pre>device type {values.devicebridge}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -41,7 +40,6 @@ export default function ProfileLineBridge() {
         <code id="linebridge3" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linebridge3').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimbridge3} name {values.devicebridge}_{values.vlanpon3}</pre>
           <pre>device type {values.devicebridge}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -55,7 +53,6 @@ export default function ProfileLineBridge() {
         <code id="linebridge4" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linebridge4').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimbridge4} name {values.devicebridge}_{values.vlanpon4}</pre>
           <pre>device type {values.devicebridge}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -69,7 +66,6 @@ export default function ProfileLineBridge() {
         <code id="linebridge5" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linebridge5').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimbridge5} name {values.devicebridge}_{values.vlanpon5}</pre>
           <pre>device type {values.devicebridge}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -83,7 +79,6 @@ export default function ProfileLineBridge() {
         <code id="linebridge6" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linebridge6').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimbridge6} name {values.devicebridge}_{values.vlanpon6}</pre>
           <pre>device type {values.devicebridge}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -97,7 +92,6 @@ export default function ProfileLineBridge() {
         <code id="linebridge7" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linebridge7').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimbridge7} name {values.devicebridge}_{values.vlanpon7}</pre>
           <pre>device type {values.devicebridge}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -111,7 +105,6 @@ export default function ProfileLineBridge() {
         <code id="linebridge8" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('linebridge8').innerText)
         }>
-          <pre>deploy profile line</pre>
           <pre>aim {values.aimbridge8} name {values.devicebridge}_{values.vlanpon8}</pre>
           <pre>device type {values.devicebridge}</pre>
           <pre>tcont 1 profile dba 1</pre>
@@ -127,7 +120,6 @@ export default function ProfileLineBridge() {
             <code id="linebridge9" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linebridge9').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimbridge9} name {values.devicebridge}_{values.vlanpon9}</pre>
               <pre>device type {values.devicebridge}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -141,7 +133,6 @@ export default function ProfileLineBridge() {
             <code id="linebridge10" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linebridge10').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimbridge10} name {values.devicebridge}_{values.vlanpon10}</pre>
               <pre>device type {values.devicebridge}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -155,7 +146,6 @@ export default function ProfileLineBridge() {
             <code id="linebridge11" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linebridge11').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimbridge11} name {values.devicebridge}_{values.vlanpon11}</pre>
               <pre>device type {values.devicebridge}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -169,7 +159,6 @@ export default function ProfileLineBridge() {
             <code id="linebridge12" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linebridge12').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimbridge12} name {values.devicebridge}_{values.vlanpon12}</pre>
               <pre>device type {values.devicebridge}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -183,7 +172,6 @@ export default function ProfileLineBridge() {
             <code id="linebridge13" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linebridge13').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimbridge13} name {values.devicebridge}_{values.vlanpon13}</pre>
               <pre>device type {values.devicebridge}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -197,7 +185,6 @@ export default function ProfileLineBridge() {
             <code id="linebridge14" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linebridge14').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimbridge14} name {values.devicebridge}_{values.vlanpon14}</pre>
               <pre>device type {values.devicebridge}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -211,7 +198,6 @@ export default function ProfileLineBridge() {
             <code id="linebridge15" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linebridge15').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimbridge15} name {values.devicebridge}_{values.vlanpon15}</pre>
               <pre>device type {values.devicebridge}</pre>
               <pre>tcont 1 profile dba 1</pre>
@@ -225,7 +211,6 @@ export default function ProfileLineBridge() {
             <code id="linebridge16" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linebridge16').innerText)
             }>
-              <pre>deploy profile line</pre>
               <pre>aim {values.aimbridge16} name {values.devicebridge}_{values.vlanpon16}</pre>
               <pre>device type {values.devicebridge}</pre>
               <pre>tcont 1 profile dba 1</pre>
