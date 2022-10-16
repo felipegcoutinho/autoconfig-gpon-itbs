@@ -1,13 +1,13 @@
-.container { 
-  background-color: #00A335;
-  grid-area: 1 / 1 / 1 / 17;
-}
-
 :root {
   --cor-fundo: #00A335;
   --cor-hover: #006a23;
   --cor-fundo-hover: #003c14;
   --cor-primaria: #e7f1ec;
+}
+
+.container { 
+  background-color: #00A335;
+  grid-area: 1 / 1 / 1 / 17;
 }
 
 .title {
