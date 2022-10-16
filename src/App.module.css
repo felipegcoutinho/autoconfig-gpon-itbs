@@ -58,38 +58,47 @@ hr {
     display: grid;
     grid-row-gap: 10px;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-rows: repeat(2, 0.1fr);
 }
 
 .title {
   grid-area: 2 / 3 / 2 / 15;
 }
 
-.select {
+.select, .modoselect {
   border: none;
   font-size: 1rem;
   font-weight: bold;
   height: 30px;
-  margin-left: 10px;
+  margin: 10px 0 0 0;
   text-align: center;
   width: 150px;
 }
 
+.modoselect {
+  width: 220px;
+}
+
 .h1 {
-  margin: 50px 0 0 0;
+  margin: 40px 0 0 0;
 }
 
-.h2 {
-  margin: 0 0 0 0;
+.h2, .h3 {
+  margin: 0;
 }
 
-.selectContainer {
-  background-color: #21743c;
+.h3 {
+  margin-top: 10px;
+}
+
+.selectContainer{
+  align-items: center;
+  background-color: #5E6573;
   border-radius: 3px;
   color: white;
   display: flex;
+  flex-direction: column;
   padding: 20px;
-  text-align: center;
 }
 
 .menu {
@@ -104,7 +113,7 @@ hr {
     margin-left: 3px;
     padding: 15px 15px 15px 10px;
     position: sticky;
-    top: 0%;
+    top: 10%;
     width: max-content
   }
 
@@ -115,7 +124,7 @@ hr {
 
   .menuItem:before {
     color:lightgray;
-    content:'\23';
+    content:'\f0da';
     font: var(--fa-font-solid);
   } 
 

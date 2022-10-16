@@ -24,12 +24,14 @@
 }
 
 .container select {
-  background-color: #696969;
-  color: white;
+  border: none;
+  font-weight: bold;
+  height: 35px;
   margin: 10px 0 10px 5px;
   padding: 5px;
   text-align: center;
-  width: 150px;
+  text-transform: capitalize;
+  width: 180px;
 }
 
 .h4 {
@@ -71,7 +73,7 @@
 	}
 
   50% { 
-    color: #343333;
+    color: goldenrod;
   }
 
 	100% {

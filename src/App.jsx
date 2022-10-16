@@ -37,25 +37,20 @@ export default function App() {
       <div className={Style.container}>
 
         {/* Select para o equipamento */}
-        <div id="start" className={Style.title}>
+        <div className={Style.title}>
           <div className={Style.selectContainer}>
             <h2 className={Style.h2}>Escolha o Concentrador que será configurado:</h2>
             <select className={Style.select} onChange={handleChangeCheckbox}>
               <option>G16</option>
               <option>G08</option>
-              <option disabled>8820i (Disabled)</option>
+              {/* <option disabled>8820i (Disabled)</option> */}
             </select>
+            {/* <h3 className={Style.h3}>Escolha o tipo de configuração:</h3>
+            <select className={Style.modoselect} onChange={handleChangeCheckbox}>
+              <option>Uma VLAN por PON</option>
+              <option>Apenas uma VLAN por PON</option>
+            </select> */}
           </div>
-          <div className={Style.selectContainer}>
-            <h2 className={Style.h2}>Escolha o modo que será configurado:</h2>
-            <select className={Style.select} onChange={handleChangeCheckbox}>
-              <option>Uma VLAN por Porta Pon</option>
-              <option>Apenas uma VLAN </option>
-
-            </select>
-          </div>
-
-
 
           <h1 className={Style.h1}>{checked ? "G16" : "G08"} - Configurações de Auto Provisionamento</h1>
 

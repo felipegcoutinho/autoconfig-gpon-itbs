@@ -21,10 +21,9 @@
 }
 
 .select select {
-  background-color: black;
   border: none;
-  color: white;
-  height: 25px;
+  font-weight: bold;
+  height: 30px;
   margin-left: 10px;
   text-align: center;
   width: 100px;

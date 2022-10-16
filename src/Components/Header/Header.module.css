@@ -1,4 +1,65 @@
 .container { 
-  background-color: #00A335;   
+  background-color: #00A335;
   grid-area: 1 / 1 / 1 / 17;
+
+}
+
+:root {
+  --cor-fundo: #00A335;
+  --cor-hover: #006a23;
+  --cor-fundo-hover: #003c14;
+  --cor-primaria: #e7f1ec;
+}
+
+.title {
+  font-weight: 900;
+}
+.version {
+  font-size: 0.6rem;
+}
+
+.menu ul {
+  background-color: var(--cor-fundo);
+  font-size: 0.8rem;
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+  text-align: center;
+}
+
+.menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.menu ul li a {
+  color: var(--cor-primaria);
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  transition: background .3s;
+}
+
+.menu ul li a:hover {
+  background-color: var(--cor-hover);
+}
+
+/*sub menu*/
+.menu ul ul {
+  background-color: var(--cor-fundo-hover);
+  display: none;
+  left: 0;
+  position: absolute;
+}
+
+.menu ul li:hover ul {
+  display: block;
+}
+
+.menu ul ul {
+  width: 150px
+}
+
+.menu ul ul li a {
+  display: block;
 }
