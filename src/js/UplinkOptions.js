@@ -22,12 +22,12 @@ const UplinkOptions = [
   {
     key: '5',
     label: 'ethernet 2/1 (SFP+)',
-    value: 'ethernet 2/1 (SFP+)',
+    value: 'ethernet 2/1',
   },
   {
     key: '6',
     label: 'ethernet 2/2 (SFP+)',
-    value: 'ethernet 2/2 (SFP+)',
+    value: 'ethernet 2/2',
   },
 ];
 
