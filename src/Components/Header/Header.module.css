@@ -1,7 +1,6 @@
 .container { 
   background-color: #00A335;
   grid-area: 1 / 1 / 1 / 17;
-
 }
 
 :root {
@@ -62,7 +61,7 @@
 }
 
 .menu ul ul {
-  width: 100px
+  width: 120px
 }
 
 .menu ul ul li a {
