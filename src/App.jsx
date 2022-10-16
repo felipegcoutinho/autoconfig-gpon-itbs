@@ -13,11 +13,14 @@ import Pons from './Components/Vlan/Pons';
 import ProfileVlan from './Components/Vlan/ProfileVlan';
 import ValueContext from "./js/ValueContext";
 import initialValues from './js/Values.js';
+import { OLTs } from './js/DeviceOptions'
+
 
 export default function App() {
 
   //Hook para armazenar o modelo do equipamento
-  const [checked, setChecked] = React.useState(true)
+  const [checked, setChecked] = React.useState(false)
+
   const handleChangeCheckbox = () => {
     setChecked(!checked)
   }
@@ -41,10 +44,12 @@ export default function App() {
           <div className={Style.selectContainer}>
             <h2 className={Style.h2}>Escolha o Concentrador que será configurado:</h2>
             <select className={Style.select} onChange={handleChangeCheckbox}>
-              <option>G16</option>
-              <option>G08</option>
-              {/* <option disabled>8820i (Disabled)</option> */}
+              {OLTs.map((option) => (
+                <option key={option.key} value={option.value}>{option.label}</option>
+              ))}
+
             </select>
+
             {/* <h3 className={Style.h3}>Escolha o tipo de configuração:</h3>
             <select className={Style.modoselect} onChange={handleChangeCheckbox}>
               <option>Uma VLAN por PON</option>

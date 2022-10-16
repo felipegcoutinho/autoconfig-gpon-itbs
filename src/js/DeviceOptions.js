@@ -1,3 +1,21 @@
+export const OLTs = [
+  {
+    key: '1',
+    label: 'OLT G08',
+    value: 'g08',
+  },
+  {
+    key: '2',
+    label: 'OLT G16',
+    value: 'g16',
+  },
+  // {
+  //   key: '3',
+  //   label: 'OLT 8820i',
+  //   value: '8820i',
+  // },
+];
+
 export const DeviceOptionsBridge = [
   {
     key: '1',

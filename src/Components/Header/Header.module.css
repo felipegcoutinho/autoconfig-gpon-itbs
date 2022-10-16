@@ -15,14 +15,16 @@
   font-weight: 900;
 }
 .version {
+  background-color: var(--cor-hover);
+  border-radius: 3px;
   font-size: 0.6rem;
+  padding: 2px 5px;
 }
 
 .menu ul {
   background-color: var(--cor-fundo);
   font-size: 0.8rem;
   list-style-type: none;
-  margin: 5px;
   padding: 0;
   text-align: center;
 }
@@ -57,7 +59,7 @@
 }
 
 .menu ul ul {
-  width: 150px
+  width: 100px
 }
 
 .menu ul ul li a {
