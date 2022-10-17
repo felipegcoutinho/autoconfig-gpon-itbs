@@ -41,7 +41,7 @@ export default function App() {
 
         {/* Select para o equipamento */}
         <div className={Style.title}>
-          <div className={Style.selectContainer}>
+          <div className={Style.content}>
             <h2 className={Style.h2}>Escolha o Concentrador que será configurado:</h2>
             <select className={Style.select} onChange={handleChangeCheckbox}>
               {OLTs.map((option) => (
