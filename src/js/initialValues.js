@@ -66,6 +66,36 @@ const initialValues = {
   aimrouter16: '65',
   devicebridge: 'i30-100',
   devicerouter: 'i41-211',
+
+  // 8820i
+
+  uplinkpon1: 'eth 1',
+  uplinkpon2: 'eth 1',
+  uplinkpon3: 'eth 1',
+  uplinkpon4: 'eth 1',
+  uplinkpon5: 'eth 1',
+  uplinkpon6: 'eth 1',
+  uplinkpon7: 'eth 1',
+  uplinkpon8: 'eth 1',
+  bridgepon1: 'uplink',
+  bridgepon2: 'uplink',
+  bridgepon3: 'uplink',
+  bridgepon4: 'uplink',
+  bridgepon5: 'uplink',
+  bridgepon6: 'uplink',
+  bridgepon7: 'uplink',
+  bridgepon8: 'uplink',
+  modovlanpon1: 'tagged',
+  modovlanpon2: 'tagged',
+  modovlanpon3: 'tagged',
+  modovlanpon4: 'tagged',
+  modovlanpon5: 'tagged',
+  modovlanpon6: 'tagged',
+  modovlanpon7: 'tagged',
+  modovlanpon8: 'tagged',
+  R1Mode: 'bridge',
+  giMode: 'bridge',
+  defaultMode: 'bridge',
 };
 
 export default initialValues;

@@ -21,7 +21,11 @@ label {
   font-weight: bold;
 }
 
-input {
+input:focus-visible, select:focus-visible {
+  background-color: white;
+}
+
+select, input {
   background-color: #e6e6e6;  
   border: none;
   border-radius: 3px;
@@ -38,7 +42,7 @@ a {
 
 pre {
   font-family: 'JetBrains Mono', monospace, arial;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   margin: 0;
   padding: 0
 }
@@ -65,18 +69,15 @@ hr {
   grid-area: 2 / 3 / 2 / 15;
 }
 
-.select, .modoselect {
+.select, .modoselect, button{
   border: none;
+  font-family: 'Fira Sans',Segoe UI, Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   height: 30px;
   margin: 10px 0 0 0;
   text-align: center;
   width: 150px;
-}
-
-.modoselect {
-  width: 220px;
 }
 
 .h1 {

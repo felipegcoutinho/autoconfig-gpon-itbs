@@ -1,12 +1,10 @@
 import React from 'react'
 import Style from './ProfileVlan.module.css'
 import ValueContext from "../../js/ValueContext";
-import swal from 'sweetalert';
 import copyToClip from '../../js/BtnCopy';
 
 export default function ProfileVlan() {
   const { values, checked } = React.useContext(ValueContext);
-
 
   return (
     <div id="vlan" className={Style.container}>

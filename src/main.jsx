@@ -1,9 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import AppMain from './AppMain'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from './Components/Header/Header';
+import App from './App';
 
 ReactDOM.createRoot(document.getElementById('main')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <React.StrictMode>
+      <Header />
+      <Routes>
+        <Route path="/" element={<AppMain />} />
+        <Route path="/G16" element={<AppMain />} />
+        <Route path="/G08" element={<AppMain />} />
+        <Route path="/8820i" element={<App />} />
+      </Routes>
+    </React.StrictMode>
+  </BrowserRouter>
 )
