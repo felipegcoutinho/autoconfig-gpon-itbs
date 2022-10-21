@@ -6,11 +6,10 @@ html {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+  display: none;
 }
 
-body, select, input{
+body, select, input {
   box-sizing: border-box;
   font-family: 'Fira Sans',Segoe UI, Arial, sans-serif;
   margin: 0;
@@ -42,9 +41,9 @@ a {
 
 pre {
   font-family: 'JetBrains Mono', monospace, arial;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 pre::before {
@@ -55,6 +54,16 @@ pre::before {
 hr {
   border: 1px solid whitesmoke;
   width: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: 'Fira Sans',Segoe UI, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 0;
+  text-align: center;
 }
 
 .container {
@@ -69,7 +78,7 @@ hr {
   grid-area: 2 / 3 / 2 / 15;
 }
 
-.select, .modoselect, button{
+.select {
   border: none;
   font-family: 'Fira Sans',Segoe UI, Arial, sans-serif;
   font-size: 1rem;
@@ -110,11 +119,10 @@ hr {
     grid-area: 3 / 1 / 3/ 1;
     height: fit-content;
     list-style: none;
-    margin-left: 3px;
+    margin-left: 1px;
     padding: 15px 15px 15px 10px;
-    position: sticky;
-    top: 10%;
-    width: max-content
+    position: fixed;
+    top: 55px;
   }
 
   .menuItem {

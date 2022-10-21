@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Style from './AppMain.module.css';
 import ValueContext from "./js/ValueContext";
 import ConfigAutoService from '../src/Components/8820i/Bridges/ConfigAutoService';
 import RemoveAutoService from '../src/Components/8820i/Bridges/RemoveAutoService';
 import Pons_i from '../src/Components/8820i/Pons/Pons_i';
 import Aviso from '../src/Components/8820i/Aviso/Aviso';
-import Select from './Components/Header/Select';
+import Select from './Components/Global/Select';
 import initialValues from './js/initialValues.js';
 
 export default function App() {
 
   //Hook para armazenar o modelo do equipamento
+
   const [checked, setChecked] = React.useState(false)
+
+  const [selected, setSelected] = React.useState(true);
+
+  const handleChangeSelected = () => {
+    setSelected(!selected)
+  }
 
   //Hook para armazenar os valores dos inputs
   const [values, setValues] = React.useState(initialValues);
@@ -24,13 +31,13 @@ export default function App() {
   };
 
   return (
-    <ValueContext.Provider value={{ values, setValues, handleChange, checked, setChecked }}>
+    <ValueContext.Provider value={{ values, setValues, handleChange, checked, setChecked, selected, handleChangeSelected }}>
       <div className={Style.container}>
         {/* Select para o equipamento */}
         <div className={Style.title}>
           <Select />
-          <h1 className={Style.h1}>8820i - Configurações de Auto Provisionamento</h1>
 
+          <h1 className={Style.h1}>8820i - Configurações de Auto Provisionamento</h1>
         </div>
         <Pons_i />
         <Aviso />

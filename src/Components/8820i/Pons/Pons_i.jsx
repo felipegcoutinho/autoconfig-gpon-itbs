@@ -4,60 +4,66 @@ import ValueContext from "../../../js/ValueContext";
 import { UplinkOptions, BridgeOptions, ModoVlanOptions, OnuOptions } from '../js/Options';
 
 export default function Pons_i() {
-  const { values, handleChange } = React.useContext(ValueContext);
+  const { values, handleChange, selected } = React.useContext(ValueContext);
 
   return (
     <div className={Style.container}>
       <h2> UMA VLAN POR PORTA PON</h2>
       <form className={Style.content} onChange={handleChange} >
         <div className={Style.pons}>
-          <Vlan name="vlanpon1" defaultValue={values.vlanpon1} title="PON 1" />
+          {selected ? <Vlan name="vlanpon1" defaultValue={values.vlanpon1} title="PON 1" />
+            : <Vlan name="vlanpon1" defaultValue={values.vlanpon1} title="Todas as PONs" />
+          }
           <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
           <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
           <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
         </div>
-        <div className={Style.pons}>
-          <Vlan name="vlanpon2" defaultValue={values.vlanpon2} title="PON 2" />
-          <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
-          <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
-          <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
-        </div>
-        <div className={Style.pons}>
-          <Vlan name="aimvlanpon1" defaultValue={values.vlanpon1} title="PON 3" />
-          <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
-          <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
-          <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
-        </div>
-        <div className={Style.pons}>
-          <Vlan name="aimvlanpon1" defaultValue={values.vlanpon1} title="PON 4" />
-          <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
-          <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
-          <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
-        </div>
-        <div className={Style.pons}>
-          <Vlan name="aimvlanpon1" defaultValue={values.vlanpon1} title="PON 5" />
-          <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
-          <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
-          <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
-        </div>
-        <div className={Style.pons}>
-          <Vlan name="aimvlanpon1" defaultValue={values.vlanpon1} title="PON 6" />
-          <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
-          <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
-          <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
-        </div>
-        <div className={Style.pons}>
-          <Vlan name="aimvlanpon1" defaultValue={values.vlanpon1} title="PON 7" />
-          <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
-          <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
-          <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
-        </div>
-        <div className={Style.pons}>
-          <Vlan name="aimvlanpon1" defaultValue={values.vlanpon1} title="PON 8" />
-          <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
-          <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
-          <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
-        </div>
+        {selected && (
+          <>
+            <div className={Style.pons}>
+              <Vlan name="vlanpon2" defaultValue={values.vlanpon2} title="PON 2" />
+              <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
+              <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
+              <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
+            </div>
+            <div className={Style.pons}>
+              <Vlan name="aimvlanpon1" defaultValue={values.vlanpon1} title="PON 3" />
+              <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
+              <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
+              <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
+            </div>
+            <div className={Style.pons}>
+              <Vlan name="aimvlanpon1" defaultValue={values.vlanpon1} title="PON 4" />
+              <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
+              <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
+              <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
+            </div>
+            <div className={Style.pons}>
+              <Vlan name="aimvlanpon1" defaultValue={values.vlanpon1} title="PON 5" />
+              <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
+              <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
+              <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
+            </div>
+            <div className={Style.pons}>
+              <Vlan name="aimvlanpon1" defaultValue={values.vlanpon1} title="PON 6" />
+              <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
+              <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
+              <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
+            </div>
+            <div className={Style.pons}>
+              <Vlan name="aimvlanpon1" defaultValue={values.vlanpon1} title="PON 7" />
+              <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
+              <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
+              <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
+            </div>
+            <div className={Style.pons}>
+              <Vlan name="aimvlanpon1" defaultValue={values.vlanpon1} title="PON 8" />
+              <Uplink name="vlanpon1" defaultValue={values.vlanpon1} />
+              <Bridge name="aimvlanpon1" defaultValue={values.vlanpon1} />
+              <ModoVlan name="vlanpon1" defaultValue={values.vlanpon1} />
+            </div>
+          </>
+        )}
         <div className={Style.contentOnus}>
           <div className={Style.pons}>
             <Onus name="aimvlanpon1" defaultValue={values.vlanpon1} title="ONU R1" />

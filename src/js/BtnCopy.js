@@ -1,3 +1,5 @@
+import swal from "sweetalert";
+
 export default function copyToClip(str) {
   function listener(e) {
     e.preventDefault();

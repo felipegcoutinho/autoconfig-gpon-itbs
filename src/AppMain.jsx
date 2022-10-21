@@ -12,7 +12,7 @@ import Pons from './Components/Vlan/Pons';
 import ProfileVlan from './Components/Vlan/ProfileVlan';
 import ValueContext from "./js/ValueContext";
 import initialValues from './js/initialValues.js';
-import Select from './Components/Header/Select';
+import Select from './Components/Global/Select';
 
 export default function AppMain() {
 
@@ -21,6 +21,7 @@ export default function AppMain() {
 
   //Hook para armazenar os valores dos inputs
   const [values, setValues] = React.useState(initialValues);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setValues({
