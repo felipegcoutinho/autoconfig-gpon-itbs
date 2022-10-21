@@ -17,7 +17,7 @@ import Select from './Components/Global/Select';
 export default function AppMain() {
 
   //Hook para armazenar o modelo do equipamento
-  const [checked, setChecked] = React.useState(false)
+  const [checked, setChecked] = React.useState(null)
 
   //Hook para armazenar os valores dos inputs
   const [values, setValues] = React.useState(initialValues);

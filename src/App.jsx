@@ -12,10 +12,9 @@ export default function App() {
 
   //Hook para armazenar o modelo do equipamento
 
-  const [checked, setChecked] = React.useState(false)
+  const [checked, setChecked] = React.useState(null)
 
   const [selected, setSelected] = React.useState(true);
-
   const handleChangeSelected = () => {
     setSelected(!selected)
   }
