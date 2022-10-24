@@ -1,15 +1,10 @@
 import React from 'react'
 import Style from './Select.module.css'
 import ValueContext from "../../js/ValueContext";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Select() {
-  const { setChecked, handleChangeSelected } = React.useContext(ValueContext);
-
-  function Hide() {
-    const element = document.getElementById("modoContainer");
-    element.style.display = "none";
-  }
+  const { setChecked } = React.useContext(ValueContext);
 
   const G16 = () => setChecked(true);
   const G08 = () => setChecked(false);
@@ -18,18 +13,20 @@ export default function Select() {
     <div className={Style.content}>
       <h2 className={Style.h2}>Escolha o Concentrador que será configurado:</h2>
       <nav className={Style.containerBtn}>
-        <Link to="/8820i"><button className={Style.btn}>OLT 8820i</button></Link>
-        <Link to="/G08" onClick={G08}><button onClick={Hide} className={Style.btn}>OLT G08</button></Link>
-        <Link to="/G16" onClick={G16}><button onClick={Hide} className={Style.btn}>OLT G16</button></Link>
-      </nav>
+        <NavLink to="/G08" onClick={G08} className={Style.btn}
+          style={({ isActive }) => ({
+            color: isActive ? '#fff' : '#2a2f37',
+            background: isActive ? '#2a2f37' : '#f0f0f0',
+            border: isActive ? '2px solid #f0f0f0' : '2px solid #f0f0f0',
+          })}>OLT G08</NavLink>
 
-      <div className={Style.modoContainer} id="modoContainer">
-        <h3 className={Style.h3}>Escolha o tipo de configuração da 8820i:</h3>
-        <select className={Style.select} onChange={handleChangeSelected} >
-          <option>Uma VLAN por PON</option>
-          <option>Apenas uma VLAN por PON</option>
-        </select>
-      </div>
-    </div>
+        <NavLink to="/G16" onClick={G16} className={Style.btn}
+          style={({ isActive }) => ({
+            color: isActive ? '#fff' : '#2a2f37',
+            background: isActive ? '#2a2f37' : '#f0f0f0',
+            border: isActive ? '2px solid #f0f0f0' : '2px solid #f0f0f0',
+          })}>OLT G16</NavLink>
+      </nav>
+    </div >
   )
 }

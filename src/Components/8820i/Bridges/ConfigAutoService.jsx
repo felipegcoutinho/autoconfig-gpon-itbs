@@ -5,7 +5,7 @@ import copyToClip from "../../../js/BtnCopy";
 
 
 export default function ConfigAutoService() {
-  const { selected } = React.useContext(ValueContext);
+  const { selected, values } = React.useContext(ValueContext);
 
   return (
     <div className={Style.container}>
@@ -30,7 +30,7 @@ export default function ConfigAutoService() {
             <code id="linebridge2" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('linebridge2').innerText)
             }>
-              <pre>bridge-profile add gpon1-default downlink vlan 101 tagged eth 1</pre>
+              <pre>bridge-profile add gpon1-default downlink {values.vlanpon1} tagged eth 1</pre>
               <pre>bridge-profile add gpon2-default downlink vlan 102 tagged eth 1</pre>
               <pre>bridge-profile add gpon3-default downlink vlan 103 tagged eth 1</pre>
               <pre>bridge-profile add gpon4-default downlink vlan 104 tagged eth 1</pre>

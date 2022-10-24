@@ -47,3 +47,13 @@
   padding: 3px;
   text-align: center;
 }
+
+.h5Onu {
+  background-color: red;
+  border-radius: 3px;
+  color: white;
+  font-size: small;
+  margin: 0 0 5px 0;
+  padding: 3px;
+  text-align: center;
+}

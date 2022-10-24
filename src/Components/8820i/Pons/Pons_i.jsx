@@ -83,7 +83,7 @@ export default function Pons_i() {
 function Onus({ handleChange, ...props }) {
   return (
     <>
-      <h5 className={Style.h5}>{props.title}</h5>
+      <h5 className={Style.h5Onu}>{props.title}</h5>
       <label>Modo de Operação</label>
       <select onChange={handleChange} {...props} >
         {OnuOptions.map((option) => (
