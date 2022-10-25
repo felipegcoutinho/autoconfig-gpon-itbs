@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import AppMain from './AppMain'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from './Components/Global/Header';
+import Header from './Components/Header/Header';
 import App from './App';
 
 ReactDOM.createRoot(document.getElementById('main')).render(
@@ -13,7 +13,6 @@ ReactDOM.createRoot(document.getElementById('main')).render(
         <Route exact path="/" element={<AppMain />} />
         <Route path="/G16/" element={<AppMain />} />
         <Route path="/G08/" element={<AppMain />} />
-        <Route path="/8820i/" element={<App />} />
       </Routes>
     </React.StrictMode>
   </BrowserRouter>

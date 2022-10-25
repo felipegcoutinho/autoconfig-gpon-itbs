@@ -12,7 +12,8 @@ import Pons from './Components/Vlan/Pons';
 import ProfileVlan from './Components/Vlan/ProfileVlan';
 import ValueContext from "./js/ValueContext";
 import initialValues from './js/initialValues.js';
-import Select from './Components/Global/Select';
+import Menu from './Components/Menu/Menu';
+import Footer from './Components/Footer/Footer';
 
 export default function AppMain() {
 
@@ -37,7 +38,7 @@ export default function AppMain() {
 
         {/* Select para o equipamento */}
         <div className={Style.title}>
-          <Select />
+          <Menu />
           <h1 className={Style.h1}>{checked ? "G16" : "G08"} - Configurações de Auto Provisionamento</h1>
         </div>
 
@@ -65,6 +66,7 @@ export default function AppMain() {
         <ProfileLineBridge />
         <ProfileLineRouter />
         <AutoConfig />
+        <Footer/>
       </div>
     </ValueContext.Provider >
   )
