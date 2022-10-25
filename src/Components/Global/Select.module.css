@@ -1,6 +1,7 @@
 .content{
   align-items: center;
   background-color: #5E6573;
+  border: 1px solid #3d414a;
   border-radius: 3px;
   color: white;
   display: flex;
@@ -14,9 +15,30 @@
   width: 330px;
 }
 
-.btn {
-  border: none;
+.btnActive {
+  background-color: #2a2f37;
   border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-family: "Fira Sans", "Segoe UI", Arial, "sans- serif";
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 8px 0px;
+  text-align: center;
+  width: 150px;
+}
+
+.btnActive:before{
+  color: #24ac50;
+  content: '\f00c\ ';
+  font-family: FontAwesome;
+}
+
+.btnNotActive {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  color: #2a2f37;
   cursor: pointer;
   font-family: "Fira Sans", "Segoe UI", Arial, "sans- serif";
   font-size: 1rem;

@@ -20,6 +20,8 @@
 
 .content {
   background-color: #5E6573;
+  border: 1px solid #3d414a;
+  border-radius: 3px;
   color: whitesmoke;
   display: flex;
   padding: 10px;
