@@ -71,6 +71,7 @@ button {
     display: grid;
     grid-row-gap: 10px;
     grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(20, 0.1fr);
 }
 
 .title {
@@ -79,7 +80,7 @@ button {
 
 .select {
   border: none;
-  font-family: 'Fira Sans',Segoe UI, Arial, sans-serif;
+  font-family: 'Fira Sans', Segoe UI, Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   height: 30px;
