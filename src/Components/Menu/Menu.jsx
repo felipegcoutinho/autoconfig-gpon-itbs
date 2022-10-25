@@ -1,9 +1,9 @@
 import React from 'react'
-import Style from './Select.module.css'
+import Style from './Menu.module.css'
 import ValueContext from "../../js/ValueContext";
 import { NavLink } from "react-router-dom";
 
-export default function Select() {
+export default function Menu() {
   const { setChecked } = React.useContext(ValueContext);
 
   const G16 = () => setChecked(true);
