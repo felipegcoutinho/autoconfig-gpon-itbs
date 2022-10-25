@@ -5,7 +5,7 @@ import ConfigAutoService from '../src/Components/8820i/Bridges/ConfigAutoService
 import RemoveAutoService from '../src/Components/8820i/Bridges/RemoveAutoService';
 import Pons_i from '../src/Components/8820i/Pons/Pons_i';
 import Aviso from '../src/Components/8820i/Aviso/Aviso';
-import Select from './Components/Global/Select';
+import Menu from './Components/Menu/Menu';
 import initialValues from './js/initialValues.js';
 
 export default function App() {
@@ -34,7 +34,7 @@ export default function App() {
       <div className={Style.container}>
         {/* Select para o equipamento */}
         <div className={Style.title}>
-          <Select />
+          <Menu />
 
           <h1 className={Style.h1}>8820i - Configurações de Auto Provisionamento</h1>
         </div>
