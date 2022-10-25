@@ -71,7 +71,6 @@ button {
     display: grid;
     grid-row-gap: 10px;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(2, 0.1fr);
 }
 
 .title {

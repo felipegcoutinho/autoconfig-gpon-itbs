@@ -13,6 +13,7 @@ export default function Select() {
     <div className={Style.content}>
       <h2 className={Style.h2}>Escolha o Concentrador que será configurado:</h2>
       <nav className={Style.containerBtn}>
+
         <NavLink to="/G08" onClick={G08} className={({ isActive }) => (isActive ? Style.btnActive : Style.btnNotActive)}>
           OLT G08
         </NavLink>
@@ -20,6 +21,7 @@ export default function Select() {
         <NavLink to="/G16" onClick={G16} className={({ isActive }) => (isActive ? Style.btnActive : Style.btnNotActive)}>
           OLT G16
         </NavLink>
+
       </nav>
     </div >
   )
