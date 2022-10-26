@@ -1,10 +1,10 @@
 .container { 
-  grid-area: 8 / 3 / 8 / 9;
+  grid-area: 7 / 3 / 7 / 9;
   margin-right: 10px;
 }
 
 .h2 {
-  grid-area: 8 / 3 / 2 / 15;
+  grid-area: 7 / 3 / 2 / 15;
 }
 
 .container h2 {

@@ -33,14 +33,7 @@ export default function AppMain() {
 
   return (
     <ValueContext.Provider value={{ values, setValues, handleChange, checked, setChecked }}>
-
       <div className={Style.container}>
-
-        {/* Select para o equipamento */}
-        <div className={Style.title}>
-          <Menu />
-          <h1 className={Style.h1}>{checked ? "G16" : "G08"} - Configurações de Auto Provisionamento</h1>
-        </div>
 
         {/* Menu Lateral */}
         <ul className={Style.menu}>
@@ -56,6 +49,7 @@ export default function AppMain() {
         </ul>
 
         {/* Todos os componentes são chamados aqui */}
+        <Menu />
         <Dba />
         <Pons />
         <Uplink />
@@ -66,7 +60,7 @@ export default function AppMain() {
         <ProfileLineBridge />
         <ProfileLineRouter />
         <AutoConfig />
-        <Footer/>
+        <Footer />
       </div>
     </ValueContext.Provider >
   )

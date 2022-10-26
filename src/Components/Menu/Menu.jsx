@@ -4,13 +4,16 @@ import ValueContext from "../../js/ValueContext";
 import { NavLink } from "react-router-dom";
 
 export default function Menu() {
-  const { setChecked } = React.useContext(ValueContext);
+  const { setChecked, checked } = React.useContext(ValueContext);
 
   const G16 = () => setChecked(true);
   const G08 = () => setChecked(false);
 
   return (
-    <div className={Style.content}>
+    <div className={Style.container}>
+
+      <h1 className={Style.h1}>Configurações de Auto Provisionamento - {checked ? "G16" : "G08"}</h1>
+
       <h2 className={Style.h2}>Escolha o Concentrador que será configurado:</h2>
       <nav className={Style.containerBtn}>
 

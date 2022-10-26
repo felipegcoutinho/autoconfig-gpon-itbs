@@ -71,11 +71,6 @@ button {
     display: grid;
     grid-row-gap: 10px;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(20, 0.1fr);
-}
-
-.title {
-  grid-area: 2 / 3 / 2 / 15;
 }
 
 .select {
@@ -87,10 +82,6 @@ button {
   margin: 10px 0 0 0;
   text-align: center;
   width: 150px;
-}
-
-.h1 {
-  margin: 40px 0 0 0;
 }
 
 .h2, .h3 {
