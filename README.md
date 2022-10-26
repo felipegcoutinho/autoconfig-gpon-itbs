@@ -1,4 +1,4 @@
-# Auto-Config-G16
+# Auto-Config-G16 e G08
  
 ## Material de ajuda para configuração inicial da OLT Intelbras G16 e G08.
 
