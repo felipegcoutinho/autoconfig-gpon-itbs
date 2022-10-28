@@ -17,6 +17,27 @@
   width: 330px;
 }
 
+.select {
+  border: none;
+  cursor: pointer;
+  font-family: 'Fira Sans', Segoe UI, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 35px;
+  text-align: center;
+  width: 300px;
+}
+
+select {
+  cursor: pointer;
+}
+
+.modoContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .btnActive {
   background-color: #2a2f37;
   border-radius: 3px;
@@ -25,7 +46,7 @@
   font-family: "Fira Sans", "Segoe UI", Arial, "sans- serif";
   font-size: 1rem;
   font-weight: bold;
-  margin-top: 15px;
+  margin: 15px 0 0 5px;
   padding: 8px 0px;
   text-align: center;
   width: 150px;
@@ -45,7 +66,7 @@
   font-family: "Fira Sans", "Segoe UI", Arial, "sans- serif";
   font-size: 1rem;
   font-weight: bold;
-  margin-top: 15px;
+  margin: 15px 0 0 5px;  
   padding: 8px 0px;
   text-align: center;
   width: 150px;

@@ -7,12 +7,14 @@ import Pons_i from '../src/Components/8820i/Pons/Pons_i';
 import Aviso from '../src/Components/8820i/Aviso/Aviso';
 import Menu from './Components/Menu/Menu';
 import initialValues from './js/initialValues.js';
+import Footer from './Components/Footer/Footer';
 
 export default function App() {
 
   //Hook para armazenar o modelo do equipamento
 
-  const [checked, setChecked] = React.useState(null)
+  const [checked, setChecked] = React.useState()
+  const [GPON_I, setGPON_I] = React.useState(true)
 
   const [selected, setSelected] = React.useState(true);
   const handleChangeSelected = () => {
@@ -30,18 +32,15 @@ export default function App() {
   };
 
   return (
-    <ValueContext.Provider value={{ values, setValues, handleChange, checked, setChecked, selected, handleChangeSelected }}>
+    <ValueContext.Provider value={{ values, setValues, handleChange, checked, setChecked, selected, handleChangeSelected, GPON_I, setGPON_I }}>
       <div className={Style.container}>
         {/* Select para o equipamento */}
-        <div className={Style.title}>
-          <Menu />
-
-          <h1 className={Style.h1}>8820i - Configurações de Auto Provisionamento</h1>
-        </div>
+        <Menu />
         <Pons_i />
         <Aviso />
         <ConfigAutoService />
         <RemoveAutoService />
+        <Footer />
       </div>
     </ValueContext.Provider>
   )
