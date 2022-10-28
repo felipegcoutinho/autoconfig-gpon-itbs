@@ -4,18 +4,17 @@ import ValueContext from "../../js/ValueContext";
 import { NavLink } from "react-router-dom";
 
 export default function Menu() {
-  const { setChecked, checked, handleChangeSelected, GPON_I, setGPON_I } = React.useContext(ValueContext);
+  const { setChecked, checked, handleChangeSelected, GPON_I, SetGPON_I } = React.useContext(ValueContext);
 
   const G16 = () => setChecked(true);
   const G08 = () => setChecked(false);
-
+  const I = () => SetGPON_I(true);
 
   return (
     <div className={Style.container}>
 
-      {GPON_I ? <h1 className={Style.h1}>Configurações de Auto Provisionamento - 8820i</h1> :
-        <h1 className={Style.h1}>Configurações de Auto Provisionamento - {checked ? "G16" : "G08"}</h1>}
-
+      {GPON_I ? <h1 className={Style.h1}>Configuração de Auto Provisionamento - 8820i</h1> :
+        <h1 className={Style.h1}>Configuração de Auto Provisionamento - {checked ? "G16" : "G08"}</h1>}
 
       <h2 className={Style.h2}>Escolha o Concentrador que será configurado:</h2>
       <nav className={Style.containerBtn}>
