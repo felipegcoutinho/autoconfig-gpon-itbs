@@ -11,10 +11,9 @@ ReactDOM.createRoot(document.getElementById('main')).render(
       <Header />
       <Routes>
         <Route exact path="/" element={<AppMain />} />
+        <Route exact path="/8820i" element={<AppMain />} />
         <Route exact path="/G16" element={<AppMain />} />
         <Route exact path="/G08" element={<AppMain />} />
-        <Route exact path="/8820i" element={<App />} />
-
       </Routes>
     </React.StrictMode>
   </BrowserRouter>
