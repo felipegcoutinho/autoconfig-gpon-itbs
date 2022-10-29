@@ -14,19 +14,14 @@ import ValueContext from "./js/ValueContext";
 import initialValues from './js/initialValues.js';
 import Menu from './Components/Menu/Menu';
 import Footer from './Components/Footer/Footer';
-import ConfigAutoService from '../src/Components/8820i/Bridges/ConfigAutoService';
-import RemoveAutoService from '../src/Components/8820i/Bridges/RemoveAutoService';
-import Pons_i from '../src/Components/8820i/Pons/Pons_i';
-import Aviso from '../src/Components/8820i/Aviso/Aviso';
 
 export default function AppMain() {
 
   //Hook para armazenar o modelo do equipamento
   const [checked, setChecked] = React.useState(true)
-  const [GPON_I, setGPON_I] = React.useState(false)
+
   //Hook para armazenar os valores dos inputs
   const [values, setValues] = React.useState(initialValues);
-
 
   const [selected, setSelected] = React.useState(true);
   const handleChangeSelected = () => {
@@ -42,9 +37,8 @@ export default function AppMain() {
   };
 
   return (
-    <ValueContext.Provider value={{ values, setValues, handleChange, checked, setChecked, selected, handleChangeSelected, GPON_I, setGPON_I }}>
+    <ValueContext.Provider value={{ values, setValues, handleChange, checked, setChecked, selected, handleChangeSelected }}>
       <div className={Style.container}>
-
         {/* Menu Lateral */}
         <ul className={Style.menu}>
           <a href="#start"><li className={Style.menuItem}> Inicio</li></a>
@@ -57,34 +51,21 @@ export default function AppMain() {
           <a href="#profileLine"><li className={Style.menuItem}> Profile Line</li></a>
           <a href="#autoconfig"><li className={Style.menuItem}> Auto Config</li></a>
         </ul>
-
         {/* Todos os componentes são chamados aqui */}
-        {checked &&
-          <>
-            <Menu />
-            <Dba />
-            <Pons />
-            <Uplink />
-            <ProfileVlan />
-            <AimLine />
-            <SelectDeviceBridge />
-            <SelectDeviceRouter />
-            <ProfileLineBridge />
-            <ProfileLineRouter />
-            <AutoConfig />
-            <Footer />
-          </>
-        }
-
-        {GPON_I &&
-          <>
-            <Menu />
-            <Pons_i />
-            <Aviso />
-            <ConfigAutoService />
-            <RemoveAutoService />
-            <Footer />
-          </>}
+        <>
+          <Menu />
+          <Dba />
+          <Pons />
+          <Uplink />
+          <ProfileVlan />
+          <AimLine />
+          <SelectDeviceBridge />
+          <SelectDeviceRouter />
+          <ProfileLineBridge />
+          <ProfileLineRouter />
+          <AutoConfig />
+          <Footer />
+        </>
       </div>
     </ValueContext.Provider >
   )

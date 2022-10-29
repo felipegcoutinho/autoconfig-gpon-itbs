@@ -10,8 +10,8 @@ ReactDOM.createRoot(document.getElementById('main')).render(
     <React.StrictMode>
       <Header />
       <Routes>
-        <Route exact path="/" element={<AppMain />} />
-        <Route exact path="/8820i" element={<AppMain />} />
+        <Route exact path="/" element={<App />} />
+        <Route exact path="/8820i" element={<App />} />
         <Route exact path="/G16" element={<AppMain />} />
         <Route exact path="/G08" element={<AppMain />} />
       </Routes>

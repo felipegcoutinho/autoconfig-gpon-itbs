@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Style from './AppMain.module.css';
 import ValueContext from "./js/ValueContext";
 import ConfigAutoService from '../src/Components/8820i/Bridges/ConfigAutoService';
@@ -10,11 +10,8 @@ import initialValues from './js/initialValues.js';
 import Footer from './Components/Footer/Footer';
 
 export default function App() {
-
-  //Hook para armazenar o modelo do equipamento
-
-  const [checked, setChecked] = React.useState()
-  const [GPON_I, setGPON_I] = React.useState(false)
+  const [checked, setChecked] = React.useState(true)
+  const [GPON_I, setGPON_I] = React.useState(true)
 
   const [selected, setSelected] = React.useState(true);
   const handleChangeSelected = () => {
@@ -32,7 +29,7 @@ export default function App() {
   };
 
   return (
-    <ValueContext.Provider value={{ values, setValues, handleChange, checked, setChecked, selected, handleChangeSelected, GPON_I, setGPON_I }}>
+    <ValueContext.Provider value={{ values, setValues, handleChange, selected, handleChangeSelected, checked, setChecked, GPON_I, setGPON_I }}>
       <div className={Style.container}>
         {/* Select para o equipamento */}
         <Menu />

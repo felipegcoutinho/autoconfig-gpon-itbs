@@ -4,11 +4,13 @@ import ValueContext from "../../js/ValueContext";
 import { NavLink } from "react-router-dom";
 
 export default function Menu() {
-  const { setChecked, checked, handleChangeSelected, GPON_I, SetGPON_I } = React.useContext(ValueContext);
+  const { setChecked, checked, handleChangeSelected, GPON_I } = React.useContext(ValueContext);
 
   const G16 = () => setChecked(true);
   const G08 = () => setChecked(false);
-  const I = () => SetGPON_I(true);
+
+  console.log("G16:", G16)
+  console.log("G08:", G08)
 
   return (
     <div className={Style.container}>
