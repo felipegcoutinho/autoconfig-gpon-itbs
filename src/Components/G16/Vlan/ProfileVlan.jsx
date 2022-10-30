@@ -13,13 +13,11 @@ export default function ProfileVlan() {
         <div className={Style.ContainerCpemgr}>
           <label>Habilitar CPEMGR:
             <select type="checkbox" className={Style.cpemgr} onChange={handleCpemgr} >
-              <option>Não</option>
               <option>Sim</option>
+              <option selected>Não</option>
             </select>
           </label>
         </div>
-
-
 
         <code id="blocovlan1" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('blocovlan1').innerText)
