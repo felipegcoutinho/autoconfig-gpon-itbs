@@ -1,11 +1,11 @@
 import React from 'react'
-import options from '../../js/UplinkOptions'
+import options from '../../../js/UplinkOptions'
 import Style from './Uplink.module.css'
-import ValueContext from "../../js/ValueContext";
-import copyToClip from '../../js/BtnCopy';
+import ValueContext from "../../../js/ValueContext";
+import copyToClip from '../../../js/BtnCopy';
 
 export default function Uplink() {
-  const { values, handleChange, checked } = React.useContext(ValueContext);
+  const { values, handleChange, g16 } = React.useContext(ValueContext);
 
   return (
     <div id="uplink" className={Style.container}>
@@ -23,7 +23,7 @@ export default function Uplink() {
         <code id="criarVlan" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('criarVlan').innerText)
         }>
-          {checked ? <pre>vlan {values.vlanpon1},{values.vlanpon2},{values.vlanpon3},{values.vlanpon4},
+          {g16 ? <pre>vlan {values.vlanpon1},{values.vlanpon2},{values.vlanpon3},{values.vlanpon4},
             {values.vlanpon5},{values.vlanpon6},{values.vlanpon7},{values.vlanpon8},{values.vlanpon9},
             {values.vlanpon10},{values.vlanpon11},{values.vlanpon12},{values.vlanpon13},
             {values.vlanpon14},{values.vlanpon15},{values.vlanpon16}</pre> :
@@ -37,7 +37,7 @@ export default function Uplink() {
         }>
           <pre>interface {values.uplink}</pre>
           <pre>switchport mode hybrid</pre>
-          {checked ? <pre>switchport hybrid tagged vlan {values.vlanpon1},{values.vlanpon2},{values.vlanpon3},{values.vlanpon4},
+          {g16 ? <pre>switchport hybrid tagged vlan {values.vlanpon1},{values.vlanpon2},{values.vlanpon3},{values.vlanpon4},
             {values.vlanpon5},{values.vlanpon6},{values.vlanpon7},{values.vlanpon8},{values.vlanpon9},
             {values.vlanpon10},{values.vlanpon11},{values.vlanpon12},{values.vlanpon13},
             {values.vlanpon14},{values.vlanpon15},{values.vlanpon16}</pre>

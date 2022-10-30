@@ -1,10 +1,10 @@
 import React from 'react'
 import Style from './AimLine.module.css'
-import ValueContext from "../../js/ValueContext";
+import ValueContext from "../../../js/ValueContext";
 
 export default function AimLine() {
 
-  const { values, handleChange, checked } = React.useContext(ValueContext);
+  const { values, handleChange, g16 } = React.useContext(ValueContext);
 
   return (
     <div id="aimLine" className={Style.container}>
@@ -42,7 +42,7 @@ export default function AimLine() {
           <AimBridge name="aimbridge8" defaultValue={values.aimbridge8} title="PON 8" handleChange={handleChange} />
           <AimRouter name="aimrouter8" defaultValue={values.aimrouter8} handleChange={handleChange} />
         </div>
-        {checked && (
+        {g16 && (
           <>
             <div className={Style.pons}>
               <AimBridge name="aimbridge9" defaultValue={values.aimbridge9} title="PON 9" handleChange={handleChange} />

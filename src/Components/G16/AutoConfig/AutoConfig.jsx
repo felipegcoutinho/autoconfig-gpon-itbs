@@ -1,11 +1,11 @@
 import React from 'react'
 import Style from './AutoConfig.module.css'
-import ValueContext from "../../js/ValueContext";
-import copyToClip from '../../js/BtnCopy';
-import { DeviceNamesBridge, DeviceNameRouter } from '../../js/DeviceNames';
+import ValueContext from "../../../js/ValueContext";
+import copyToClip from '../../../js/BtnCopy';
+import { DeviceNamesBridge, DeviceNameRouter } from '../../../js/DeviceNames';
 
 export default function AutoConfig() {
-  const { values, checked } = React.useContext(ValueContext);
+  const { values, g16 } = React.useContext(ValueContext);
 
   return (
     <div id="autoconfig" className={Style.container}>
@@ -30,7 +30,7 @@ export default function AutoConfig() {
           <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon6} device-type {values.devicebridge} line {values.aimbridge6} interface gpon 0/6</pre>
           <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon7} device-type {values.devicebridge} line {values.aimbridge7} interface gpon 0/7</pre>
           <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon8} device-type {values.devicebridge} line {values.aimbridge8} interface gpon 0/8</pre>
-          {checked && (
+          {g16 && (
             <>
               <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon9} device-type {values.devicebridge} line {values.aimbridge9} interface gpon 0/9</pre>
               <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon10} device-type {values.devicebridge} line {values.aimbridge10} interface gpon 0/10</pre>
@@ -55,7 +55,7 @@ export default function AutoConfig() {
           <pre>ont auto-config name {DeviceNameRouter()}-VLAN-{values.vlanpon6} device-type {values.devicerouter} line {values.aimrouter6} interface gpon 0/6</pre>
           <pre>ont auto-config name {DeviceNameRouter()}-VLAN-{values.vlanpon7} device-type {values.devicerouter} line {values.aimrouter7} interface gpon 0/7</pre>
           <pre>ont auto-config name {DeviceNameRouter()}-VLAN-{values.vlanpon8} device-type {values.devicerouter} line {values.aimrouter8} interface gpon 0/8</pre>
-          {checked && (
+          {g16 && (
             <>
               <pre>ont auto-config name {DeviceNameRouter()}-VLAN-{values.vlanpon9} device-type {values.devicerouter} line {values.aimrouter9} interface gpon 0/9</pre>
               <pre>ont auto-config name {DeviceNameRouter()}-VLAN-{values.vlanpon10} device-type {values.devicerouter} line {values.aimrouter10} interface gpon 0/10</pre>

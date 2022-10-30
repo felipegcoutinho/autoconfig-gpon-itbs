@@ -1,6 +1,6 @@
 import React from 'react'
 import Style from './Dba.module.css'
-import copyToClip from '../../js/BtnCopy';
+import copyToClip from '../../../js/BtnCopy';
 
 function Dba() {
 

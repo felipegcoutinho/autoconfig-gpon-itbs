@@ -1,10 +1,10 @@
 import React from 'react'
 import Style from './ProfileLine.module.css'
-import ValueContext from "../../js/ValueContext";
-import copyToClip from '../../js/BtnCopy';
+import ValueContext from "../../../js/ValueContext";
+import copyToClip from '../../../js/BtnCopy';
 
 export default function ProfileLineRouter() {
-  const { values, checked } = React.useContext(ValueContext);
+  const { values, g16 } = React.useContext(ValueContext);
 
   return (
     <div className={Style.containerRouter}>
@@ -114,7 +114,7 @@ export default function ProfileLineRouter() {
           <pre>flow 1 port veip vlan {values.vlanpon8} keep</pre>
           <pre>active</pre>
         </code>
-        {checked && (
+        {g16 && (
           <>
             <hr />
             <code id="linerouter9" className={Style.code} onClick={() =>

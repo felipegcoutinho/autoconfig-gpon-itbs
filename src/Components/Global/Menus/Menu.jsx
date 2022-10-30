@@ -1,26 +1,26 @@
 import React from 'react'
 import Style from './Menu.module.css'
-import ValueContext from "../../js/ValueContext";
+import ValueContext from "../../../js/ValueContext";
 import { NavLink } from "react-router-dom";
 
 export default function Menu() {
-  const { setChecked, checked, handleChangeSelected, GPON_I } = React.useContext(ValueContext);
+  const { g16, setG16, setG08, i8820, setI8820, handleChangeSelected } = React.useContext(ValueContext);
 
-  const G16 = () => setChecked(true);
-  const G08 = () => setChecked(false);
+  const G16 = () => setG16(true) || setG08(false) || setI8820(false);
+  const G08 = () => setG08(true) || setG16(false) || setI8820(false);
+  const I8820 = () => setI8820(true) || setG16(false) || setG08(false);
 
-  console.log("G16:", G16)
-  console.log("G08:", G08)
+  console.log("handleChangeSelected:", handleChangeSelected)
 
   return (
     <div className={Style.container}>
 
-      {GPON_I ? <h1 className={Style.h1}>Configuração de Auto Provisionamento - 8820i</h1> :
-        <h1 className={Style.h1}>Configuração de Auto Provisionamento - {checked ? "G16" : "G08"}</h1>}
+      {i8820 ? <h1 className={Style.h1}>Configuração de Auto Provisionamento - 8820i</h1> :
+        <h1 className={Style.h1}>Configuração de Auto Provisionamento - {g16 ? "G16" : "G08"}</h1>}
 
       <h2 className={Style.h2}>Escolha o Concentrador que será configurado:</h2>
       <nav className={Style.containerBtn}>
-        <NavLink to="/8820i" className={({ isActive }) => isActive ? Style.btnActive : Style.btnNotActive}>
+        <NavLink to="/8820i" onClick={I8820} className={({ isActive }) => isActive ? Style.btnActive : Style.btnNotActive}>
           8820i
         </NavLink>
 
@@ -33,7 +33,7 @@ export default function Menu() {
         </NavLink>
       </nav>
 
-      {GPON_I &&
+      {i8820 &&
         <div className={Style.modoContainer} id="modoContainer">
           <h3 className={Style.h3}>Escolha o tipo de configuração da 8820i:</h3>
           <select className={Style.select} onChange={handleChangeSelected} >

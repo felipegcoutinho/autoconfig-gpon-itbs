@@ -1,9 +1,9 @@
 import React from 'react';
-import ValueContext from "../../js/ValueContext";
+import ValueContext from "../../../js/ValueContext";
 import Style from './Pons.module.css';
 
 export default function Pons() {
-  const { values, handleChange, checked } = React.useContext(ValueContext);
+  const { values, handleChange, g16 } = React.useContext(ValueContext);
 
   return (
     <div id="aim" className={Style.container}>
@@ -41,7 +41,7 @@ export default function Pons() {
           <Aim name="aimvlanpon8" defaultValue={values.aimvlanpon8} title="PON 8" />
           <Vlans name="vlanpon8" defaultValue={values.vlanpon8} />
         </div>
-        {checked && (
+        {g16 && (
           <>
             <div className={Style.pons}>
               <Aim name="aimvlanpon9" defaultValue={values.aimvlanpon9} title="PON 9" />

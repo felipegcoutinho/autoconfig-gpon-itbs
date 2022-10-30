@@ -1,10 +1,10 @@
 import React from 'react'
 import Style from './ProfileLine.module.css'
-import ValueContext from "../../js/ValueContext";
-import copyToClip from '../../js/BtnCopy';
+import ValueContext from "../../../js/ValueContext";
+import copyToClip from '../../../js/BtnCopy';
 
 export default function ProfileLineBridge() {
-  const { values, checked } = React.useContext(ValueContext);
+  const { values, g16 } = React.useContext(ValueContext);
 
   return (
     <div className={Style.container}>
@@ -114,7 +114,7 @@ export default function ProfileLineBridge() {
           <pre>flow 1 port eth 1 default vlan {values.vlanpon8}</pre>
           <pre>active</pre>
         </code>
-        {checked && (
+        {g16 && (
           <>
             <hr />
             <code id="linebridge9" className={Style.code} onClick={() =>

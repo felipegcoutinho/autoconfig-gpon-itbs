@@ -1,7 +1,7 @@
 import React from 'react'
 import Style from './SelectDeviceBridge.module.css'
-import ValueContext from "../../js/ValueContext";
-import { DeviceOptionsBridge } from '../../js/DeviceOptions'
+import ValueContext from "../../../js/ValueContext";
+import { DeviceOptionsBridge } from '../../../js/DeviceOptions'
 
 export default function SelectDeviceBridge() {
   const { values, handleChange } = React.useContext(ValueContext);

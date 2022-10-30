@@ -14,7 +14,6 @@
 .containerBtn{
   display: flex;
   justify-content: space-between;
-  width: 330px;
 }
 
 .select {
