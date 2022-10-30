@@ -35,6 +35,11 @@ export default function App() {
     setSelected(!selected)
   }
 
+  const [cpemgr, setCpemgr] = React.useState(false);
+  const handleCpemgr = () => {
+    setCpemgr(!cpemgr)
+  }
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setValues({
@@ -44,7 +49,7 @@ export default function App() {
   };
 
   return (
-    <ValueContext.Provider value={{ values, setValues, handleChange, g16, setG16, selected, handleChangeSelected, g08, setG08, i8820, setI8820 }}>
+    <ValueContext.Provider value={{ values, setValues, handleChange, g16, setG16, selected, handleChangeSelected, g08, setG08, i8820, setI8820, handleCpemgr, cpemgr, setCpemgr }}>
       <div className={Style.container}>
         {!i8820 &&
           <>

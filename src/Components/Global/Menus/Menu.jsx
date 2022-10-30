@@ -10,8 +10,6 @@ export default function Menu() {
   const G08 = () => setG08(true) || setG16(false) || setI8820(false);
   const I8820 = () => setI8820(true) || setG16(false) || setG08(false);
 
-  console.log("handleChangeSelected:", handleChangeSelected)
-
   return (
     <div className={Style.container}>
 
