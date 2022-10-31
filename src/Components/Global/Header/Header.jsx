@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import Style from './Header.module.css'
 
 export default function header() {
@@ -6,7 +7,7 @@ export default function header() {
     <div id="start" className={Style.container}>
       <nav className={Style.menu}>
         <ul>
-          <li><a className={Style.title} href="https://github.com/felipegcoutinho">GPON ITBS <span className={Style.version}>v1.1</span> </a></li>
+          <li><a className={Style.title} href="/">GPON ITBS <span className={Style.version}>v1.1</span> </a></li>
           <li><a href="#"> 8820i <i className="fa-solid fa-caret-down"></i></a>
             <ul>
               <li><a target="_blank" rel="noopener noreferrer" href="http://backend.intelbras.com/sites/default/files/2021-02/Datasheet%20OLT%208820%20I%2001.2021%20V2.pdf">
@@ -49,6 +50,8 @@ export default function header() {
                 </i> Manual e Guia</a>
               </li>
             </ul>
+          </li>
+          <li><NavLink to="/Services">Serviços GPON</NavLink>
           </li>
         </ul>
       </nav>

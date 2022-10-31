@@ -49,7 +49,10 @@ export default function App() {
   };
 
   return (
-    <ValueContext.Provider value={{ values, setValues, handleChange, g16, setG16, selected, handleChangeSelected, g08, setG08, i8820, setI8820, handleCpemgr, cpemgr, setCpemgr }}>
+    <ValueContext.Provider value={{
+      values, setValues, handleChange, g16, setG16, selected, handleChangeSelected, g08, setG08, i8820,
+      setI8820, handleCpemgr, cpemgr
+    }}>
       <div className={Style.container}>
         {!i8820 &&
           <>

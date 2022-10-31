@@ -68,7 +68,6 @@ const initialValues = {
   devicerouter: 'i41-211',
 
   // 8820i
-
   uplinkpon1: 'eth 1',
   uplinkpon2: 'eth 1',
   uplinkpon3: 'eth 1',

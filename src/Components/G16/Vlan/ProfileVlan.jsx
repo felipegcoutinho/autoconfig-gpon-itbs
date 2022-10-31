@@ -11,12 +11,13 @@ export default function ProfileVlan() {
       <h2> Profile Vlan</h2>
       <div className={Style.content}>
         <div className={Style.ContainerCpemgr}>
-          <label>Habilitar CPEMGR:
-            <select type="checkbox" className={Style.cpemgr} onChange={handleCpemgr} >
-              <option>Sim</option>
-              <option selected>Não</option>
-            </select>
-          </label>
+          <h4 className={Style.h4}>4.1 Habilitar CPEMGR:</h4>
+
+          <select type="checkbox" className={Style.cpemgr} onChange={handleCpemgr} >
+            <option>Sim</option>
+            <option selected>Não</option>
+          </select>
+
         </div>
 
         <code id="blocovlan1" className={Style.code} onClick={() =>
@@ -39,7 +40,6 @@ export default function ProfileVlan() {
         </code>
         {g16 && (
           <>
-
             <hr></hr>
             <code id="blocovlan3" className={Style.code} onClick={() =>
               copyToClip(document.getElementById('blocovlan3').innerText)
