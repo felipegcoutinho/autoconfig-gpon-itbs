@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from './Components/Global/Header/Header';
-import ProvisManual from './Components/Serviços/ProvisionamentoManual/ProvisManual';
+import AppServices from './Components/Serviços/AppServices';
 
 ReactDOM.createRoot(document.getElementById('main')).render(
   <BrowserRouter>
@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('main')).render(
         <Route exact path="/8820i" element={<App />} />
         <Route exact path="/G16" element={<App />} />
         <Route exact path="/G08" element={<App />} />
-        <Route exact path="/Services" element={<ProvisManual />} />
+        <Route exact path="/ProvisionamentoManual" element={<AppServices />} />
       </Routes>
     </React.StrictMode>
   </BrowserRouter>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Style from './Pons_i.module.css';
-import ValueContext from "../../../js/ValueContext";
-import { UplinkOptions, BridgeOptions, ModoVlanOptions, OnuOptions } from '../../../js/DeviceOptions';
+import ValueContext from "../../../JS/ValueContext";
+import { UplinkOptions, BridgeOptions, ModoVlanOptions, OnuOptions } from '../../../JS/DeviceOptions';
 
 export default function Pons_i() {
   const { values, handleChange, selected } = React.useContext(ValueContext);

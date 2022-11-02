@@ -1,7 +1,7 @@
 import React from 'react'
 import Style from './ProfileLine.module.css'
-import ValueContext from "../../../js/ValueContext";
-import copyToClip from '../../../js/BtnCopy';
+import ValueContext from "../../../JS/ValueContext";
+import copyToClip from '../../../JS/BtnCopy';
 
 export default function ProfileLineBridge() {
   const { values, g16 } = React.useContext(ValueContext);

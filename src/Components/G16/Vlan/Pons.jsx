@@ -1,5 +1,5 @@
 import React from 'react';
-import ValueContext from "../../../js/ValueContext";
+import ValueContext from "../../../JS/ValueContext";
 import Style from './Pons.module.css';
 
 export default function Pons() {

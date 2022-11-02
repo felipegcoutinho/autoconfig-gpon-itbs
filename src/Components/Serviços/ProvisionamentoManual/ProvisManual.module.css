@@ -1,21 +1,20 @@
 .container {
-  background-color: whitesmoke;
-  display: grid;
-  grid-row-gap: 10px;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(10 1fr);
+  display: flex;
+  flex-direction: column;
+  grid-area: 2 / 4 / 2 / 14;
+  justify-content: center;
 }
 
 .container h2 {
   border-bottom: 3px solid black;
   border-radius: 3px;
   grid-area: 1 / 4 / 1 / 14;
+  margin: 0 0 20px 0;
   padding: 5px;
 }
 
-.content{
+.content {
   display: flex;
-  grid-area: 2 / 4 / 2 / 14;
   justify-content: center;
 }
 
@@ -26,19 +25,32 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  margin: 0 10px 10px 0;
   padding: 5px;
   text-align: center;
 }
 
-.h5 {
+.pons:last-child {
+  margin-right: 0;
+}
+
+.pons label, input {
+  margin-bottom: 5px;
+}
+
+.title {
   background-color: #000000;
   border-radius: 3px;
   color: white;
-  font-size: small;
   margin: 0 0 5px 0;
-  padding: 3px;
+  padding: 5px;
   text-align: center;
+}
+
+.Span {
+  color: #818181;
+  font-size: 0.6rem;
+  font-style: italic;
 }
 
 .contentCode {
@@ -47,8 +59,9 @@
   color: white;
   display: flex;
   flex-direction: column;
-  grid-area: 3 / 4 / 4 / 14;
-  padding: 20px; 
+  grid-area: 3 / 4 / 4 / 14; 
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .code {
@@ -86,4 +99,10 @@
 	100% {
 		color: lightgray;
 	}
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #a0a0a0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }

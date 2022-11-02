@@ -1,6 +1,6 @@
 import React from 'react'
 import Style from './Menu.module.css'
-import ValueContext from "../../../js/ValueContext";
+import ValueContext from "../../../JS/ValueContext";
 import { NavLink } from "react-router-dom";
 
 export default function Menu() {
@@ -21,11 +21,9 @@ export default function Menu() {
         <NavLink to="/8820i" onClick={I8820} className={({ isActive }) => isActive ? Style.btnActive : Style.btnNotActive}>
           8820i
         </NavLink>
-
         <NavLink to="/G08" onClick={G08} className={({ isActive }) => (isActive ? Style.btnActive : Style.btnNotActive)}>
           OLT G08
         </NavLink>
-
         <NavLink to="/G16" onClick={G16} className={({ isActive }) => (isActive ? Style.btnActive : Style.btnNotActive)}>
           OLT G16
         </NavLink>

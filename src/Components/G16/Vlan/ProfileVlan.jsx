@@ -1,7 +1,7 @@
 import React from 'react'
 import Style from './ProfileVlan.module.css'
-import ValueContext from "../../../js/ValueContext";
-import copyToClip from '../../../js/BtnCopy';
+import ValueContext from "../../../JS/ValueContext";
+import copyToClip from '../../../JS/BtnCopy';
 
 export default function ProfileVlan() {
   const { values, g16, handleCpemgr, cpemgr } = React.useContext(ValueContext);

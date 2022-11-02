@@ -1,8 +1,8 @@
 import React from 'react'
 import Style from './AutoConfig.module.css'
-import ValueContext from "../../../js/ValueContext";
-import copyToClip from '../../../js/BtnCopy';
-import { DeviceNamesBridge, DeviceNameRouter } from '../../../js/DeviceNames';
+import ValueContext from "../../../JS/ValueContext";
+import copyToClip from '../../../JS/BtnCopy';
+import { DeviceNamesBridge, DeviceNameRouter } from '../../../JS/DeviceNames';
 
 export default function AutoConfig() {
   const { values, g16 } = React.useContext(ValueContext);

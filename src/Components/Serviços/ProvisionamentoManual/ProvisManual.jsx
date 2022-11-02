@@ -1,110 +1,192 @@
 import React from 'react';
-import initialValues from '../../../js/initialValues.js';
-import copyToClip from '../../../js/BtnCopy';
+import copyToClip from '../../../JS/BtnCopy';
 import Style from './ProvisManual.module.css';
+import { DeviceOptionsBridge, DeviceOptionsRouter, ModoVlanOptions } from '../../../JS/DeviceOptions'
+import ServiceContext from '../../../JS/ServiceContext';
+import { DeviceNamesBridge, DeviceNamesRouter } from '../../../JS/DeviceNamesManual';
+import { Onudesc, DbaName, vlanName, lineName, TCont } from '../../../JS/ManualLogic';
 
 export default function ProvisManual() {
 
-  const [values, setValues] = React.useState(initialValues);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setValues({
-      ...values,
-      [name]: value,
-    });
-  };
+  const { ProvManualMode, values, handleChange } = React.useContext(ServiceContext);
 
   return (
     <div className={Style.container}>
-      <h2> Provisionamento Manual - Router</h2>
-      <form className={Style.content} onChange={handleChange} >
-
+      <form className={Style.content}  >
         <div className={Style.pons}>
-          <h5 className={Style.h5}>PON</h5>
-          <label>ID</label>
-          <input type="number" name="aimvlanpon1" defaultValue={values.aimvlanpon10} onChange={handleChange} />
-          <label>SLOT</label>
-          <input type="number" name="aimvlanpon1" defaultValue={values.aimvlanpon10} onChange={handleChange} />
+          <h5 className={Style.title}>PROFILE DBA</h5>
+          <label>Id <span className={Style.Span}>(Aim)</span></label>
+          <input type="number" name="dbaId" defaultValue={values.dbaId} onChange={handleChange} />
+          <label>Name </label>
+          <input type="text" name="dbaName" defaultValue={values.dbaName} onChange={handleChange} />
+          <label>TCont-Type</label>
+          <select type="number" name="dbaCont" defaultValue={values.dbaCont} onChange={handleChange}>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
         </div>
 
         <div className={Style.pons}>
-          <h5 className={Style.h5}>ONU/ONT</h5>
+          <h5 className={Style.title}>BANDWIDTH</h5>
+          <label>Fix</label>
+          <input type="number" name="dbaFix" defaultValue={values.dbaFix} onChange={handleChange} />
+          <label>Assured</label>
+          <input type="number" name="dbaAssured" defaultValue={values.dbaAssured} onChange={handleChange} />
+          <label>Max</label>
+          <input type="number" name="dbaMax" defaultValue={values.dbaMax} onChange={handleChange} />
+        </div>
+
+        <div className={Style.pons}>
+          <h5 className={Style.title}>PON</h5>
+          <label>Id <span className={Style.Span}>(0/X/0)</span></label>
+          <input type="number" name="ponId" defaultValue={values.ponId} onChange={handleChange} />
+          <label>Slot <span className={Style.Span}>(0/0/X)</span></label>
+          <input type="number" name="ponSlot" defaultValue={values.ponSlot} onChange={handleChange} />
+        </div>
+
+        <div className={Style.pons}>
+          <h5 className={Style.title}>ONU/ONT</h5>
           <label>Serial Number</label>
-          <input type="number" onChange={handleChange} />
+          <input type="text" name="onuSn" defaultValue={values.onuSn} onChange={handleChange} />
           <label>Device Type</label>
-          <select type="number" onChange={handleChange} />
+          {ProvManualMode ?
+            <select type="text" name="devicebridge" defaultValue={values.devicebridge} onChange={handleChange}>
+              {DeviceOptionsBridge.map((option) => (
+                <option key={option.key} value={option.value}>{option.label}</option>
+              ))}
+            </select>
+            :
+            <select type="text" name="devicerouter" defaultValue={values.devicerouter} onChange={handleChange}>
+              {DeviceOptionsRouter.map((option) => (
+                <option key={option.key} value={option.value}>{option.label}</option>
+              ))}
+            </select>
+          }
           <label>Descrição</label>
-          <input type="number" onChange={handleChange} />
+          <input type="text" name="onuDesc" defaultValue={values.onuDesc} placeholder="Descrição ONU" onChange={handleChange} />
+          {ProvManualMode && (
+            <>
+              <label>Porta Eth</label>
+              <select type="text" name="onuEth" defaultValue={values.onuEth} onChange={handleChange}>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </>)}
         </div>
 
         <div className={Style.pons}>
-          <h5 className={Style.h5}>PROFILES</h5>
-          <label>DBA</label>
-          <input type="number" onChange={handleChange} />
-          <label>VLAN</label>
-          <select type="number" onChange={handleChange} />
+          <h5 className={Style.title}>PROFILES</h5>
+          <label>Vlan <span className={Style.Span}>(Aim)</span></label>
+          <input type="number" name="ProfileVlan" defaultValue={values.ProfileVlan} onChange={handleChange} />
+          <label>Vlan Name </label>
+          <input type="text" name="vlanName" defaultValue={values.vlanName} onChange={handleChange} />
           <label>Line</label>
-          <input type="number" onChange={handleChange} />
+          <input type="number" name="ProfileLine" defaultValue={values.ProfileLine} onChange={handleChange} />
+          <label>Line Name </label>
+          <input type="text" name="lineName" defaultValue={values.lineName} onChange={handleChange} />
         </div>
 
         <div className={Style.pons}>
-          <h5 className={Style.h5}>VLAN</h5>
-          <label>VLAN</label>
-          <input type="number" onChange={handleChange} />
-        </div>
+          <h5 className={Style.title}>VLAN ID</h5>
+          <label>Vlan ID</label>
+          <input type="number" name="VlanVlan" defaultValue={values.VlanVlan} onChange={handleChange} />
+          {ProvManualMode && (
+            <>
+              <label>Modo Vlan</label>
+              <select type="number" name="VlanMode" defaultValue={values.VlanMode} onChange={handleChange}>
+                {ModoVlanOptions.map((option) => (
+                  <option key={option.key} value={option.value}>{option.label}</option>
+                ))}
+              </select>
+            </>
+          )}
 
-      </form>
+        </div>
+      </form >
 
       <div className={Style.contentCode}>
-        <code id="bloco" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('bloco').innerText)
+        <code id="dbacode" className={Style.code} onClick={() =>
+          copyToClip(document.getElementById('dbacode').innerText)
         }>
           <pre>deploy profile dba</pre>
-          <pre>aim 1 name DBA-DEFAULT</pre>
-          <pre>type 4 max 1200000</pre>
+          <pre>aim {DbaName()}</pre>
+          <pre>{TCont()}</pre>
           <pre>active</pre>
           <pre>exit</pre>
         </code>
         <hr />
-        <code id="bloco" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('bloco').innerText)
+        <code id="vlancode" className={Style.code} onClick={() =>
+          copyToClip(document.getElementById('vlancode').innerText)
         }>
           <pre>deploy profile vlan</pre>
-          <pre>aim 200</pre>
-          <pre>translate old - vlan 200 new- vlan 200</pre>
-          <pre>translate old - vlan 7 new- vlan 7</pre>
+          <pre>aim {vlanName()}</pre>
+          <pre>translate old - vlan {values.VlanVlan} new-vlan {values.VlanVlan}</pre>
+          {!ProvManualMode && (
+            <pre>translate old - vlan 7 new-vlan 7</pre>
+          )}
           <pre>active</pre>
           <pre>exit</pre>
         </code>
         <hr />
-        <code id="bloco" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('bloco').innerText)
+        <code id="linecode" className={Style.code} onClick={() =>
+          copyToClip(document.getElementById('linecode').innerText)
         }>
           <pre>deploy profile line</pre>
-          <pre>aim name</pre>
-          <pre>device type i40-211</pre>
-          <pre>tcont 1 profile dba name padrao</pre>
-          <pre>gemport 1 tcont 1 vlan-profile 200</pre>
-          <pre>gemport 2 tcont 1 vlan-profile 200</pre>
+          <pre>aim {lineName()} </pre>
+          <pre>device type {!ProvManualMode ? values.devicerouter : values.devicebridge} </pre>
+          <pre>tcont 1 profile dba {DbaName()}</pre>
+          <pre>gemport 1 tcont 1 vlan-profile {values.ProfileVlan}</pre>
+          {!ProvManualMode && (<pre>gemport 2 tcont 1 vlan-profile {values.ProfileVlan}</pre>)}
           <pre>mapping mode port-vlan</pre>
-          <pre>mapping 1 port veip vlan 200 gemport 1</pre>
-          <pre>mapping 2 port veip vlan 7 gemport 2</pre>
-          <pre>flow 1 port veip vlan 200 keep</pre>
-          <pre>flow 2 port veip vlan 7 keep</pre>
+          {!ProvManualMode ? <pre>mapping 1 port veip vlan {values.VlanVlan} gemport 1</pre> : <pre>mapping 1 port eth {values.onuEth} vlan {values.VlanVlan} gemport 1</pre>}
+          {!ProvManualMode && (<pre>mapping 2 port veip vlan 7 gemport 2</pre>)}
+          {ProvManualMode ?
+            <pre>flow 1 port eth {values.onuEth} default vlan {values.VlanVlan}</pre>
+            :
+            <>
+              <pre>flow 1 port veip vlan {values.VlanVlan} keep</pre>
+              <pre>flow 2 port veip vlan 7 keep</pre>
+            </>
+          }
+
           <pre>active</pre>
           <pre>exit</pre>
         </code>
         <hr />
-        <code id="bloco" className={Style.code} onClick={() =>
-          copyToClip(document.getElementById('bloco').innerText)
+        <code id="rulecode" className={Style.code} onClick={() =>
+          copyToClip(document.getElementById('rulecode').innerText)
         }>
           <pre>deploy profile rule</pre>
-          <pre>aim 0/1/3</pre>
-          <pre>permit sn string-hex ZTEG-c4ac0320 line name  default line name</pre>
+          <pre>aim 0/{values.ponId}/{values.ponSlot} {Onudesc()}-{ProvManualMode ? DeviceNamesBridge() : DeviceNamesRouter()}</pre>
+          <pre>permit sn string-hex {values.onuSn} line {values.ProfileLine} default line {values.ProfileLine}</pre>
           <pre>active</pre>
         </code>
+        <hr />
+        <code id="autoconfig" className={Style.code} onClick={() =>
+          copyToClip(document.getElementById('autoconfig').innerText)
+        }>
+          <pre>ont auto-config</pre>
+          <pre>ont auto-config 0 name {ProvManualMode ? DeviceNamesBridge() : DeviceNamesRouter()} device-type {!ProvManualMode ? values.devicerouter : values.devicebridge} line {values.ProfileLine}</pre>
+          <pre>active</pre>
+        </code>
+        <hr />
+        <h4>Desfazer</h4>
+        <code id="desfazer" className={Style.code} onClick={() =>
+          copyToClip(document.getElementById('desfazer').innerText)
+        }>
+          <pre>deploy profile rule</pre>
+          <pre>delete aim 0/{values.ponId}/{values.ponSlot}</pre>
+          <pre>deploy profile line</pre>
+          <pre>delete aim {lineName()}</pre>
+          <pre>deploy profile vlan</pre>
+          <pre>delete aim {vlanName()}</pre>
+        </code>
       </div>
-    </div>
+    </div >
   )
 }					

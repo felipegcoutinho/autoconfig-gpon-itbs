@@ -1,7 +1,7 @@
 import React from 'react'
 import Style from './ConfigAutoService.module.css'
-import ValueContext from "../../../js/ValueContext";
-import copyToClip from "../../../js/BtnCopy";
+import ValueContext from "../../../JS/ValueContext";
+import copyToClip from "../../../JS/BtnCopy";
 
 export default function RemoveAutoService() {
 

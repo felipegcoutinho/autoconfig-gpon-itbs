@@ -17,11 +17,11 @@
   padding: 5px;
 }
 
-.menuItem:before {
+/* .menuItem:before {
   color:lightgray;
   content:'\f0da';
   font: var(--fa-font-solid);
- } 
+ }  */
 
 .menuItem:hover {
   background-color: #00A335;

@@ -7,7 +7,8 @@ export default function header() {
     <div id="start" className={Style.container}>
       <nav className={Style.menu}>
         <ul>
-          <li><a className={Style.title} href="/">GPON ITBS <span className={Style.version}>v1.1</span> </a></li>
+          <li><a className={Style.title}>GPON ITBS <span className={Style.version}>v1.1</span> </a></li>
+          <li><a href="/">Home </a></li>
           <li><a href="#"> 8820i <i className="fa-solid fa-caret-down"></i></a>
             <ul>
               <li><a target="_blank" rel="noopener noreferrer" href="http://backend.intelbras.com/sites/default/files/2021-02/Datasheet%20OLT%208820%20I%2001.2021%20V2.pdf">
@@ -51,7 +52,12 @@ export default function header() {
               </li>
             </ul>
           </li>
-          <li><NavLink to="/Services">Serviços GPON</NavLink>
+
+          <li><a href="#"> Serviços GPON <i className="fa-solid fa-caret-down"></i></a>
+            <ul>
+              <li><NavLink to="/ProvisionamentoManual">Provisionamento Manual</NavLink>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Style from './SelectDeviceRouter.module.css'
-import ValueContext from "../../../js/ValueContext";
-import { DeviceOptionsRouter } from '../../../js/DeviceOptions'
+import ValueContext from "../../../JS/ValueContext";
+import { DeviceOptionsRouter } from '../../../JS/DeviceOptions'
 
 export default function SelectDeviceRouter() {
   const { values, handleChange } = React.useContext(ValueContext);

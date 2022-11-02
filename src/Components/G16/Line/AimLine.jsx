@@ -1,6 +1,6 @@
 import React from 'react'
 import Style from './AimLine.module.css'
-import ValueContext from "../../../js/ValueContext";
+import ValueContext from "../../../JS/ValueContext";
 
 export default function AimLine() {
 

@@ -1,8 +1,8 @@
 import React from 'react'
-import options from '../../../js/UplinkOptions'
+import options from '../../../JS/UplinkOptions'
 import Style from './Uplink.module.css'
-import ValueContext from "../../../js/ValueContext";
-import copyToClip from '../../../js/BtnCopy';
+import ValueContext from "../../../JS/ValueContext";
+import copyToClip from '../../../JS/BtnCopy';
 
 export default function Uplink() {
   const { values, handleChange, g16 } = React.useContext(ValueContext);

@@ -1,0 +1,29 @@
+.container {
+  background-color: whitesmoke;
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(4 1fr);
+}
+
+.menu {
+    align-items: center;
+    background-color: #0e421f;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 4 / 1 / 14;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.select {
+  border: none;
+  font-family: 'Fira Sans', Segoe UI, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 35px;
+  text-align: center;
+  width: 150px;
+}

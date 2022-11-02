@@ -95,6 +95,27 @@ const initialValues = {
   R1Mode: 'bridge',
   giMode: 'bridge',
   defaultMode: 'bridge',
+
+  // Provisionamento Manual 
+  ponId: '1',
+  ponSlot: '2',
+  onuSn: 'ITBS-12345678',
+  onuDesc: 'Cliente-X',
+  ProfileDba: 'Padrao',
+  ProfileVlan: '1',
+  ProfileLine: '2',
+  VlanVlan: '100',
+  dbaId: '1',
+  dbaName: 'Padrao',
+  dbaCont: '4',
+  dbaFix: '560000',
+  dbaAssured: '10000',
+  dbaMax: '1200000',
+  onuEth: '1',
+  devicerouter: 'i40-100',
+  devicebridge: 'i30-100',
+  vlanName: 'PPPoE',
+  lineName: 'Dados',
 };
 
 export default initialValues;
