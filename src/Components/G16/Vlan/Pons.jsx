@@ -1,14 +1,14 @@
-import React from 'react';
-import ValueContext from "../../../JS/ValueContext";
-import Style from './Pons.module.css';
+import React from "react";
+import {ValueContext} from "../../../JS/Context";
+import Style from "./Pons.module.css";
 
 export default function Pons() {
-  const { values, handleChange, g16 } = React.useContext(ValueContext);
+  const {values, handleChange, g16} = React.useContext(ValueContext);
 
   return (
     <div id="aim" className={Style.container}>
       <h2> Definição dos AIMs do Profile VLAN</h2>
-      <form className={Style.content} onChange={handleChange} >
+      <form className={Style.content} onChange={handleChange}>
         <div className={Style.pons}>
           <Aim name="aimvlanpon1" defaultValue={values.aimvlanpon1} title="PON 1" />
           <Vlans name="vlanpon1" defaultValue={values.vlanpon1} />
@@ -79,24 +79,24 @@ export default function Pons() {
         )}
       </form>
     </div>
-  )
+  );
 }
 
-function Aim({ handleChange, ...props }) {
+function Aim({handleChange, ...props}) {
   return (
     <>
       <h5 className={Style.h5}>{props.title}</h5>
       <label>AIM</label>
       <input type="number" onChange={handleChange} {...props} />
     </>
-  )
+  );
 }
 
-function Vlans({ handleChange, ...props }) {
+function Vlans({handleChange, ...props}) {
   return (
     <>
       <label>VLAN</label>
       <input type="number" onChange={handleChange} {...props} />
     </>
-  )
+  );
 }

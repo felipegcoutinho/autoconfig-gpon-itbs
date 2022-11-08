@@ -1,4 +1,6 @@
 const initialValues = {
+
+  // G16 e G08
   aimvlanpon1: '1',
   aimvlanpon2: '2',
   aimvlanpon3: '3',
@@ -66,6 +68,7 @@ const initialValues = {
   aimrouter16: '65',
   devicebridge: 'i30-100',
   devicerouter: 'i41-211',
+  vmodovlan: 'untagged',
 
   // 8820i
   uplinkpon1: 'eth 1',

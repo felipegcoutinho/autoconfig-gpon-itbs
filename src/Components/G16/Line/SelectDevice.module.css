@@ -7,7 +7,17 @@
   grid-area: 7 / 3 / 2 / 15;
 }
 
-.container h2 {
+.containerRouter { 
+  grid-area: 7 / 9 / 7 / 15;
+  margin-left: 10px;
+}
+
+.h2Router {
+  grid-area: 8 / 3 / 8 / 15;
+}
+
+.container h2,
+.containerRouter h2 {
   border-bottom: 3px solid black;
   border-radius: 3px;
   padding: 5px;
@@ -18,20 +28,33 @@
   font: var(--fa-font-solid);
 }
 
-.content {
+.content {  
   background-color: #5E6573;
   border: 1px solid #3d414a;
   border-radius: 3px;
   color: whitesmoke;
   display: flex;
+  justify-content: space-around;
   padding: 10px;
 }
 
-.select select {
+.DeviceSelectContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.ModoVlanContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectDevice, .modovlan {
   border: none;
   font-weight: bold;
   height: 30px;
-  margin-left: 10px;
+  margin-top: 5px;
   text-align: center;
-  width: 100px;
+  width: 140px;
 }

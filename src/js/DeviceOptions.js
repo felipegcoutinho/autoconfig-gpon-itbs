@@ -1,16 +1,3 @@
-export const OLTs = [
-  {
-    key: '1',
-    label: 'OLT G08',
-    value: 'g08',
-  },
-  {
-    key: '2',
-    label: 'OLT G16',
-    value: 'g16',
-  }
-];
-
 export const DeviceOptionsBridge = [
   {
     key: '1',
@@ -178,5 +165,38 @@ export const UplinkOptions = [
     key: '10',
     label: 'xeth 2',
     value: 'xeth 2',
+  },
+];
+
+export const UplinkOptionsG16 = [
+  {
+    key: '1',
+    label: 'ethernet 1/1',
+    value: 'ethernet 1/1',
+  },
+  {
+    key: '2',
+    label: 'ethernet 1/2',
+    value: 'ethernet 1/2',
+  },
+  {
+    key: '3',
+    label: 'ethernet 1/3',
+    value: 'ethernet 1/3',
+  },
+  {
+    key: '4',
+    label: 'ethernet 1/4',
+    value: 'ethernet 1/4',
+  },
+  {
+    key: '5',
+    label: 'ethernet 2/1 (SFP+)',
+    value: 'ethernet 2/1',
+  },
+  {
+    key: '6',
+    label: 'ethernet 2/2 (SFP+)',
+    value: 'ethernet 2/2',
   },
 ];

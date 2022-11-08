@@ -22,20 +22,6 @@
   padding: 20px; 
 }
 
-.ContainerCpemgr {
-  padding: 10px 0 0 10px;
-}
-
-.cpemgr {
-  border: none;
-  font-weight: bold;
-  height: 35px;
-  margin: 10px 0 0 0;
-  padding: 5px;
-  text-align: center;
-  width: 100px;
-}
-
 .h4 {
   color: lightgray;
   margin: 5px 0 5px 0;

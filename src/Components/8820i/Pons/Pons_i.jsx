@@ -1,19 +1,21 @@
-import React from 'react';
-import Style from './Pons_i.module.css';
-import ValueContext from "../../../JS/ValueContext";
-import { UplinkOptions, BridgeOptions, ModoVlanOptions, OnuOptions } from '../../../JS/DeviceOptions';
+import React from "react";
+import Style from "./Pons_i.module.css";
+import {ValueContext} from "../../../JS/Context";
+import {UplinkOptions, BridgeOptions, ModoVlanOptions, OnuOptions} from "../../../JS/DeviceOptions";
 
 export default function Pons_i() {
-  const { values, handleChange, selected } = React.useContext(ValueContext);
+  const {values, handleChange, selected} = React.useContext(ValueContext);
 
   return (
     <div className={Style.container}>
       {selected ? <h2> UMA VLAN POR PORTA PON</h2> : <h2> APENAS UMA VLAN</h2>}
-      <form className={Style.content} onChange={handleChange} >
+      <form className={Style.content} onChange={handleChange}>
         <div className={Style.pons}>
-          {selected ? <Vlan name="vlanpon1" defaultValue={values.vlanpon1} title="PON 1" />
-            : <Vlan name="vlanpon1" defaultValue={values.vlanpon1} title="Todas as PONs" />
-          }
+          {selected ? (
+            <Vlan name="vlanpon1" defaultValue={values.vlanpon1} title="PON 1" />
+          ) : (
+            <Vlan name="vlanpon1" defaultValue={values.vlanpon1} title="Todas as PONs" />
+          )}
           <Uplink name="uplinkpon1" defaultValue={values.uplinkpon1} />
           <Bridge name="bridgepon1" defaultValue={values.bridgepon1} />
           <ModoVlan name="modovlanpon1" defaultValue={values.modovlanpon1} />
@@ -76,48 +78,47 @@ export default function Pons_i() {
           </div>
         </div>
       </form>
-    </div >
-  )
+    </div>
+  );
 }
 
-function Onus({ handleChange, ...props }) {
+function Onus({handleChange, ...props}) {
   return (
     <>
       <h5 className={Style.h5}>{props.title}</h5>
       <label>Modo de Operação</label>
-      <select onChange={handleChange} {...props} >
+      <select onChange={handleChange} {...props}>
         {OnuOptions.map((option) => (
           <option value={option.value}>{option.label}</option>
         ))}
       </select>
     </>
-  )
+  );
 }
 
-
-function Vlan({ handleChange, ...props }) {
+function Vlan({handleChange, ...props}) {
   return (
     <>
       <h5 className={Style.h5}>{props.title}</h5>
       <label>Vlan ID</label>
       <input type="number" onChange={handleChange} {...props} />
     </>
-  )
+  );
 }
 
-function Uplink({ handleChange, ...props }) {
+function Uplink({handleChange, ...props}) {
   return (
     <>
       <label>Uplink</label>
-      <select onChange={handleChange} {...props} >
+      <select onChange={handleChange} {...props}>
         {UplinkOptions.map((option) => (
           <option value={option.value}>{option.label}</option>
         ))}
       </select>
     </>
-  )
+  );
 }
-function Bridge({ handleChange, ...props }) {
+function Bridge({handleChange, ...props}) {
   return (
     <>
       <label>Bridge</label>
@@ -127,10 +128,10 @@ function Bridge({ handleChange, ...props }) {
         ))}
       </select>
     </>
-  )
+  );
 }
 
-function ModoVlan({ handleChange, ...props }) {
+function ModoVlan({handleChange, ...props}) {
   return (
     <>
       <label>Modo Vlan</label>
@@ -140,5 +141,5 @@ function ModoVlan({ handleChange, ...props }) {
         ))}
       </select>
     </>
-  )
+  );
 }

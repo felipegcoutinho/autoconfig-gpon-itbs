@@ -1,10 +1,9 @@
-import React from 'react'
-import Style from './AimLine.module.css'
-import ValueContext from "../../../JS/ValueContext";
+import React from "react";
+import Style from "./AimLine.module.css";
+import {ValueContext} from "../../../JS/Context";
 
 export default function AimLine() {
-
-  const { values, handleChange, g16 } = React.useContext(ValueContext);
+  const {values, handleChange, g16} = React.useContext(ValueContext);
 
   return (
     <div id="aimLine" className={Style.container}>
@@ -49,54 +48,89 @@ export default function AimLine() {
               <AimRouter name="aimrouter9" defaultValue={values.aimrouter9} handleChange={handleChange} />
             </div>
             <div className={Style.pons}>
-              <AimBridge name="aimbridge10" defaultValue={values.aimbridge10} title="PON 10" handleChange={handleChange} />
+              <AimBridge
+                name="aimbridge10"
+                defaultValue={values.aimbridge10}
+                title="PON 10"
+                handleChange={handleChange}
+              />
               <AimRouter name="aimrouter10" defaultValue={values.aimrouter10} handleChange={handleChange} />
             </div>
             <div className={Style.pons}>
-              <AimBridge name="aimbridge11" defaultValue={values.aimbridge11} title="PON 11" handleChange={handleChange} />
+              <AimBridge
+                name="aimbridge11"
+                defaultValue={values.aimbridge11}
+                title="PON 11"
+                handleChange={handleChange}
+              />
               <AimRouter name="aimrouter11" defaultValue={values.aimrouter11} handleChange={handleChange} />
             </div>
             <div className={Style.pons}>
-              <AimBridge name="aimbridge12" defaultValue={values.aimbridge12} title="PON 12" handleChange={handleChange} />
+              <AimBridge
+                name="aimbridge12"
+                defaultValue={values.aimbridge12}
+                title="PON 12"
+                handleChange={handleChange}
+              />
               <AimRouter name="aimrouter12" defaultValue={values.aimrouter12} handleChange={handleChange} />
             </div>
             <div className={Style.pons}>
-              <AimBridge name="aimbridge13" defaultValue={values.aimbridge13} title="PON 13" handleChange={handleChange} />
+              <AimBridge
+                name="aimbridge13"
+                defaultValue={values.aimbridge13}
+                title="PON 13"
+                handleChange={handleChange}
+              />
               <AimRouter name="aimrouter13" defaultValue={values.aimrouter13} handleChange={handleChange} />
             </div>
             <div className={Style.pons}>
-              <AimBridge name="aimbridge14" defaultValue={values.aimbridge14} title="PON 14" handleChange={handleChange} />
+              <AimBridge
+                name="aimbridge14"
+                defaultValue={values.aimbridge14}
+                title="PON 14"
+                handleChange={handleChange}
+              />
               <AimRouter name="aimrouter14" defaultValue={values.aimrouter14} handleChange={handleChange} />
             </div>
             <div className={Style.pons}>
-              <AimBridge name="aimbridge15" defaultValue={values.aimbridge15} title="PON 15" handleChange={handleChange} />
+              <AimBridge
+                name="aimbridge15"
+                defaultValue={values.aimbridge15}
+                title="PON 15"
+                handleChange={handleChange}
+              />
               <AimRouter name="aimrouter15" defaultValue={values.aimrouter15} handleChange={handleChange} />
             </div>
             <div className={Style.pons}>
-              <AimBridge name="aimbridge16" defaultValue={values.aimbridge16} title="PON 16" handleChange={handleChange} />
+              <AimBridge
+                name="aimbridge16"
+                defaultValue={values.aimbridge16}
+                title="PON 16"
+                handleChange={handleChange}
+              />
               <AimRouter name="aimrouter16" defaultValue={values.aimrouter16} handleChange={handleChange} />
             </div>
           </>
         )}
       </div>
     </div>
-  )
+  );
 }
 
-function AimBridge({ handleChange, ...props }) {
+function AimBridge({handleChange, ...props}) {
   return (
     <>
       <label>Aim Bridge</label>
       <input type="number" onChange={handleChange} {...props} />
     </>
-  )
+  );
 }
 
-function AimRouter({ handleChange, ...props }) {
+function AimRouter({handleChange, ...props}) {
   return (
     <>
       <label>Aim Router</label>
       <input type="number" onChange={handleChange} {...props} />
     </>
-  )
+  );
 }

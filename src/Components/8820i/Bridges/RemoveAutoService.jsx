@@ -1,22 +1,21 @@
-import React from 'react'
-import Style from './ConfigAutoService.module.css'
-import ValueContext from "../../../JS/ValueContext";
+import React from "react";
+import Style from "./ConfigAutoService.module.css";
+import {ValueContext} from "../../../JS/Context";
 import copyToClip from "../../../JS/BtnCopy";
 
 export default function RemoveAutoService() {
-
-  const { selected } = React.useContext(ValueContext);
+  const {selected} = React.useContext(ValueContext);
 
   return (
     <div className={Style.containerRemove}>
       <h2> REMOÇÃO DO AUTO-SERVICE</h2>
       <div className={Style.content}>
-        {selected ?
+        {selected ? (
           <>
-            <code id="linerouter1" className={Style.code} onClick={() =>
-              copyToClip(document.getElementById('linerouter1').innerText)
-            }>
-
+            <code
+              id="linerouter1"
+              className={Style.code}
+              onClick={() => copyToClip(document.getElementById("linerouter1").innerText)}>
               <pre>bridge-profile delete gpon1-default</pre>
               <pre>yes</pre>
               <pre>bridge-profile delete gpon2-default</pre>
@@ -55,9 +54,11 @@ export default function RemoveAutoService() {
               <pre>yes</pre>
             </code>
           </>
-          : <code id="linerouter1" className={Style.code} onClick={() =>
-            copyToClip(document.getElementById('linerouter1').innerText)
-          }>
+        ) : (
+          <code
+            id="linerouter1"
+            className={Style.code}
+            onClick={() => copyToClip(document.getElementById("linerouter1").innerText)}>
             <pre>bridge-profile delete default</pre>
             <pre>yes</pre>
             <pre>bridge-profile delete default-router</pre>
@@ -67,9 +68,8 @@ export default function RemoveAutoService() {
             <pre>onu set noauto</pre>
             <pre>yes</pre>
           </code>
-        }
-
+        )}
       </div>
-    </div >
-  )
+    </div>
+  );
 }
