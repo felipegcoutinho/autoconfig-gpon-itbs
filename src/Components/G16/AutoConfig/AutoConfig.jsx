@@ -2,7 +2,7 @@ import React from 'react'
 import Style from './AutoConfig.module.css'
 import ValueContext from "../../../JS/ValueContext";
 import copyToClip from '../../../JS/BtnCopy';
-import { DeviceNamesBridge, DeviceNameRouter } from '../../../JS/DeviceNames';
+import { DeviceNameBridge, DeviceNameRouter } from '../../../JS/DeviceNames';
 
 export default function AutoConfig() {
   const { values, g16 } = React.useContext(ValueContext);
@@ -22,24 +22,24 @@ export default function AutoConfig() {
         <code id="auto1" className={Style.code} onClick={() =>
           copyToClip(document.getElementById('auto1').innerText)
         }>
-          <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon1} device-type {values.devicebridge} line {values.aimbridge1} interface gpon 0/1</pre>
-          <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon2} device-type {values.devicebridge} line {values.aimbridge2} interface gpon 0/2</pre>
-          <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon3} device-type {values.devicebridge} line {values.aimbridge3} interface gpon 0/3</pre>
-          <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon4} device-type {values.devicebridge} line {values.aimbridge4} interface gpon 0/4</pre>
-          <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon5} device-type {values.devicebridge} line {values.aimbridge5} interface gpon 0/5</pre>
-          <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon6} device-type {values.devicebridge} line {values.aimbridge6} interface gpon 0/6</pre>
-          <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon7} device-type {values.devicebridge} line {values.aimbridge7} interface gpon 0/7</pre>
-          <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon8} device-type {values.devicebridge} line {values.aimbridge8} interface gpon 0/8</pre>
+          <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon1} device-type {values.devicebridge} line {values.aimbridge1} interface gpon 0/1</pre>
+          <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon2} device-type {values.devicebridge} line {values.aimbridge2} interface gpon 0/2</pre>
+          <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon3} device-type {values.devicebridge} line {values.aimbridge3} interface gpon 0/3</pre>
+          <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon4} device-type {values.devicebridge} line {values.aimbridge4} interface gpon 0/4</pre>
+          <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon5} device-type {values.devicebridge} line {values.aimbridge5} interface gpon 0/5</pre>
+          <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon6} device-type {values.devicebridge} line {values.aimbridge6} interface gpon 0/6</pre>
+          <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon7} device-type {values.devicebridge} line {values.aimbridge7} interface gpon 0/7</pre>
+          <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon8} device-type {values.devicebridge} line {values.aimbridge8} interface gpon 0/8</pre>
           {g16 && (
             <>
-              <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon9} device-type {values.devicebridge} line {values.aimbridge9} interface gpon 0/9</pre>
-              <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon10} device-type {values.devicebridge} line {values.aimbridge10} interface gpon 0/10</pre>
-              <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon11} device-type {values.devicebridge} line {values.aimbridge11} interface gpon 0/11</pre>
-              <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon12} device-type {values.devicebridge} line {values.aimbridge12} interface gpon 0/12</pre>
-              <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon13} device-type {values.devicebridge} line {values.aimbridge13} interface gpon 0/13</pre>
-              <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon14} device-type {values.devicebridge} line {values.aimbridge14} interface gpon 0/14</pre>
-              <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon15} device-type {values.devicebridge} line {values.aimbridge15} interface gpon 0/15</pre>
-              <pre>ont auto-config name {DeviceNamesBridge()}-VLAN-{values.vlanpon16} device-type {values.devicebridge} line {values.aimbridge16} interface gpon 0/16</pre>
+              <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon9} device-type {values.devicebridge} line {values.aimbridge9} interface gpon 0/9</pre>
+              <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon10} device-type {values.devicebridge} line {values.aimbridge10} interface gpon 0/10</pre>
+              <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon11} device-type {values.devicebridge} line {values.aimbridge11} interface gpon 0/11</pre>
+              <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon12} device-type {values.devicebridge} line {values.aimbridge12} interface gpon 0/12</pre>
+              <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon13} device-type {values.devicebridge} line {values.aimbridge13} interface gpon 0/13</pre>
+              <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon14} device-type {values.devicebridge} line {values.aimbridge14} interface gpon 0/14</pre>
+              <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon15} device-type {values.devicebridge} line {values.aimbridge15} interface gpon 0/15</pre>
+              <pre>ont auto-config name {DeviceNameBridge()}-VLAN-{values.vlanpon16} device-type {values.devicebridge} line {values.aimbridge16} interface gpon 0/16</pre>
             </>
           )}
         </code>

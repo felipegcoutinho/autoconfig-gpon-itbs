@@ -2,14 +2,14 @@ import React from 'react'
 import ValueContext from "./ValueContext";
 
 //DEVICE BRIDGE
-export function DeviceNamesBridge() {
+export function DeviceNameBridge() {
 
   const { values } = React.useContext(ValueContext);
 
   if (values.devicebridge == 'i30-100') {
     return '110Gi';
   }
-  if (values.devicebridge == '110Gb') {
+  if (values.devicebridge == 'i41-100') {
     return '110Gb';
   }
   if (values.devicebridge == 'i40-100') {

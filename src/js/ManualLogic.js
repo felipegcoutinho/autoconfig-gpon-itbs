@@ -10,6 +10,15 @@ export function Onudesc() {
   }
 }
 
+export function VlanMode() {
+  const { values } = React.useContext(ServiceContext);
+  if (values.VlanMode === 'untagged') {
+    return 'default vlan ' + values.VlanVlan;
+  } else {
+    return 'vlan ' + values.VlanVlan + ' keep';
+  }
+}
+
 export function DbaName() {
   const { values } = React.useContext(ServiceContext);
   if (values.dbaName === "") {
