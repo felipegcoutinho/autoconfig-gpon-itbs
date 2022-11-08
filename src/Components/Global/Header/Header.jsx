@@ -13,9 +13,7 @@ export default function header() {
             </a>
           </li>
           <li>
-            <a href="/">
-              <i className="fa-solid fa-house"></i> Home
-            </a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="#">
@@ -101,9 +99,7 @@ export default function header() {
           </li>
 
           <li>
-            <NavLink to="/ProvisionamentoManual">
-              <i className="fa-solid fa-gear"></i> Provisionamento Manual
-            </NavLink>
+            <NavLink to="/ProvisionamentoManual">Provisionamento Manual</NavLink>
           </li>
         </ul>
       </nav>
