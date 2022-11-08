@@ -19,9 +19,9 @@ export default function RemoveAutoService() {
 
               <pre>bridge-profile delete gpon1-default</pre>
               <pre>yes</pre>
-              <pre>bridge-profile delete gpon2-default-router</pre>
+              <pre>bridge-profile delete gpon2-default</pre>
               <pre>yes</pre>
-              <pre>bridge-profile delete gpon3-default-router</pre>
+              <pre>bridge-profile delete gpon3-default</pre>
               <pre>yes</pre>
               <pre>bridge-profile delete gpon4-default</pre>
               <pre>yes</pre>

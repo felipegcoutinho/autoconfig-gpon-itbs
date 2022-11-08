@@ -21,7 +21,7 @@ import {
 } from "../../../JS/ManualLogic";
 
 export default function ProvisManual() {
-  const { ProvManualMode, values, handleChange } =
+  const {ProvManualMode, values, handleChange} =
     React.useContext(ServiceContext);
 
   return (
