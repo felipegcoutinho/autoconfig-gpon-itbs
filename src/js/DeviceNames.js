@@ -65,7 +65,7 @@ export function DeviceNamesBridge() {
   if (values.devicebridge == 'i30-100') {
     return '110Gi';
   }
-  if (values.devicebridge == '110Gb') {
+  if (values.devicebridge == 'i41-100') {
     return '110Gb';
   }
   if (values.devicebridge == 'i40-100') {

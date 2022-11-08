@@ -207,8 +207,8 @@ export default function ProvisManual() {
           onClick={() => copyToClip(document.getElementById("autoconfig").innerText)}>
           <pre>ont auto-config</pre>
           <pre>
-            ont auto-config name {ProvManualMode ? DeviceNamesBridge() : DeviceNamesRouter()} device-type{" "}
-            {!ProvManualMode ? values.devicerouter : values.devicebridge} line {values.ProfileLine}
+            ont auto-config name {ProvManualMode ? DeviceNamesBridge() : DeviceNamesRouter()}-VLAN-{values.VlanVlan}{" "}
+            device-type {!ProvManualMode ? values.devicerouter : values.devicebridge} line {values.ProfileLine}
           </pre>
           <pre>active</pre>
         </code>
