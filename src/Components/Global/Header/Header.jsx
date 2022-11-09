@@ -99,7 +99,7 @@ export default function header() {
           </li>
 
           <li>
-            <NavLink to="/ProvisionamentoManual">Provisionamento Manual</NavLink>
+            <NavLink to="/provisionamentomanual">Provisionamento Manual G08/G16</NavLink>
           </li>
         </ul>
       </nav>
