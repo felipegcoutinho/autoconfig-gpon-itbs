@@ -24,7 +24,7 @@ export default function AppServices() {
     <ServiceContext.Provider value={{ProvManualMode, values, handleChange}}>
       <div className={Style.container}>
         <div className={Style.menu}>
-          <h1>Provisionamento Manual - Modo {ProvManualMode ? "Bridge" : "Router"}</h1>
+          <h1>Provisionamento Manual G08/G16 - Modo {ProvManualMode ? "Bridge" : "Router"}</h1>
           <select className={Style.select} onChange={HandleChangeMode}>
             <option>Router</option>
             <option>Bridge</option>
