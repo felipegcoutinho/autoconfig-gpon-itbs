@@ -2,6 +2,7 @@ import React from "react";
 import Style from "./Pons_i.module.css";
 import {ValueContext} from "../../../JS/Context";
 import {UplinkOptions, BridgeOptions, ModoVlanOptions, OnuOptions} from "../../../JS/DeviceOptions";
+import BridgeChangepon from "../Bridges/ConfigAutoService";
 
 export default function Pons_i() {
   const {values, handleChange, selected} = React.useContext(ValueContext);
@@ -17,7 +18,7 @@ export default function Pons_i() {
             <Vlan name="vlanpon1" defaultValue={values.vlanpon1} title="Todas as PONs" />
           )}
           <Uplink name="uplinkpon1" defaultValue={values.uplinkpon1} />
-          <Bridge name="bridgepon1" defaultValue={values.bridgepon1} />
+          <Bridge name="bridgepon1" defaultValue={BridgeChangepon(1)} />
           <ModoVlan name="modovlanpon1" defaultValue={values.modovlanpon1} />
         </div>
         {selected && (
@@ -25,43 +26,43 @@ export default function Pons_i() {
             <div className={Style.pons}>
               <Vlan name="vlanpon2" defaultValue={values.vlanpon2} title="PON 2" />
               <Uplink name="uplinkpon2" defaultValue={values.uplinkpon2} />
-              <Bridge name="bridgepon2" defaultValue={values.bridgepon2} />
+              <Bridge name="bridgepon2" defaultValue={BridgeChangepon(2)} />
               <ModoVlan name="modovlanpon2" defaultValue={values.modovlanpon2} />
             </div>
             <div className={Style.pons}>
               <Vlan name="vlanpon3" defaultValue={values.vlanpon3} title="PON 3" />
               <Uplink name="uplinkpon3" defaultValue={values.uplinkpon3} />
-              <Bridge name="bridgepon3" defaultValue={values.bridgepon3} />
+              <Bridge name="bridgepon3" defaultValue={BridgeChangepon(3)} />
               <ModoVlan name="modovlanpon3" defaultValue={values.modovlanpon3} />
             </div>
             <div className={Style.pons}>
               <Vlan name="vlanpon4" defaultValue={values.vlanpon4} title="PON 4" />
               <Uplink name="uplinkpon4" defaultValue={values.uplinkpon4} />
-              <Bridge name="bridgepon4" defaultValue={values.bridgepon4} />
+              <Bridge name="bridgepon4" defaultValue={BridgeChangepon(4)} />
               <ModoVlan name="modovlanpon4" defaultValue={values.modovlanpon4} />
             </div>
             <div className={Style.pons}>
               <Vlan name="vlanpon5" defaultValue={values.vlanpon5} title="PON 5" />
               <Uplink name="uplinkpon5" defaultValue={values.uplinkpon5} />
-              <Bridge name="bridgepon5" defaultValue={values.bridgepon5} />
+              <Bridge name="bridgepon5" defaultValue={BridgeChangepon(5)} />
               <ModoVlan name="modovlanpon5" defaultValue={values.modovlanpon5} />
             </div>
             <div className={Style.pons}>
               <Vlan name="vlanpon6" defaultValue={values.vlanpon6} title="PON 6" />
               <Uplink name="uplinkpon6" defaultValue={values.uplinkpon6} />
-              <Bridge name="bridgepon6" defaultValue={values.bridgepon6} />
+              <Bridge name="bridgepon6" defaultValue={BridgeChangepon(6)} />
               <ModoVlan name="modovlanpon6" defaultValue={values.modovlanpon6} />
             </div>
             <div className={Style.pons}>
               <Vlan name="vlanpon7" defaultValue={values.vlanpon7} title="PON 7" />
               <Uplink name="uplinkpon7" defaultValue={values.uplinkpon7} />
-              <Bridge name="bridgepon7" defaultValue={values.bridgepon7} />
+              <Bridge name="bridgepon7" defaultValue={BridgeChangepon(7)} />
               <ModoVlan name="modovlanpon7" defaultValue={values.modovlanpon7} />
             </div>
             <div className={Style.pons}>
               <Vlan name="vlanpon8" defaultValue={values.vlanpon8} title="PON 8" />
               <Uplink name="uplinkpon8" defaultValue={values.uplinkpon8} />
-              <Bridge name="bridgepon8" defaultValue={values.bridgepon8} />
+              <Bridge name="bridgepon8" defaultValue={BridgeChangepon(8)} />
               <ModoVlan name="modovlanpon8" defaultValue={values.modovlanpon8} />
             </div>
           </>

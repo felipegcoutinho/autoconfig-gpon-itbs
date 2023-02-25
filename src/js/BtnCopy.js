@@ -1,15 +1,13 @@
 import swal from "sweetalert";
 
-export default function copyToClip(str) {
-  function listener(e) {
-    e.preventDefault();
-    e.clipboardData.setData('text/plain', str);
+export default async function copyToClip(str) {
+  try {
+    await navigator.clipboard.writeText(str);
+    swal("COPIADO COM SUCESSO!", {
+      button: false,
+      timer: 1000,
+    });
+  } catch (err) {
+    console.error("Falha ao copiar o texto", err);
   }
-  document.addEventListener('copy', listener);
-  document.execCommand('copy');
-  document.removeEventListener('copy', listener);
-  swal("COPIADO COM SUCESSO!", {
-    button: false,
-    timer: 1000,
-  });
 }

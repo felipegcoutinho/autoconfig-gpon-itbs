@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=JetBrains+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=JetBrains+Mono&display=swap");
 
 html {
-  scroll-behavior:smooth
+  scroll-behavior: smooth;
 }
 
 input::-webkit-outer-spin-button,
@@ -9,9 +9,11 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-body, select, input {
+body,
+select,
+input {
   box-sizing: border-box;
-  font-family: 'Fira Sans',Segoe UI, Arial, sans-serif;
+  font-family: "Fira Sans", Segoe UI, Arial, sans-serif;
   margin: 0;
 }
 
@@ -20,12 +22,14 @@ label {
   font-weight: bold;
 }
 
-input:focus-visible, select:focus-visible {
+input:focus-visible,
+select:focus-visible {
   background-color: white;
 }
 
-select, input {
-  background-color: #e6e6e6;  
+select,
+input {
+  background-color: #e6e6e6;
   border: none;
   border-radius: 3px;
   font-size: 0.9rem;
@@ -40,15 +44,15 @@ a {
 }
 
 pre {
-  font-family: 'JetBrains Mono', monospace, arial;
+  font-family: "JetBrains Mono", monospace, arial;
   font-size: 0.7rem;
   margin: 0;
   padding: 0;
 }
 
 pre::before {
-  color: #00A335;
-  content: '# ';
+  color: #00a335;
+  content: "# ";
 }
 
 hr {
@@ -59,7 +63,7 @@ hr {
 button {
   border: none;
   cursor: pointer;
-  font-family: 'Fira Sans',Segoe UI, Arial, sans-serif;
+  font-family: "Fira Sans", Segoe UI, Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   padding: 8px 0;
@@ -75,7 +79,7 @@ button {
 
 .select {
   border: none;
-  font-family: 'Fira Sans', Segoe UI, Arial, sans-serif;
+  font-family: "Fira Sans", Segoe UI, Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   height: 30px;
@@ -84,7 +88,8 @@ button {
   width: 150px;
 }
 
-.h2, .h3 {
+.h2,
+.h3 {
   margin: 0;
 }
 
@@ -92,13 +97,12 @@ button {
   margin-top: 10px;
 }
 
-.content{
+.content {
   align-items: center;
-  background-color: #5E6573;
+  background-color: #5e6573;
   border-radius: 3px;
   color: white;
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
-
