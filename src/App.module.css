@@ -29,13 +29,16 @@ select:focus-visible {
 
 select,
 input {
-  background-color: #e6e6e6;
+  background-color: #eee;
   border: none;
   border-radius: 3px;
   font-size: 0.9rem;
   margin-bottom: 3px;
   text-align: center;
+  align-items: center;
   width: 100%;
+  height: 25px;
+  margin-top: 3px;
 }
 
 a {

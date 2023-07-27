@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom";
 import Header from "./Components/Global/Header/Header";
 import AppServices from "./Components/Serviços/AppServices";
 
 ReactDOM.createRoot(document.getElementById("main")).render(
-  <BrowserRouter>
+  <HashRouter>
     <React.StrictMode>
       <Header />
       <Routes>
@@ -17,5 +17,5 @@ ReactDOM.createRoot(document.getElementById("main")).render(
         <Route exact path="/provisionamentomanual" element={<AppServices />} />
       </Routes>
     </React.StrictMode>
-  </BrowserRouter>
+  </HashRouter>
 );

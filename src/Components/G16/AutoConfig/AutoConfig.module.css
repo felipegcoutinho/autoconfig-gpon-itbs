@@ -10,17 +10,30 @@
 }
 
 .container h2:before {
-  content: '\23\37';
+  content: "\23\37";
   font: var(--fa-font-solid);
 }
 
 .content {
-  background-color:black;  
+  background-color: black;
   box-sizing: border-box;
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 20px; 
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00a335;
+}
+
+.subTitle {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .code {
@@ -28,34 +41,34 @@
   padding: 15px 10px;
 }
 
-.code:hover{
+.code:hover {
   background-color: #1e1e1e;
 }
 
-.code:active{
+.code:active {
   background-color: #3c5745;
 }
 
-.code:before{
+.code:before {
   animation: pulse 3s infinite;
-  content: '[ Clique para copiar ]';
+  content: "Copiar";
   display: flex;
-  font-family: 'JetBrains Mono', monospace, arial;
+  font-family: "JetBrains Mono", monospace, arial;
   font-size: x-small;
   justify-content: end;
   text-transform: uppercase;
 }
 
 @keyframes pulse {
-	0% {
-		color: lightgray;
-	}
+  0% {
+    color: lightgray;
+  }
 
-  50% { 
+  50% {
     color: goldenrod;
   }
 
-	100% {
-		color: lightgray;
-	}
+  100% {
+    color: lightgray;
+  }
 }

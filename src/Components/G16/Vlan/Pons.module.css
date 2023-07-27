@@ -11,16 +11,16 @@
 }
 
 .container h2:before {
-  content: '\23\32';
+  content: "\23\32";
   font: var(--fa-font-solid);
 }
 
-.content{
+.content {
   display: flex;
 }
 
-.pons {  
-  background-color: #DFDFDF;
+.pons {
+  background-color: #dfdfdf;
   border: 1px solid #cecece;
   border-radius: 3px;
   box-sizing: border-box;
@@ -32,7 +32,7 @@
 }
 
 .h5 {
-  background-color: #24ac50;
+  background-color: #00a335;
   border-radius: 3px;
   color: white;
   font-size: small;

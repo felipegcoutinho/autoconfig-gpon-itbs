@@ -1,11 +1,11 @@
 :root {
-  --cor-fundo: #24ac50;
+  --cor-fundo: #00a335;
   --cor-hover: #1e8a41;
   --cor-fundo-hover: #125628;
   --cor-primaria: #e7f1ec;
 }
 
-.container { 
+.container {
   background-color: var(--cor-fundo);
 }
 
@@ -40,7 +40,7 @@
   display: inline-block;
   padding: 10px;
   text-decoration: none;
-  transition: background .3s;
+  transition: background 0.3s;
 }
 
 .menu ul li a:hover {
@@ -72,7 +72,7 @@
 }
 
 .menu ul ul {
-  width: 120px
+  width: 120px;
 }
 
 .menu ul ul li a {

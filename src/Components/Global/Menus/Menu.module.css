@@ -1,6 +1,6 @@
-.container{
+.container {
   align-items: center;
-  background-color: #5E6573;
+  background-color: #5e6573;
   border: 1px solid #3d414a;
   border-radius: 3px;
   color: white;
@@ -11,7 +11,7 @@
   padding: 30px;
 }
 
-.containerBtn{
+.containerBtn {
   display: flex;
   justify-content: space-between;
 }
@@ -19,7 +19,7 @@
 .select {
   border: none;
   cursor: pointer;
-  font-family: 'Fira Sans', Segoe UI, Arial, sans-serif;
+  font-family: "Fira Sans", Segoe UI, Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   height: 35px;
@@ -51,9 +51,9 @@ select {
   width: 150px;
 }
 
-.btnActive:before{
-  color: #24ac50;
-  content: '\f00c\ ';
+.btnActive:before {
+  color: #00a335;
+  content: "\f00c\ ";
   font-family: FontAwesome;
 }
 
@@ -65,7 +65,7 @@ select {
   font-family: "Fira Sans", "Segoe UI", Arial, "sans- serif";
   font-size: 1rem;
   font-weight: bold;
-  margin: 15px 0 0 5px;  
+  margin: 15px 0 0 5px;
   padding: 8px 0px;
   text-align: center;
   width: 150px;

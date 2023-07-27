@@ -1,5 +1,5 @@
 .container {
-  background-color: #24AC50;
+  background-color: #00a335;
   display: flex;
   grid-area: 20 / 3 / 22 / 15;
   justify-content: center;
@@ -10,8 +10,9 @@
 .content {
   color: white;
 }
-  
-.github, .site {
+
+.github,
+.site {
   border-radius: 3px;
   padding: 10px;
   text-transform: lowercase;

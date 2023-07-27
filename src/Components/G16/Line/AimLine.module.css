@@ -11,16 +11,16 @@
 }
 
 .container h2:before {
-  content: '\23\35';
+  content: "\23\35";
   font: var(--fa-font-solid);
 }
 
-.content{
+.content {
   display: flex;
 }
 
-.pons {  
-  background-color: #DFDFDF;
+.pons {
+  background-color: #dfdfdf;
   border: 1px solid #cecece;
   border-radius: 3px;
   box-sizing: border-box;
@@ -28,5 +28,15 @@
   flex-direction: column;
   margin: 1px;
   padding: 5px;
+  text-align: center;
+}
+
+.h5 {
+  background-color: #00a335;
+  border-radius: 3px;
+  color: white;
+  font-size: small;
+  margin: 0 0 5px 0;
+  padding: 3px;
   text-align: center;
 }

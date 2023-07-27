@@ -6,7 +6,7 @@ export default function Footer() {
     <div className={Style.container}>
       <div className={Style.content}>
         <a className={Style.site} href="https://felipecoutinho.com">
-          FELIPECOUTINHO.COM
+          FELIPE COUTINHO
         </a>
         {"|"}
         <a className={Style.github} href="https://github.felipecoutinho.com">

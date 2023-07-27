@@ -44,8 +44,10 @@ export default function BridgeChangepon(num) {
       `bridge-profile bind add gpon${gponNumber}-default-router device intelbras-142nw gpon ${gponNumber}`,
       `bridge-profile bind add gpon${gponNumber}-default-router device intelbras-1420g gpon ${gponNumber}`,
       `bridge-profile bind add gpon${gponNumber}-default-router device intelbras-121ac gpon ${gponNumber}`,
-      `bridge-profile bind add gpon${gponNumber}-default-router device intelbras-1200r gpon ${gponNumber}`,
       `bridge-profile bind add gpon${gponNumber}-default-router device intelbras-120ac gpon ${gponNumber}`,
+      `bridge-profile bind add gpon${gponNumber}-default-router device intelbras-1200r gpon ${gponNumber}`,
+      `bridge-profile bind add gpon${gponNumber}-default-router device intelbras-1800 gpon ${gponNumber}`,
+      `bridge-profile bind add gpon${gponNumber}-default-router device intelbras-1800v gpon ${gponNumber}`,
     ];
     return codes.join("\n");
   }
@@ -66,6 +68,8 @@ export default function BridgeChangepon(num) {
     "bridge-profile bind add default-router device intelbras-120ac",
     "bridge-profile bind add default-router device intelbras-121ac",
     "bridge-profile bind add default-router device intelbras-1200r",
+    "bridge-profile bind add default-router device intelbras-1800",
+    "bridge-profile bind add default-router device intelbras-1800v",
     "onu set auto",
     "auto-service enable",
     "yes",
@@ -78,7 +82,10 @@ export default function BridgeChangepon(num) {
       <div className={Style.content}>
         {selected ? (
           <>
-            <code id="bridgeadd" className={Style.code} onClick={() => copyToClip(document.getElementById("bridgeadd").innerText)}>
+            <code
+              id="bridgeadd"
+              className={Style.code}
+              onClick={() => copyToClip(document.getElementById("bridgeadd").innerText)}>
               {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
                 <pre key={num}>
                   {generateBridgeCommand(
@@ -96,7 +103,13 @@ export default function BridgeChangepon(num) {
               className={Style.code}
               onClick={() => copyToClip(document.getElementById("bridgeprofiledefault").innerText)}>
               {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-                <pre key={num}>{generateBridgeProfileCommand(`gpon${num}-default`, bridgeValue, values[`vlanpon${num}`])}</pre>
+                <pre key={num}>
+                  {generateBridgeProfileCommand(
+                    `gpon${num}-default`,
+                    bridgeValue,
+                    values[`vlanpon${num}`]
+                  )}
+                </pre>
               ))}
             </code>
             <hr />
@@ -105,7 +118,13 @@ export default function BridgeChangepon(num) {
               className={Style.code}
               onClick={() => copyToClip(document.getElementById("bridgeprofilerouter").innerText)}>
               {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-                <pre key={num}>{generateBridgeProfileRouterCommand(`gpon${num}-default-router`, bridgeValue, values[`vlanpon${num}`])}</pre>
+                <pre key={num}>
+                  {generateBridgeProfileRouterCommand(
+                    `gpon${num}-default-router`,
+                    bridgeValue,
+                    values[`vlanpon${num}`]
+                  )}
+                </pre>
               ))}
             </code>
             <hr />
@@ -174,7 +193,10 @@ export default function BridgeChangepon(num) {
                 ))}
             </code>
             <hr />
-            <code id="onuset" className={Style.code} onClick={() => copyToClip(document.getElementById("onuset").innerText)}>
+            <code
+              id="onuset"
+              className={Style.code}
+              onClick={() => copyToClip(document.getElementById("onuset").innerText)}>
               <pre>onu set auto</pre>
               <pre>auto-service enable</pre>
               <pre>yes</pre>

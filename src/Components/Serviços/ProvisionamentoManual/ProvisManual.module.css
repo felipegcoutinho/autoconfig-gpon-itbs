@@ -18,8 +18,8 @@
   justify-content: center;
 }
 
-.pons {  
-  background-color: #DFDFDF;
+.pons {
+  background-color: #dfdfdf;
   border: 1px solid #cecece;
   border-radius: 3px;
   box-sizing: border-box;
@@ -34,7 +34,8 @@
   margin-right: 0;
 }
 
-.pons label, input {
+.pons label,
+input {
   margin-bottom: 5px;
 }
 
@@ -54,12 +55,12 @@
 }
 
 .contentCode {
-  background-color: black; 
+  background-color: black;
   box-sizing: border-box;
   color: white;
   display: flex;
   flex-direction: column;
-  grid-area: 3 / 4 / 4 / 14; 
+  grid-area: 3 / 4 / 4 / 14;
   margin-bottom: 20px;
   padding: 20px;
 }
@@ -69,39 +70,40 @@
   padding: 15px 10px;
 }
 
-.code:hover{
+.code:hover {
   background-color: #1e1e1e;
 }
 
-.code:active{
+.code:active {
   background-color: #3c5745;
 }
 
-.code:before{
+.code:before {
   animation: pulse 3s infinite;
-  content: '[ Clique para copiar ]';
+  content: "Copiar";
   display: flex;
-  font-family: 'JetBrains Mono', monospace, arial;
+  font-family: "JetBrains Mono", monospace, arial;
   font-size: x-small;
   justify-content: end;
   text-transform: uppercase;
 }
 
 @keyframes pulse {
-	0% {
-		color: lightgray;
-	}
-
-  50% { 
-    color: goldenrod
+  0% {
+    color: lightgray;
   }
 
-	100% {
-		color: lightgray;
-	}
+  50% {
+    color: goldenrod;
+  }
+
+  100% {
+    color: lightgray;
+  }
 }
 
-::-webkit-input-placeholder { /* Edge */
+::-webkit-input-placeholder {
+  /* Edge */
   color: #a0a0a0;
   font-size: 0.8rem;
   text-transform: uppercase;
